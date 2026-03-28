@@ -11,9 +11,7 @@ import { useEffect, useState } from "react";
 import {
   ArrowRight,
   Check,
-  ChevronUp,
   Mail,
-  MapPin,
   Phone,
   ShoppingCart,
   Image as ImageIcon,
@@ -22,16 +20,8 @@ import {
   User,
   MessageSquare,
   Globe,
-  X,
 } from "lucide-react";
 
-const COLORS = {
-  primary: "#000000",
-  accent: "#7B2CBF", // Purple
-  purple: "#7B2CBF", // Purple for contact button
-  lightGray: "#F5F5F5",
-  textGray: "#888888",
-};
 
 const LOGOS = [
   {
@@ -127,7 +117,6 @@ const PORTFOLIO = [
 ];
 
 export default function Home() {
-  const [scrolled, setScrolled] = useState(false);
   const ref = React.useRef(null);
 const isInView = useInView(ref, { once: true });
 
@@ -165,18 +154,6 @@ useEffect(() => {
     }, intervalTime);
   });
 }, [isInView]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   return (
     <div className="min-h-screen bg-black mt-3 text-white selection:bg-purple-500 selection:text-white">
