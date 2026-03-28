@@ -1,3 +1,4 @@
+import logo from "../src/assets/WorkHolo-logo.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -468,7 +469,7 @@ function NavbarZ({ scrolled }: NavbarProps) {
             <div className="flex items-center">
               <div className="w-10 h-10 flex items-center justify-center p-1.5">
                 <div className="text-white font-black text-xl leading-none">
-                  <img src={`../src/assets/WorkHolo-logo.png`} />
+                  <img src={logo} alt={`Workholo-logo`} />
                 </div>
               </div>
               <div className="flex flex-col">
@@ -721,7 +722,7 @@ function NavbarZ({ scrolled }: NavbarProps) {
               <div className="flex items-center justify-between mb-10">
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 flex items-center justify-center">
-                    <img src={`../src/assets/WorkHolo-logo.png`}/>
+                    <img src={logo} alt={`WorkHolo-logo`}/>
                   </div>
                   <span className="text-xl font-bold text-gray-900">
                     WorkHolo
