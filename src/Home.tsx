@@ -153,7 +153,7 @@ useEffect(() => {
 }, [isInView]);
 
   return (
-    <div className="min-h-screen bg-black mt-3 text-white overflow-x-hidden selection:bg-purple-500 selection:text-white">
+    <div className=" selection:bg-purple-500 selection:text-white min-h-screen bg-black mt-3 text-white overflow-x-hidden">
       {/* Sticky Sidebar Actions */}
       {/* <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-px">
         <button className="bg-[#7B2CBF] p-4 hover:bg-purple-600 transition-colors">
@@ -214,7 +214,7 @@ useEffect(() => {
                   y: { repeat: Infinity, duration: 5, ease: "easeInOut" },
                   rotate: { repeat: Infinity, duration: 5, ease: "easeInOut" },
                 }}
-                className="absolute top-1/2 -left-32 w-[150px] h-[150px] rounded-2xl overflow-hidden hidden lg:block z-30 shadow-2xl border-4 border-black"
+                className="absolute top-1/2 -left-10 lg:-left-32 w-[150px] h-[150px] rounded-2xl overflow-hidden hidden lg:block z-30 shadow-2xl border-4 border-black"
               >
                 <img
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600"
@@ -292,7 +292,7 @@ useEffect(() => {
                     ease: "easeInOut",
                   },
                 }}
-                className="absolute bottom-0 -right-32 w-[120px] h-[150px] rounded-2xl overflow-hidden hidden lg:block z-30 shadow-2xl"
+                className="absolute bottom-0 -right-10 lg:-right-32 w-[120px] h-[150px] rounded-2xl overflow-hidden hidden lg:block z-30 shadow-2xl"
               >
                 <img
                   src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=600"
@@ -331,7 +331,7 @@ useEffect(() => {
         </div>
 
         {/* Hero Background Images */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-30 pointer-events-none">
+        <div className="absolute inset-0 w-full h-full overflow-hidden opacity-30 pointer-events-none">
           <img
             src="https://img.freepik.com/free-photo/connecting-dots-background-network-communication-design_53876-160207.jpg"
             alt="Background"
@@ -430,7 +430,7 @@ useEffect(() => {
                   }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.5 }}
-                  className="absolute -top-10 -left-32 w-24 h-24 rounded-lg overflow-hidden shadow-2xl hidden lg:block -z-10 opacity-80"
+                  className="absolute -top-10 -left-10 lg:-left-32 w-24 h-24 rounded-lg overflow-hidden shadow-2xl hidden lg:block -z-10 opacity-80"
                 >
                   <motion.div
                     animate={{ y: [0, -10, 0] }}
