@@ -441,7 +441,7 @@ function NavbarZ({ scrolled }: NavbarProps) {
                 animate={{ x: "0%", opacity: 1, filter: "blur(0px)" }}
                 exit={{ x: "-100%", opacity: 0, filter: "blur(4px)" }}
                 transition={{ duration: 0.6, ease: "easeInOut" }}
-                className="absolute w-full text-center text-[#EFEFEF] font-semibold tracking-[2px] text-[10px] md:text-[11px] lg:text-[12px]"
+                className="absolute w-full text-center px-1 text-[#EFEFEF] font-semibold tracking-[2px] text-[7px] md:text-[11px] lg:text-[12px]"
               >
                 {TOP_BAR.Corousel[carouselIndex]}
               </motion.span>

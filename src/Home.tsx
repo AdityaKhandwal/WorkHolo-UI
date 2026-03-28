@@ -1,12 +1,7 @@
 import Footer from "./Footer";
-import React from "react";
-import { motion, useInView } from "framer-motion";
-import { useEffect, useState } from "react";
-
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
+import Navbar from "./Navbar";
+import React, { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion, useInView } from "framer-motion";
 
 import {
   ArrowRight,
@@ -19,6 +14,10 @@ import {
   Globe,
 } from "lucide-react";
 
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
 
 const LOGOS = [
   {
@@ -113,69 +112,55 @@ const PORTFOLIO = [
   },
 ];
 
-export default function Home() {
-  const ref = React.useRef(null);
-const isInView = useInView(ref, { once: true });
+export default function App() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
-const [counts, setCounts] = useState([0, 0, 0, 0]);
+  const [counts, setCounts] = useState([0, 0, 0, 0]);
 
-useEffect(() => {
-  if (!isInView) return;
+  useEffect(() => {
+    if (!isInView) return;
 
-  const targets = [61, 32, 10, 15];
-  const duration = 2000; // total animation time (2 seconds)
-  const intervalTime = 30; // update every 30ms
+    const targets = [61, 32, 10, 15];
+    const duration = 2000; // total animation time (2 seconds)
+    const intervalTime = 30; // update every 30ms
 
-  targets.forEach((target, index) => {
-    let current = 0;
-    const steps = duration / intervalTime;
-    const increment = target / steps;
+    targets.forEach((target, index) => {
+      let current = 0;
+      const steps = duration / intervalTime;
+      const increment = target / steps;
 
-    const interval = setInterval(() => {
-      current += increment;
+      const interval = setInterval(() => {
+        current += increment;
 
-      setCounts((prev) => {
-        const updated = [...prev];
-        updated[index] = Math.floor(current);
-        return updated;
-      });
-
-      if (current >= target) {
         setCounts((prev) => {
           const updated = [...prev];
-          updated[index] = target;
+          updated[index] = Math.floor(current);
           return updated;
         });
-        clearInterval(interval);
-      }
-    }, intervalTime);
-  });
-}, [isInView]);
+
+        if (current >= target) {
+          setCounts((prev) => {
+            const updated = [...prev];
+            updated[index] = target;
+            return updated;
+          });
+          clearInterval(interval);
+        }
+      }, intervalTime);
+    });
+  }, [isInView]);
 
   return (
-    <div className=" selection:bg-purple-500 selection:text-white min-h-screen bg-black mt-3 text-white overflow-x-hidden">
-      {/* Sticky Sidebar Actions */}
-      {/* <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-px">
-        <button className="bg-[#7B2CBF] p-4 hover:bg-purple-600 transition-colors">
-          <ShoppingCart className="w-6 h-6 text-white" />
-        </button>
-        <button className="bg-[#7B2CBF] p-4 hover:bg-purple-600 transition-colors">
-          <ImageIcon className="w-6 h-6 text-white" />
-        </button>
-        <button className="bg-[#7B2CBF] p-4 hover:bg-purple-600 transition-colors">
-          <Layout className="w-6 h-6 text-white" />
-        </button>
-      </div> */}
-
-      {/* Header */}
-      
+    <div className="selection:bg-purple-500 selection:text-white min-h-screen bg-black text-white overflow-x-hidden">
+      <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-48 pb-24 overflow-hidden">
+      <section className="relative pt-32 md:pt-48 pb-16 md:pb-24 overflow-hidden">
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
           <div className="flex flex-col items-center text-center">
             <div className="relative w-full max-w-6xl">
-              {/* Floating Images */}
+              {/* Floating Images - Adjusted for Tablet/Desktop */}
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
                 animate={{
@@ -190,7 +175,7 @@ useEffect(() => {
                   y: { repeat: Infinity, duration: 4, ease: "easeInOut" },
                   rotate: { repeat: Infinity, duration: 4, ease: "easeInOut" },
                 }}
-                className="absolute -top-10 -left-20 w-40 h-40 rounded-2xl overflow-hidden hidden lg:block z-20 shadow-2xl"
+                className="absolute -top-10 -left-20 w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden hidden lg:block z-20 shadow-2xl"
               >
                 <img
                   src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800"
@@ -214,7 +199,7 @@ useEffect(() => {
                   y: { repeat: Infinity, duration: 5, ease: "easeInOut" },
                   rotate: { repeat: Infinity, duration: 5, ease: "easeInOut" },
                 }}
-                className="absolute top-1/2 -left-10 lg:-left-32 w-[150px] h-[150px] rounded-2xl overflow-hidden hidden lg:block z-30 shadow-2xl border-4 border-black"
+                className="absolute top-1/2 -left-10 lg:-left-32 w-[120px] h-[120px] md:w-[150px] md:h-[150px] rounded-2xl overflow-hidden hidden lg:block z-30 shadow-2xl border-4 border-black"
               >
                 <img
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600"
@@ -238,7 +223,7 @@ useEffect(() => {
                   y: { repeat: Infinity, duration: 6, ease: "easeInOut" },
                   rotate: { repeat: Infinity, duration: 6, ease: "easeInOut" },
                 }}
-                className="absolute -top-20 -right-20 w-[100px] h-[150px] rounded-2xl overflow-hidden hidden lg:block z-20 shadow-2xl"
+                className="absolute -top-20 -right-20 w-[80px] h-[120px] md:w-[100px] md:h-[150px] rounded-2xl overflow-hidden hidden lg:block z-20 shadow-2xl"
               >
                 <img
                   src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?q=80&w=800"
@@ -264,7 +249,7 @@ useEffect(() => {
                     ease: "easeInOut",
                   },
                 }}
-                className="absolute -bottom-32 -left-10 w-[150px] h-[150px] rounded-2xl overflow-hidden hidden lg:block z-20 shadow-2xl"
+                className="absolute -bottom-32 -left-10 w-[120px] h-[120px] md:w-[150px] md:h-[150px] rounded-2xl overflow-hidden hidden lg:block z-20 shadow-2xl"
               >
                 <img
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800"
@@ -292,7 +277,7 @@ useEffect(() => {
                     ease: "easeInOut",
                   },
                 }}
-                className="absolute bottom-0 -right-10 lg:-right-32 w-[120px] h-[150px] rounded-2xl overflow-hidden hidden lg:block z-30 shadow-2xl"
+                className="absolute bottom-0 -right-10 lg:-right-32 w-[100px] h-[120px] md:w-[120px] md:h-[150px] rounded-2xl overflow-hidden hidden lg:block z-30 shadow-2xl"
               >
                 <img
                   src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=600"
@@ -304,9 +289,9 @@ useEffect(() => {
 
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1 }}
-                className="relative z-50 text-[12vw] lg:text-[10vw] font-black font-display leading-[0.9] uppercase tracking-tighter"
+                className="relative z-50 text-[10vw] md:text-[12vw] lg:text-[10vw] font-black font-display leading-[0.9] uppercase tracking-tighter"
               >
                 WorkHolo <br />
                 <span className="text-white/10 outline-text ">
@@ -315,8 +300,8 @@ useEffect(() => {
               </motion.div>
             </div>
 
-            <div className="mt-12 flex flex-col items-center">
-              <p className="text-xl font-medium tracking-wide mb-8">
+            <div className="mt-8 md:mt-12 flex flex-col items-center">
+              <p className="text-lg md:text-xl font-medium tracking-wide mb-8 max-w-md md:max-w-none">
                 Real-time Chat, SIP Calling, Team Collaboration
               </p>
               <motion.div
@@ -331,7 +316,7 @@ useEffect(() => {
         </div>
 
         {/* Hero Background Images */}
-        <div className="absolute inset-0 w-full h-full overflow-hidden opacity-30 pointer-events-none">
+        <div className="absolute inset-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
           <img
             src="https://img.freepik.com/free-photo/connecting-dots-background-network-communication-design_53876-160207.jpg"
             alt="Background"
@@ -342,21 +327,21 @@ useEffect(() => {
       </section>
 
       {/* Logo Bar */}
-      <section className="py-16 border-y border-white/10">
+      <section className="py-12 md:py-16 border-y border-white/10">
         <div className="container mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="flex flex-wrap justify-center lg:justify-between items-center gap-12 opacity-40 grayscale hover:grayscale-0 transition-all"
+            className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all"
           >
             {LOGOS.map((logo) => (
               <img
                 key={logo.name}
                 src={logo.url}
                 alt={logo.name}
-                className="h-8 lg:h-10 w-auto"
+                className="h-6 md:h-8 lg:h-10 w-auto"
                 referrerPolicy="no-referrer"
               />
             ))}
@@ -365,21 +350,21 @@ useEffect(() => {
       </section>
 
       {/* Services Section */}
-      <section className="py-32 bg-black">
+      <section id="services" className="py-20 md:py-32 bg-black">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-20">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-6xl lg:text-7xl font-bold font-display leading-tight">
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-display leading-tight">
                 Empowering you and <br />
                 <span className="text-[#7B2CBF]">your business</span>
               </h2>
             </motion.div>
-            <div className="space-y-16">
+            <div className="space-y-12 md:space-y-16">
               {SERVICES.map((service, i) => (
                 <motion.div
                   key={i}
@@ -390,14 +375,14 @@ useEffect(() => {
                   className="group cursor-pointer"
                 >
                   <div className="flex items-start justify-between mb-6">
-                    <h3 className="text-4xl font-bold font-display group-hover:text-[#7B2CBF] transition-colors">
+                    <h3 className="text-3xl md:text-4xl font-bold font-display group-hover:text-[#7B2CBF] transition-colors">
                       {service.title}
                     </h3>
-                    <div className="w-12 h-12 border border-white/20 rounded-full flex items-center justify-center group-hover:bg-[#7B2CBF] group-hover:border-[#7B2CBF] transition-all">
+                    <div className="w-10 h-10 md:w-12 md:h-12 border border-white/20 rounded-full flex items-center justify-center group-hover:bg-[#7B2CBF] group-hover:border-[#7B2CBF] transition-all flex-shrink-0 ml-4">
                       {service.icon}
                     </div>
                   </div>
-                  <p className="text-lg text-white/60 leading-relaxed max-w-lg">
+                  <p className="text-base md:text-lg text-white/60 leading-relaxed max-w-lg">
                     {service.description}
                   </p>
                   <div className="mt-8 h-px bg-white/10 w-full"></div>
@@ -409,7 +394,7 @@ useEffect(() => {
       </section>
 
       {/* Big Text Section */}
-      <section className="py-32 bg-white text-black relative overflow-hidden">
+      <section className="py-20 md:py-32 bg-white text-black relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             <motion.h2
@@ -417,7 +402,7 @@ useEffect(() => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
-              className="relative z-50 text-6xl lg:text-8xl font-black font-display leading-[1.1] uppercase tracking-tighter"
+              className="relative z-50 text-4xl md:text-6xl lg:text-8xl font-black font-display leading-[1.1] uppercase tracking-tighter"
             >
               <span className="relative inline-block">
                 WE BUILD,
@@ -430,7 +415,7 @@ useEffect(() => {
                   }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.5 }}
-                  className="absolute -top-10 -left-10 lg:-left-32 w-24 h-24 rounded-lg overflow-hidden shadow-2xl hidden lg:block -z-10 opacity-80"
+                  className="absolute -top-10 -left-10 lg:-left-32 w-20 h-20 md:w-24 md:h-24 rounded-lg overflow-hidden shadow-2xl hidden lg:block -z-10 opacity-80"
                 >
                   <motion.div
                     animate={{ y: [0, -10, 0] }}
@@ -464,7 +449,7 @@ useEffect(() => {
                   }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.7 }}
-                  className="absolute -bottom-10 -right-10 w-32 h-32 rounded-lg overflow-hidden shadow-2xl hidden lg:block"
+                  className="absolute -bottom-10 -right-10 w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden shadow-2xl hidden lg:block"
                 >
                   <motion.div
                     animate={{ y: [0, 10, 0] }}
@@ -490,15 +475,15 @@ useEffect(() => {
       </section>
 
       {/* Future Section */}
-      <section className="py-32 bg-white text-black">
+      <section className="py-20 md:py-32 bg-white text-black">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="rounded-2xl overflow-hidden aspect-[4/5]"
+              className="rounded-2xl overflow-hidden aspect-[4/5] hidden md:block"
             >
               <motion.div
                 animate={{ y: [0, -15, 0] }}
@@ -522,22 +507,22 @@ useEffect(() => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="space-y-10"
+              className="space-y-8 md:space-y-10"
             >
               <div className="space-y-4">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#7B2CBF]">
                   Learn More
                 </span>
-                <h2 className="text-6xl font-bold font-display leading-tight">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display leading-tight">
                   The future of communication platforms
                 </h2>
               </div>
-              <p className="text-xl text-black/60 leading-relaxed">
+              <p className="text-lg md:text-xl text-black/60 leading-relaxed">
                 WorkHolo is designed to simplify communication with integrated
                 chat, calling, and team collaboration tools for modern
                 businesses.
               </p>
-              <ul className="space-y-6">
+              <ul className="space-y-4 md:space-y-6">
                 {[
                   "Real-time messaging and notifications",
                   "SIP-based calling with DID support",
@@ -549,16 +534,16 @@ useEffect(() => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-                    className="flex items-center gap-4 text-lg font-medium"
+                    className="flex items-center gap-4 text-base md:text-lg font-medium"
                   >
-                    <div className="w-6 h-6 rounded-full bg-[#7B2CBF]/10 flex items-center justify-center">
+                    <div className="w-6 h-6 rounded-full bg-[#7B2CBF]/10 flex items-center justify-center flex-shrink-0">
                       <Check className="w-4 h-4 text-[#7B2CBF]" />
                     </div>
                     {item}
                   </motion.li>
                 ))}
               </ul>
-              <button className="bg-[#7B2CBF] text-white px-10 py-5 text-sm font-bold uppercase tracking-widest hover:bg-black transition-all duration-300">
+              <button className="bg-[#7B2CBF] text-white px-8 md:px-10 py-4 md:py-5 text-sm font-bold uppercase tracking-widest hover:bg-black transition-all duration-300 w-full md:w-auto">
                 About Us
               </button>
             </motion.div>
@@ -567,15 +552,15 @@ useEffect(() => {
       </section>
 
       {/* Stats Section */}
-      <section ref={ref} className="py-32 bg-[#F5F5F5] text-black">
+      <section ref={ref} className="py-20 md:py-32 bg-[#F5F5F5] text-black">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             {[
-  { label: "Features", value: 61, suffix: "+" },
-  { label: "Agents", value: 32, suffix: "" },
-  { label: "Modules", value: 10, suffix: "+" },
-  { label: "Integrations", value: 15, suffix: "+" },
-].map((stat, i) => (
+              { label: "Features", value: 61, suffix: "+" },
+              { label: "Agents", value: 32, suffix: "" },
+              { label: "Modules", value: 10, suffix: "+" },
+              { label: "Integrations", value: 15, suffix: "+" },
+            ].map((stat, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
@@ -584,11 +569,11 @@ useEffect(() => {
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 className="relative flex flex-col items-center text-center"
               >
-                <span className="text-[120px] font-black font-display text-black/5 leading-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <span className="text-[80px] md:text-[100px] lg:text-[120px] font-black font-display text-black/5 leading-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                   {counts[i]}{stat.suffix}
                 </span>
                 <div className="relative z-10">
-                  <h4 className="text-xl font-bold mb-2">{stat.label}</h4>
+                  <h4 className="text-lg md:text-xl font-bold mb-2">{stat.label}</h4>
                 </div>
               </motion.div>
             ))}
@@ -597,33 +582,33 @@ useEffect(() => {
       </section>
 
       {/* Team Section */}
-      <section className="py-32 bg-black">
+      <section id="team" className="py-20 md:py-32 bg-black">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 md:gap-20 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="space-y-10"
+              className="space-y-8 md:space-y-10"
             >
               <div className="space-y-4">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#7B2CBF]">
                   Experts
                 </span>
-                <h2 className="text-6xl font-bold font-display leading-tight">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display leading-tight">
                   Our development and testing team drives product quality{" "}
-                  <span className="text-[#7B2CBF]">income</span>
+                  <span className="text-[#7B2CBF]">excellence</span>
                 </h2>
               </div>
-              <p className="text-xl text-white/60 leading-relaxed max-w-md">
+              <p className="text-lg md:text-xl text-white/60 leading-relaxed max-w-md">
                Our team focuses on building, testing, and optimizing communication workflows for seamless user experience.
               </p>
-              <button className="bg-[#7B2CBF] text-white px-10 py-5 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300">
+              <button className="bg-[#7B2CBF] text-white px-8 md:px-10 py-4 md:py-5 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 w-full md:w-auto">
                 The Team
               </button>
             </motion.div>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-4 md:gap-6">
               {[1, 2, 3, 4].map((i) => (
                 <motion.div
                   key={i}
@@ -662,22 +647,22 @@ useEffect(() => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className="py-20 bg-black overflow-hidden border-y border-white/10"
+        className="py-12 md:py-20 bg-black overflow-hidden border-y border-white/10"
       >
         <div className="flex whitespace-nowrap animate-marquee">
-          {[1, 2, 3, 4].map((i) => (
-            <div key={i} className="flex items-center gap-20 mx-10">
-              <span className="text-8xl lg:text-[120px] font-black font-display uppercase tracking-tighter">
+          {[1, 2].map((i) => (
+            <div key={i} className="flex items-center gap-12 md:gap-20 mx-6 md:mx-10">
+              <span className="text-5xl md:text-8xl lg:text-[120px] font-black font-display uppercase tracking-tighter">
                 Real-time Chat Systems
               </span>
-              <div className="w-16 h-16 bg-[#7B2CBF] rounded-lg rotate-45 flex items-center justify-center">
-                <div className="w-8 h-8 border-4 border-white rounded-sm"></div>
+              <div className="w-10 h-10 md:w-16 md:h-16 bg-[#7B2CBF] rounded-lg rotate-45 flex items-center justify-center">
+                <div className="w-5 h-5 md:w-8 md:h-8 border-2 md:border-4 border-white rounded-sm"></div>
               </div>
-              <span className="text-8xl lg:text-[120px] font-black font-display uppercase tracking-tighter">
+              <span className="text-5xl md:text-8xl lg:text-[120px] font-black font-display uppercase tracking-tighter">
                 SIP Calling Integration
               </span>
-              <div className="w-16 h-16 bg-[#7B2CBF] rounded-lg rotate-45 flex items-center justify-center">
-                <div className="w-8 h-8 border-4 border-white rounded-sm"></div>
+              <div className="w-10 h-10 md:w-16 md:h-16 bg-[#7B2CBF] rounded-lg rotate-45 flex items-center justify-center">
+                <div className="w-5 h-5 md:w-8 md:h-8 border-2 md:border-4 border-white rounded-sm"></div>
               </div>
             </div>
           ))}
@@ -685,9 +670,9 @@ useEffect(() => {
       </motion.section>
 
       {/* Portfolio Section */}
-      <section className="py-32 bg-black">
+      <section id="portfolio" className="py-20 md:py-32 bg-black">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="space-y-32">
+          <div className="space-y-20 md:space-y-32">
             {PORTFOLIO.map((item, i) => (
               <motion.div
                 key={i}
@@ -695,7 +680,7 @@ useEffect(() => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8 }}
-                className={`grid lg:grid-cols-2 gap-20 items-center ${i % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}
+                className={`grid lg:grid-cols-2 gap-12 md:gap-20 items-center ${i % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}
               >
                 <div
                   className={`order-2 ${i % 2 !== 0 ? "lg:order-2" : "lg:order-1"}`}
@@ -720,15 +705,15 @@ useEffect(() => {
                   </div>
                 </div>
                 <div
-                  className={`space-y-8 order-1 ${i % 2 !== 0 ? "lg:order-1" : "lg:order-2"}`}
+                  className={`space-y-6 md:space-y-8 order-1 ${i % 2 !== 0 ? "lg:order-1" : "lg:order-2"}`}
                 >
                   <span className="text-xs font-bold uppercase tracking-widest text-[#7B2CBF]">
                     {item.category}
                   </span>
-                  <h2 className="text-6xl font-bold font-display leading-tight">
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display leading-tight">
                     {item.title}
                   </h2>
-                  <p className="text-xl text-white/60 leading-relaxed">
+                  <p className="text-lg md:text-xl text-white/60 leading-relaxed">
                     {item.description}
                   </p>
                   <a
@@ -747,23 +732,23 @@ useEffect(() => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-32 bg-[#0A0A0A]">
+      <section className="py-20 md:py-32 bg-[#0A0A0A]">
         <div className="container mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-24 space-y-4"
+            className="text-center mb-16 md:mb-24 space-y-4"
           >
             <span className="text-xs font-bold uppercase tracking-widest text-[#7B2CBF]">
               Testimonials
             </span>
-            <h2 className="text-6xl lg:text-7xl font-bold font-display">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-display">
               What clients say
             </h2>
           </motion.div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {TESTIMONIALS.map((t, i) => (
               <motion.div
                 key={i}
@@ -771,9 +756,9 @@ useEffect(() => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="bg-[#151515] p-10 rounded-2xl border border-white/5 hover:border-[#7B2CBF]/30 transition-all group"
+                className="bg-[#151515] p-8 md:p-10 rounded-2xl border border-white/5 hover:border-[#7B2CBF]/30 transition-all group"
               >
-                <div className="flex gap-1 mb-8">
+                <div className="flex gap-1 mb-6 md:mb-8">
                   {[...Array(t.rating)].map((_, i) => (
                     <Star
                       key={i}
@@ -781,21 +766,21 @@ useEffect(() => {
                     />
                   ))}
                 </div>
-                <p className="text-lg text-white/70 leading-relaxed mb-10 italic">
+                <p className="text-base md:text-lg text-white/70 leading-relaxed mb-8 md:mb-10 italic">
                   "{t.text}"
                 </p>
                 <div className="space-y-1">
-                  <h4 className="text-xl font-bold font-display">{t.name}</h4>
+                  <h4 className="text-lg md:text-xl font-bold font-display">{t.name}</h4>
                   <p className="text-sm text-white/40">{t.location}</p>
                 </div>
               </motion.div>
             ))}
           </div>
-          <div className="mt-16 flex justify-center gap-3">
+          <div className="mt-12 md:mt-16 flex justify-center gap-3">
             {[...Array(6)].map((_, i) => (
               <div
                 key={i}
-                className={`w-2.5 h-2.5 rounded-full ${i === 0 ? "bg-[#7B2CBF]" : "bg-white/20"}`}
+                className={`w-2 h-2 md:w-2.5 md:h-2.5 rounded-full ${i === 0 ? "bg-[#7B2CBF]" : "bg-white/20"}`}
               ></div>
             ))}
           </div>
@@ -803,26 +788,26 @@ useEffect(() => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-32 bg-[#F5F5F5] text-black">
+      <section id="contact" className="py-20 md:py-32 bg-[#F5F5F5] text-black">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-20">
+          <div className="grid lg:grid-cols-2 gap-16 md:gap-20">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="space-y-12"
+              className="space-y-8 md:space-y-12"
             >
               <div className="space-y-4">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#7B2CBF]">
                   Contact Us
                 </span>
-                <h2 className="text-6xl lg:text-7xl font-bold font-display leading-tight">
+                <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display leading-tight">
                   Have a communication solution in mind? <br />
                   Let’s build it together!
                 </h2>
               </div>
-              <div className="rounded-2xl overflow-hidden aspect-video lg:aspect-square">
+              <div className="rounded-2xl overflow-hidden aspect-video lg:aspect-square hidden md:block">
                 <motion.div
                   animate={{ y: [0, -15, 0] }}
                   transition={{
@@ -846,57 +831,57 @@ useEffect(() => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="bg-white p-12 lg:p-20 rounded-3xl shadow-2xl"
+              className="bg-white p-8 md:p-12 lg:p-20 rounded-3xl shadow-2xl"
             >
-              <form className="space-y-10">
+              <form className="space-y-8 md:space-y-10">
                 <div className="relative group">
                   <div className="absolute left-0 top-1/2 -translate-y-1/2 text-black/30 group-focus-within:text-[#7B2CBF] transition-colors">
-                    <User className="w-6 h-6" />
+                    <User className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   <input
                     type="text"
                     placeholder="Name"
-                    className="w-full bg-transparent border-b border-black/10 py-4 pl-10 focus:outline-none focus:border-[#7B2CBF] transition-all placeholder:text-black/30 text-lg"
+                    className="w-full bg-transparent border-b border-black/10 py-3 md:py-4 pl-8 md:pl-10 focus:outline-none focus:border-[#7B2CBF] transition-all placeholder:text-black/30 text-base md:text-lg"
                   />
                 </div>
                 <div className="relative group">
                   <div className="absolute left-0 top-1/2 -translate-y-1/2 text-black/30 group-focus-within:text-[#7B2CBF] transition-colors">
-                    <Phone className="w-6 h-6" />
+                    <Phone className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   <input
                     type="tel"
                     placeholder="Phone"
-                    className="w-full bg-transparent border-b border-black/10 py-4 pl-10 focus:outline-none focus:border-[#7B2CBF] transition-all placeholder:text-black/30 text-lg"
+                    className="w-full bg-transparent border-b border-black/10 py-3 md:py-4 pl-8 md:pl-10 focus:outline-none focus:border-[#7B2CBF] transition-all placeholder:text-black/30 text-base md:text-lg"
                   />
                 </div>
                 <div className="relative group">
                   <div className="absolute left-0 top-1/2 -translate-y-1/2 text-black/30 group-focus-within:text-[#7B2CBF] transition-colors">
-                    <Mail className="w-6 h-6" />
+                    <Mail className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className="w-full bg-transparent border-b border-black/10 py-4 pl-10 focus:outline-none focus:border-[#7B2CBF] transition-all placeholder:text-black/30 text-lg"
+                    className="w-full bg-transparent border-b border-black/10 py-3 md:py-4 pl-8 md:pl-10 focus:outline-none focus:border-[#7B2CBF] transition-all placeholder:text-black/30 text-base md:text-lg"
                   />
                 </div>
                 <div className="relative group">
                   <div className="absolute left-0 top-1/2 -translate-y-1/2 text-black/30 group-focus-within:text-[#7B2CBF] transition-colors">
-                    <Globe className="w-6 h-6" />
+                    <Globe className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   <input
                     type="text"
                     placeholder="Subject"
-                    className="w-full bg-transparent border-b border-black/10 py-4 pl-10 focus:outline-none focus:border-[#7B2CBF] transition-all placeholder:text-black/30 text-lg"
+                    className="w-full bg-transparent border-b border-black/10 py-3 md:py-4 pl-8 md:pl-10 focus:outline-none focus:border-[#7B2CBF] transition-all placeholder:text-black/30 text-base md:text-lg"
                   />
                 </div>
                 <div className="relative group">
                   <div className="absolute left-0 top-4 text-black/30 group-focus-within:text-[#7B2CBF] transition-colors">
-                    <MessageSquare className="w-6 h-6" />
+                    <MessageSquare className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   <textarea
-                    placeholder="How can we help you? Feel free to get in touch!"
+                    placeholder="How can we help you?"
                     rows={4}
-                    className="w-full bg-transparent border-b border-black/10 py-4 pl-10 focus:outline-none focus:border-[#7B2CBF] transition-all placeholder:text-black/30 text-lg resize-none"
+                    className="w-full bg-transparent border-b border-black/10 py-3 md:py-4 pl-8 md:pl-10 focus:outline-none focus:border-[#7B2CBF] transition-all placeholder:text-black/30 text-base md:text-lg resize-none"
                   ></textarea>
                 </div>
                 <div className="flex items-center gap-4">
@@ -905,7 +890,7 @@ useEffect(() => {
                     id="consent"
                     className="w-5 h-5 accent-[#7B2CBF]"
                   />
-                  <label htmlFor="consent" className="text-black/60">
+                  <label htmlFor="consent" className="text-sm md:text-base text-black/60">
                     I agree that my data is{" "}
                     <a href="#" className="underline">
                       collected
@@ -913,7 +898,7 @@ useEffect(() => {
                     .
                   </label>
                 </div>
-                <button className="bg-[#7B2CBF] text-white px-12 py-5 text-sm font-bold uppercase tracking-widest hover:bg-black transition-all duration-300">
+                <button className="bg-[#7B2CBF] text-white px-8 md:px-12 py-4 md:py-5 text-sm font-bold uppercase tracking-widest hover:bg-black transition-all duration-300 w-full md:w-auto">
                   Get In Touch
                 </button>
               </form>
@@ -922,13 +907,17 @@ useEffect(() => {
         </div>
       </section>
 
-      {/* Footer */}
-      <Footer/>
+      <Footer />
 
       <style>{`
         .outline-text {
-          -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);
+          -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
           color: transparent;
+        }
+        @media (min-width: 768px) {
+          .outline-text {
+            -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);
+          }
         }
         
         @keyframes marquee {

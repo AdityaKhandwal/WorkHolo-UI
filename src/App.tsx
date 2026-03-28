@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 export default function App() {
   return (
-    <div className={`p-3`}>
+    <div>
       <Navbar />
       <Home />
     </div>
