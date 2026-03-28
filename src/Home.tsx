@@ -158,7 +158,7 @@ useEffect(() => {
   return (
     <div className="min-h-screen bg-black mt-3 text-white selection:bg-purple-500 selection:text-white">
       {/* Sticky Sidebar Actions */}
-      <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-px">
+      {/* <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-px">
         <button className="bg-[#7B2CBF] p-4 hover:bg-purple-600 transition-colors">
           <ShoppingCart className="w-6 h-6 text-white" />
         </button>
@@ -168,7 +168,7 @@ useEffect(() => {
         <button className="bg-[#7B2CBF] p-4 hover:bg-purple-600 transition-colors">
           <Layout className="w-6 h-6 text-white" />
         </button>
-      </div>
+      </div> */}
 
       {/* Header */}
       
