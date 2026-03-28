@@ -720,11 +720,11 @@ function NavbarZ({ scrolled }: NavbarProps) {
             <div className="p-6 flex flex-col h-full">
               <div className="flex items-center justify-between mb-10">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                    <span className="text-white font-black text-sm">M</span>
+                  <div className="w-8 h-8 flex items-center justify-center">
+                    <img src={`../src/assets/WorkHolo-logo.png`}/>
                   </div>
                   <span className="text-xl font-bold text-gray-900">
-                    mTouch Labs
+                    WorkHolo
                   </span>
                 </div>
                 <button

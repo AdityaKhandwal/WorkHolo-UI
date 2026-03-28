@@ -1,7 +1,5 @@
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import React, { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 import {
   ArrowRight,
@@ -65,25 +63,25 @@ const TESTIMONIALS = [
   {
     name: "Internal QA Testing",
     location: "Boston, MA",
-    text: 'The chat and notification system works efficiently with minor improvements needed in real-time updates.',
+    text: "The chat and notification system works efficiently with minor improvements needed in real-time updates.",
     rating: 5,
   },
   {
     name: "Development Team Feedback",
     location: "Washington City, WA",
-    text: 'SIP integration provided stable connectivity and helped us test calling workflows effectively.',
+    text: "SIP integration provided stable connectivity and helped us test calling workflows effectively.",
     rating: 5,
   },
   {
     name: "Integration Testing",
     location: "Boston, MA",
-    text: 'Role-based access and team management features are working as expected with proper restrictions.',
+    text: "Role-based access and team management features are working as expected with proper restrictions.",
     rating: 5,
   },
   {
     name: "User Acceptance Testing",
     location: "New York City, NY",
-    text: 'Overall system performance and UI responsiveness are smooth and consistent across modules.',
+    text: "Overall system performance and UI responsiveness are smooth and consistent across modules.",
     rating: 5,
   },
 ];
@@ -93,22 +91,25 @@ const PORTFOLIO = [
     category: "DIGITAL",
     title: "User Authentication System",
     description:
-     'Implemented secure login and authentication with validation and session handling.',
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200",
+      "Implemented secure login and authentication with validation and session handling.",
+    image:
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200",
   },
   {
     category: "DIGITAL",
     title: "Chat & Notification Module",
     description:
-     'Developed and tested chat systems with real-time notifications and UI responsiveness.',
-    image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=1200",
+      "Developed and tested chat systems with real-time notifications and UI responsiveness.",
+    image:
+      "https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=1200",
   },
   {
     category: "DIGITAL",
     title: "SIP Dialer Integration",
     description:
-     'Integrated SIP trunk and DID services for calling functionality within the web application.',
-    image: "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1200",
+      "Integrated SIP trunk and DID services for calling functionality within the web application.",
+    image:
+      "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1200",
   },
 ];
 
@@ -153,7 +154,6 @@ export default function App() {
 
   return (
     <div className="selection:bg-purple-500 selection:text-white min-h-screen bg-black text-white overflow-x-hidden">
-      <Navbar />
 
       {/* Hero Section */}
       <section className="relative pt-32 md:pt-48 pb-16 md:pb-24 overflow-hidden">
@@ -570,10 +570,13 @@ export default function App() {
                 className="relative flex flex-col items-center text-center"
               >
                 <span className="text-[80px] md:text-[100px] lg:text-[120px] font-black font-display text-black/5 leading-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                  {counts[i]}{stat.suffix}
+                  {counts[i]}
+                  {stat.suffix}
                 </span>
                 <div className="relative z-10">
-                  <h4 className="text-lg md:text-xl font-bold mb-2">{stat.label}</h4>
+                  <h4 className="text-lg md:text-xl font-bold mb-2">
+                    {stat.label}
+                  </h4>
                 </div>
               </motion.div>
             ))}
@@ -602,7 +605,8 @@ export default function App() {
                 </h2>
               </div>
               <p className="text-lg md:text-xl text-white/60 leading-relaxed max-w-md">
-               Our team focuses on building, testing, and optimizing communication workflows for seamless user experience.
+                Our team focuses on building, testing, and optimizing
+                communication workflows for seamless user experience.
               </p>
               <button className="bg-[#7B2CBF] text-white px-8 md:px-10 py-4 md:py-5 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 w-full md:w-auto">
                 The Team
@@ -651,7 +655,10 @@ export default function App() {
       >
         <div className="flex whitespace-nowrap animate-marquee">
           {[1, 2].map((i) => (
-            <div key={i} className="flex items-center gap-12 md:gap-20 mx-6 md:mx-10">
+            <div
+              key={i}
+              className="flex items-center gap-12 md:gap-20 mx-6 md:mx-10"
+            >
               <span className="text-5xl md:text-8xl lg:text-[120px] font-black font-display uppercase tracking-tighter">
                 Real-time Chat Systems
               </span>
@@ -770,7 +777,9 @@ export default function App() {
                   "{t.text}"
                 </p>
                 <div className="space-y-1">
-                  <h4 className="text-lg md:text-xl font-bold font-display">{t.name}</h4>
+                  <h4 className="text-lg md:text-xl font-bold font-display">
+                    {t.name}
+                  </h4>
                   <p className="text-sm text-white/40">{t.location}</p>
                 </div>
               </motion.div>
@@ -890,7 +899,10 @@ export default function App() {
                     id="consent"
                     className="w-5 h-5 accent-[#7B2CBF]"
                   />
-                  <label htmlFor="consent" className="text-sm md:text-base text-black/60">
+                  <label
+                    htmlFor="consent"
+                    className="text-sm md:text-base text-black/60"
+                  >
                     I agree that my data is{" "}
                     <a href="#" className="underline">
                       collected
@@ -906,8 +918,6 @@ export default function App() {
           </div>
         </div>
       </section>
-
-      <Footer />
 
       <style>{`
         .outline-text {
