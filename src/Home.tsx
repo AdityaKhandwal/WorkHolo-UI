@@ -40,82 +40,100 @@ const LOGOS = [
 
 const SERVICES = [
   {
-    title: "Real-time Messaging System",
+    title: "Custom Website Development",
     description:
-      "Implemented and tested real-time chat features, including message delivery, notifications, and UI responsiveness across devices.",
-    icon: <ArrowRight className="w-6 h-6 rotate-[-45deg]" />,
+      "We design and develop modern, responsive websites based on your business requirements.",
   },
   {
-    title: "SIP Trunk & DID Integration",
+    title: "Ready-Made Software Solutions",
     description:
-      "Integrated SIP Trunk and DID services to enable calling features, including provider research, testing, and API-based connectivity.",
-    icon: <ArrowRight className="w-6 h-6 rotate-[-45deg]" />,
+      "Choose from pre-built systems like admin dashboards, CRMs, and business tools — ready to deploy.",
   },
   {
-    title: "Role-Based Access & Team Management",
+    title: "Custom Software Development",
     description:
-      "Developed and tested user roles, permissions, and team management features to ensure secure and structured access control.",
-    icon: <ArrowRight className="w-6 h-6 rotate-[-45deg]" />,
+      "Need something unique? We build tailored software solutions from scratch for your specific needs.",
   },
 ];
 
 const TESTIMONIALS = [
   {
-    name: "Internal QA Testing",
-    location: "Boston, MA",
-    text: "The chat and notification system works efficiently with minor improvements needed in real-time updates.",
+    name: "Yashraj Jaiswal",
+    location: "India",
+    text: "WorkHolo delivered exactly what we needed. The ready-made solution saved us weeks of time.",
     rating: 5,
   },
   {
-    name: "Development Team Feedback",
-    location: "Washington City, WA",
-    text: "SIP integration provided stable connectivity and helped us test calling workflows effectively.",
+    name: "Ashish Pandey",
+    location: "India",
+    text: "Their custom development approach helped us launch quickly with a professional product.",
     rating: 5,
   },
   {
-    name: "Integration Testing",
-    location: "Boston, MA",
-    text: "Role-based access and team management features are working as expected with proper restrictions.",
+    name: "Startup Founder",
+    location: "Bangalore",
+    text: "We were struggling to build our MVP, but WorkHolo provided a ready solution that worked perfectly.",
     rating: 5,
   },
   {
-    name: "User Acceptance Testing",
-    location: "New York City, NY",
-    text: "Overall system performance and UI responsiveness are smooth and consistent across modules.",
+    name: "E-commerce Owner",
+    location: "Mumbai",
+    text: "The online store system was easy to customize and helped us start selling within days.",
+    rating: 5,
+  },
+  {
+    name: "Tech Entrepreneur",
+    location: "Hyderabad",
+    text: "Professional team with great support. They understood our requirements and delivered beyond expectations.",
+    rating: 5,
+  },
+  {
+    name: "Small Business Owner",
+    location: "Delhi",
+    text: "We needed a website fast, and WorkHolo delivered a clean and modern design that fits our brand perfectly.",
+    rating: 4,
+  },
+  {
+    name: "Agency Partner",
+    location: "Pune",
+    text: "We partnered with WorkHolo for multiple projects. Their systems are reliable and easy to scale.",
+    rating: 5,
+  },
+  {
+    name: "Product Manager",
+    location: "Chennai",
+    text: "The dashboard system is powerful and easy to use. It helped us manage our data efficiently.",
     rating: 5,
   },
 ];
 
 const PORTFOLIO = [
   {
-    category: "DIGITAL",
-    title: "User Authentication System",
-    description:
-      "Implemented secure login and authentication with validation and session handling.",
+    category: "WEBSITE",
+    title: "Business Website Template",
+    description: "A ready-to-use modern website...",
     image:
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200",
+      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=800",
   },
   {
-    category: "DIGITAL",
-    title: "Chat & Notification Module",
-    description:
-      "Developed and tested chat systems with real-time notifications and UI responsiveness.",
+    category: "SOFTWARE",
+    title: "Admin Dashboard System",
+    description: "A complete dashboard solution...",
     image:
-      "https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=1200",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800",
   },
   {
-    category: "DIGITAL",
-    title: "SIP Dialer Integration",
-    description:
-      "Integrated SIP trunk and DID services for calling functionality within the web application.",
+    category: "E-COMMERCE",
+    title: "Online Store System",
+    description: "A fully functional e-commerce platform...",
     image:
-      "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1200",
+      "https://lh6.googleusercontent.com/G9fmuqVwC9iN-xBOc7obvptv1HuNb4HPQkPy8dptRJ5D6Fkep-f-pGHXwl0oIwCA1SJkRwYIiZds06t8W0iWqKovUCjdEysnSqVT2lalXc7sBM2F48YTD5xB1IXMVIeZHbJl_4gnbGDbLazeWk_4gaNgMn44neboUdk8M0UsHqawOhicmM89fLE55F3Hzw",
   },
 ];
 
 export default function App() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: false });
 
   const [counts, setCounts] = useState([0, 0, 0, 0]);
 
@@ -148,181 +166,206 @@ export default function App() {
           });
           clearInterval(interval);
         }
+
+        if (!isInView) {
+          setCounts([0, 0, 0, 0]);
+          return;
+        }
       }, intervalTime);
     });
   }, [isInView]);
 
   return (
-    <div className="selection:bg-purple-500 selection:text-white min-h-screen bg-black text-white overflow-x-hidden">
-
+    <div className="selection:bg-purple-500 selection:text-white min-h-screen bg-black text-white overflow-x-hidden ">
       {/* Hero Section */}
-      <section className="relative pt-32 md:pt-48 pb-16 md:pb-24 overflow-hidden">
-        <div className="container mx-auto px-6 lg:px-12 relative z-10">
+      <section className="relative min-h-screen flex items-center justify-center pt-32 md:pt-48 pb-16 md:pb-24 overflow-hidden">
+        {/* Layer 1: Background Image & Gradients (z-0) */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <img
+            src="https://img.freepik.com/free-photo/connecting-dots-background-network-communication-design_53876-160207.jpg"
+            alt="Background"
+            className="w-full h-full object-cover opacity-20"
+            referrerPolicy="no-referrer"
+          />
+          <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[150px] animate-pulse delay-1000"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        {/* Layer 2: Floating Images (z-10) */}
+        <div className="absolute inset-0 z-10 pointer-events-none">
+          <div className="relative w-full h-full max-w-7xl mx-auto">
+            {/* Floating Image 1 */}
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              animate={{
+                opacity: 0.9,
+                x: 0,
+                y: [0, -30, 0],
+                rotate: [-5, -8, -5],
+              }}
+              transition={{
+                opacity: { duration: 1.2 },
+                x: { duration: 1.2 },
+                y: { repeat: Infinity, duration: 6, ease: "easeInOut" },
+                rotate: { repeat: Infinity, duration: 6, ease: "easeInOut" },
+              }}
+              className="absolute top-[10%] -left-10 md:left-0 w-32 h-32 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-2xl blur-[1px] hover:blur-0 transition-all duration-700 pointer-events-auto cursor-pointer group"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800"
+                alt="Floating 1"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+
+            {/* Floating Image 2 */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{
+                opacity: 0.9,
+                x: 0,
+                y: [0, 25, 0],
+                rotate: [10, 15, 10],
+              }}
+              transition={{
+                opacity: { duration: 1.2, delay: 0.3 },
+                x: { duration: 1.2, delay: 0.3 },
+                y: { repeat: Infinity, duration: 8, ease: "easeInOut" },
+                rotate: { repeat: Infinity, duration: 8, ease: "easeInOut" },
+              }}
+              className="absolute top-[40%] -left-16 md:-left-[2%] w-28 h-28 md:w-40 md:h-40 rounded-2xl overflow-hidden shadow-2xl border border-white/10 blur-[1px] hover:blur-0 transition-all duration-700 pointer-events-auto cursor-pointer group"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600"
+                alt="Floating 2"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+
+            {/* Floating Image 3 */}
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              animate={{
+                opacity: 0.9,
+                x: 0,
+                y: [0, -40, 0],
+                rotate: [5, 2, 5],
+              }}
+              transition={{
+                opacity: { duration: 1.2, delay: 0.6 },
+                x: { duration: 1.2, delay: 0.6 },
+                y: { repeat: Infinity, duration: 7, ease: "easeInOut" },
+                rotate: { repeat: Infinity, duration: 7, ease: "easeInOut" },
+              }}
+              className="absolute top-[12%] -right-8 md:right-0 w-24 h-36 md:w-36 md:h-52 rounded-2xl overflow-hidden shadow-2xl blur-[2px] hover:blur-0 transition-all duration-700 pointer-events-auto cursor-pointer group"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?q=80&w=800"
+                alt="Floating 3"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+
+            {/* Floating Image 4 */}
+            <motion.div
+              initial={{ opacity: 0, y: 150 }}
+              animate={{
+                opacity: 0.9,
+                y: [0, 30, 0],
+                rotate: [-12, -15, -12],
+              }}
+              transition={{
+                opacity: { duration: 1.2, delay: 0.9 },
+                y: { repeat: Infinity, duration: 9, ease: "easeInOut" },
+                rotate: { repeat: Infinity, duration: 9, ease: "easeInOut" },
+              }}
+              className="absolute bottom-[14%] -right-16 md:right-[10%] w-32 h-32 md:w-44 md:h-44 rounded-2xl overflow-hidden shadow-2xl blur-[1px] hover:blur-0 transition-all duration-700 pointer-events-auto cursor-pointer group"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800"
+                alt="Floating 4"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+
+            {/* Floating Image 5 */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{
+                opacity: 0.7,
+                scale: 1,
+                y: [0, -20, 0],
+                rotate: [15, 18, 15],
+              }}
+              transition={{
+                opacity: { duration: 1.2, delay: 1.2 },
+                scale: { duration: 1.2, delay: 1.2 },
+                y: { repeat: Infinity, duration: 10, ease: "easeInOut" },
+                rotate: { repeat: Infinity, duration: 10, ease: "easeInOut" },
+              }}
+              className="absolute top-[40%] -right-10 md:right-[5%] w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden shadow-2xl blur-[1px] hover:blur-0 transition-all duration-700 pointer-events-auto cursor-pointer group"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=600"
+                alt="Floating 5"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Layer 3: Main Content (z-20) */}
+        <div className="container mx-auto px-6 lg:px-12 relative z-20">
           <div className="flex flex-col items-center text-center">
             <div className="relative w-full max-w-6xl">
-              {/* Floating Images - Adjusted for Tablet/Desktop */}
               <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                  y: [0, -20, 0],
-                  rotate: [-5, -7, -5],
-                }}
-                transition={{
-                  opacity: { duration: 0.8 },
-                  x: { duration: 0.8 },
-                  y: { repeat: Infinity, duration: 4, ease: "easeInOut" },
-                  rotate: { repeat: Infinity, duration: 4, ease: "easeInOut" },
-                }}
-                className="absolute -top-10 -left-20 w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden hidden lg:block z-20 shadow-2xl"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800"
-                  alt="Floating 1"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                  y: [0, 15, 0],
-                  rotate: [10, 12, 10],
-                }}
-                transition={{
-                  opacity: { duration: 0.8, delay: 0.2 },
-                  x: { duration: 0.8, delay: 0.2 },
-                  y: { repeat: Infinity, duration: 5, ease: "easeInOut" },
-                  rotate: { repeat: Infinity, duration: 5, ease: "easeInOut" },
-                }}
-                className="absolute top-1/2 -left-10 lg:-left-32 w-[120px] h-[120px] md:w-[150px] md:h-[150px] rounded-2xl overflow-hidden hidden lg:block z-30 shadow-2xl border-4 border-black"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600"
-                  alt="Floating 2"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                  y: [0, -25, 0],
-                  rotate: [5, 3, 5],
-                }}
-                transition={{
-                  opacity: { duration: 0.8, delay: 0.4 },
-                  x: { duration: 0.8, delay: 0.4 },
-                  y: { repeat: Infinity, duration: 6, ease: "easeInOut" },
-                  rotate: { repeat: Infinity, duration: 6, ease: "easeInOut" },
-                }}
-                className="absolute -top-20 -right-20 w-[80px] h-[120px] md:w-[100px] md:h-[150px] rounded-2xl overflow-hidden hidden lg:block z-20 shadow-2xl"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?q=80&w=800"
-                  alt="Floating 3"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 100 }}
-                animate={{
-                  opacity: 1,
-                  y: [0, 20, 0],
-                  rotate: [-8, -10, -8],
-                }}
-                transition={{
-                  opacity: { duration: 0.8, delay: 0.6 },
-                  y: { repeat: Infinity, duration: 4.5, ease: "easeInOut" },
-                  rotate: {
-                    repeat: Infinity,
-                    duration: 4.5,
-                    ease: "easeInOut",
-                  },
-                }}
-                className="absolute -bottom-32 -left-10 w-[120px] h-[120px] md:w-[150px] md:h-[150px] rounded-2xl overflow-hidden hidden lg:block z-20 shadow-2xl"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800"
-                  alt="Floating 4"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                  y: [0, -15, 0],
-                  rotate: [12, 14, 12],
-                }}
-                transition={{
-                  opacity: { duration: 0.8, delay: 0.8 },
-                  x: { duration: 0.8, delay: 0.8 },
-                  y: { repeat: Infinity, duration: 5.5, ease: "easeInOut" },
-                  rotate: {
-                    repeat: Infinity,
-                    duration: 5.5,
-                    ease: "easeInOut",
-                  },
-                }}
-                className="absolute bottom-0 -right-10 lg:-right-32 w-[100px] h-[120px] md:w-[120px] md:h-[150px] rounded-2xl overflow-hidden hidden lg:block z-30 shadow-2xl"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=600"
-                  alt="Floating 5"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: window.innerWidth < 768 ? 10 : -50 }}
                 transition={{ duration: 1 }}
-                className="relative z-50 text-[10vw] md:text-[12vw] lg:text-[10vw] font-black font-display leading-[0.9] uppercase tracking-tighter"
+                className="text-[10vw] md:text-[12vw] lg:text-[10vw] font-black font-display leading-[0.85] uppercase tracking-tighter"
               >
                 WorkHolo <br />
-                <span className="text-white/10 outline-text ">
-                  Communication Platform
+                <span className="text-white/10 outline-text">
+                  Build. Customize. Sell.
                 </span>
               </motion.div>
             </div>
 
-            <div className="mt-8 md:mt-12 flex flex-col items-center">
-              <p className="text-lg md:text-xl font-medium tracking-wide mb-8 max-w-md md:max-w-none">
-                Real-time Chat, SIP Calling, Team Collaboration
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="mt-12 md:mt-16 flex flex-col items-center"
+            >
+              <p className="text-xl md:text-2xl font-medium tracking-wide mb-12 max-w-2xl text-white/80">
+                We build websites and software solutions that you can launch,
+                customize, and scale for your business.
               </p>
+
+              <div className="flex flex-wrap justify-center gap-6 mb-16">
+                <button className="bg-[#7B2CBF] text-white px-10 py-5 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 rounded-full shadow-[0_0_30px_rgba(123,44,191,0.4)]">
+                  Explore Solutions
+                </button>
+                <button className="border border-white/20 text-white px-10 py-5 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 rounded-full">
+                  Contact Us
+                </button>
+              </div>
+
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ repeat: Infinity, duration: 2 }}
-                className="w-10 h-10 flex items-center justify-center border border-white/20 rounded-full"
+                className="w-12 h-12 flex items-center justify-center border border-white/20 rounded-full cursor-pointer hover:bg-white/10 transition-colors"
               >
-                <ArrowRight className="w-5 h-5 rotate-90" />
+                <ArrowRight className="w-6 h-6 rotate-90" />
               </motion.div>
-            </div>
+            </motion.div>
           </div>
-        </div>
-
-        {/* Hero Background Images */}
-        <div className="absolute inset-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
-          <img
-            src="https://img.freepik.com/free-photo/connecting-dots-background-network-communication-design_53876-160207.jpg"
-            alt="Background"
-            className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
         </div>
       </section>
 
@@ -332,7 +375,7 @@ export default function App() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.8 }}
             className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all"
           >
@@ -356,7 +399,7 @@ export default function App() {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold font-display leading-tight">
@@ -370,7 +413,7 @@ export default function App() {
                   key={i}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false, amount: 0.3 }}
                   transition={{ duration: 0.6, delay: i * 0.1 }}
                   className="group cursor-pointer"
                 >
@@ -379,7 +422,7 @@ export default function App() {
                       {service.title}
                     </h3>
                     <div className="w-10 h-10 md:w-12 md:h-12 border border-white/20 rounded-full flex items-center justify-center group-hover:bg-[#7B2CBF] group-hover:border-[#7B2CBF] transition-all flex-shrink-0 ml-4">
-                      {service.icon}
+                      <ArrowRight className="w-5 h-5 -rotate-45" />
                     </div>
                   </div>
                   <p className="text-base md:text-lg text-white/60 leading-relaxed max-w-lg">
@@ -400,7 +443,7 @@ export default function App() {
             <motion.h2
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 1 }}
               className="relative z-50 text-4xl md:text-6xl lg:text-8xl font-black font-display leading-[1.1] uppercase tracking-tighter"
             >
@@ -413,7 +456,7 @@ export default function App() {
                     opacity: 1,
                     y: 0,
                   }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false, amount: 0.3 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
                   className="absolute -top-10 -left-10 lg:-left-32 w-20 h-20 md:w-24 md:h-24 rounded-lg overflow-hidden shadow-2xl hidden lg:block -z-10 opacity-80"
                 >
@@ -436,10 +479,10 @@ export default function App() {
                 </motion.div>
               </span>
               <br />
-              TEST AND SCALE
+              CUSTOMIZE AND SELL
               <br />
               <span className="relative inline-block">
-                COMMUNICATION SYSTEMS
+                DIGITAL PRODUCTS
                 <motion.div
                   initial={{ rotate: 10, opacity: 0, y: 20 }}
                   whileInView={{
@@ -447,9 +490,9 @@ export default function App() {
                     opacity: 1,
                     y: 0,
                   }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false, amount: 0.3 }}
                   transition={{ duration: 0.5, delay: 0.7 }}
-                  className="absolute -bottom-10 -right-10 w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden shadow-2xl hidden lg:block"
+                  className="absolute -bottom-10 -right-10 w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden shadow-2xl hidden lg:block -z-10"
                 >
                   <motion.div
                     animate={{ y: [0, 10, 0] }}
@@ -481,7 +524,7 @@ export default function App() {
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 0.8 }}
               className="rounded-2xl overflow-hidden aspect-[4/5] hidden md:block"
             >
@@ -505,7 +548,7 @@ export default function App() {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 0.8 }}
               className="space-y-8 md:space-y-10"
             >
@@ -514,25 +557,25 @@ export default function App() {
                   Learn More
                 </span>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display leading-tight">
-                  The future of communication platforms
+                  The future of ready-to-launch digital solutions
                 </h2>
               </div>
               <p className="text-lg md:text-xl text-black/60 leading-relaxed">
-                WorkHolo is designed to simplify communication with integrated
-                chat, calling, and team collaboration tools for modern
-                businesses.
+                WorkHolo helps businesses launch faster by providing ready-made
+                and custom-built websites and software solutions tailored to
+                their needs.
               </p>
               <ul className="space-y-4 md:space-y-6">
                 {[
-                  "Real-time messaging and notifications",
-                  "SIP-based calling with DID support",
-                  "Secure role-based access control",
+                  "Pre-built solutions ready for quick deployment",
+                  "Fully customizable based on client requirements",
+                  "Scalable systems for long-term growth",
                 ].map((item, i) => (
                   <motion.li
                     key={i}
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.3 }}
                     transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
                     className="flex items-center gap-4 text-base md:text-lg font-medium"
                   >
@@ -556,16 +599,16 @@ export default function App() {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             {[
-              { label: "Features", value: 61, suffix: "+" },
-              { label: "Agents", value: 32, suffix: "" },
-              { label: "Modules", value: 10, suffix: "+" },
-              { label: "Integrations", value: 15, suffix: "+" },
+              { label: "Projects Built", value: 50, suffix: "+" },
+              { label: "Clients Served", value: 20, suffix: "+" },
+              { label: "Products Ready", value: 10, suffix: "+" },
+              { label: "Custom Solutions", value: 30, suffix: "+" },
             ].map((stat, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false, amount: 0.3 }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 className="relative flex flex-col items-center text-center"
               >
@@ -591,7 +634,7 @@ export default function App() {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 0.8 }}
               className="space-y-8 md:space-y-10"
             >
@@ -600,13 +643,14 @@ export default function App() {
                   Experts
                 </span>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display leading-tight">
-                  Our development and testing team drives product quality{" "}
+                  We build solutions that businesses can launch instantly{" "}
                   <span className="text-[#7B2CBF]">excellence</span>
                 </h2>
               </div>
               <p className="text-lg md:text-xl text-white/60 leading-relaxed max-w-md">
-                Our team focuses on building, testing, and optimizing
-                communication workflows for seamless user experience.
+                Our team designs and develops ready-to-use digital products and
+                custom solutions to help businesses grow faster without starting
+                from scratch.
               </p>
               <button className="bg-[#7B2CBF] text-white px-8 md:px-10 py-4 md:py-5 text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 w-full md:w-auto">
                 The Team
@@ -618,7 +662,7 @@ export default function App() {
                   key={i}
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false, amount: 0.3 }}
                   transition={{ duration: 0.6, delay: i * 0.1 }}
                   className="rounded-xl overflow-hidden aspect-square grayscale hover:grayscale-0 transition-all duration-500"
                 >
@@ -647,9 +691,9 @@ export default function App() {
 
       {/* Marquee Section */}
       <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 1 }}
         className="py-12 md:py-20 bg-black overflow-hidden border-y border-white/10"
       >
@@ -660,13 +704,13 @@ export default function App() {
               className="flex items-center gap-12 md:gap-20 mx-6 md:mx-10"
             >
               <span className="text-5xl md:text-8xl lg:text-[120px] font-black font-display uppercase tracking-tighter">
-                Real-time Chat Systems
+                Custom Website Development
               </span>
               <div className="w-10 h-10 md:w-16 md:h-16 bg-[#7B2CBF] rounded-lg rotate-45 flex items-center justify-center">
                 <div className="w-5 h-5 md:w-8 md:h-8 border-2 md:border-4 border-white rounded-sm"></div>
               </div>
               <span className="text-5xl md:text-8xl lg:text-[120px] font-black font-display uppercase tracking-tighter">
-                SIP Calling Integration
+                Ready-Made Software
               </span>
               <div className="w-10 h-10 md:w-16 md:h-16 bg-[#7B2CBF] rounded-lg rotate-45 flex items-center justify-center">
                 <div className="w-5 h-5 md:w-8 md:h-8 border-2 md:border-4 border-white rounded-sm"></div>
@@ -685,7 +729,7 @@ export default function App() {
                 key={i}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: false, margin: "-100px" }}
                 transition={{ duration: 0.8 }}
                 className={`grid lg:grid-cols-2 gap-12 md:gap-20 items-center ${i % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}
               >
@@ -744,7 +788,7 @@ export default function App() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.8 }}
             className="text-center mb-16 md:mb-24 space-y-4"
           >
@@ -761,7 +805,7 @@ export default function App() {
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false, amount: 0.3 }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 className="bg-[#151515] p-8 md:p-10 rounded-2xl border border-white/5 hover:border-[#7B2CBF]/30 transition-all group"
               >
@@ -803,7 +847,7 @@ export default function App() {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 0.8 }}
               className="space-y-8 md:space-y-12"
             >
@@ -812,8 +856,8 @@ export default function App() {
                   Contact Us
                 </span>
                 <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display leading-tight">
-                  Have a communication solution in mind? <br />
-                  Let’s build it together!
+                  Have a project or idea? <br />
+                  Let’s build and launch it together!
                 </h2>
               </div>
               <div className="rounded-2xl overflow-hidden aspect-video lg:aspect-square hidden md:block">
@@ -838,7 +882,7 @@ export default function App() {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 0.8 }}
               className="bg-white p-8 md:p-12 lg:p-20 rounded-3xl shadow-2xl"
             >

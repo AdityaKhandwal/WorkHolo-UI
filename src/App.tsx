@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Home from "./Home";
 import Navbar from "./Navbar";
 
@@ -6,6 +7,7 @@ export default function App() {
     <div>
       <Navbar />
       <Home />
+      <Footer/>
     </div>
   );
 }

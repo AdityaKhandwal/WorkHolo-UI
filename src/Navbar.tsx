@@ -1,4 +1,3 @@
-import logo from "../src/assets/WorkHolo-logo.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -15,9 +14,7 @@ import {
   Palette,
   TrendingUp,
   ShoppingBag,
-  Calendar,
   BookOpen,
-  HeartPulse,
   Users,
   CheckCircle2,
   ArrowRight,
@@ -27,16 +24,14 @@ import {
 const TOP_BAR = {
   email: "hr@workholo.com",
   phone1: "+91-XXXXXXXXXX",
-  phone2: "+1-XXX-XXX-XXXX",
-  Corousel: [
-    "Welcome to WorkHolo Platform",
-    "Real-Time Chat & Collaboration",
-    "Create Organizations & Teams",
-    "Manage Channels Seamlessly",
-    "Integrated SIP Calling System",
-    "Secure Role-Based Access Control",
+  carousel: [
+    "Build Websites & Software for Your Business",
+    "Ready-Made Solutions Available for Instant Launch",
+    "Custom Development Based on Your Requirements",
+    "Scalable Digital Products for Growing Businesses",
+    "Launch Faster with WorkHolo Solutions",
   ],
-  locations: "India | Remote Teams | Global Clients",
+  locations: "India | Serving Clients Worldwide",
 };
 
 const NAV_DATA = [
@@ -49,8 +44,8 @@ const NAV_DATA = [
         label: "About WorkHolo",
         icon: Users,
         description:
-          "WorkHolo is a communication platform enabling real-time chat, SIP calling, and team collaboration.",
-        links: [], // Home uses a different center layout in screenshot
+          "WorkHolo builds ready-to-use and custom websites and software solutions for businesses to launch and scale faster.",
+        links: [],
       },
       {
         id: "blog",
@@ -61,43 +56,38 @@ const NAV_DATA = [
       },
     ],
     centerContent: {
-      title: "PRODUCT UPDATES",
+      title: "LATEST SOLUTIONS",
       links: [
         {
-          label: "Chat System Implementation",
-          desc: "Real-time messaging with notifications and UI responsiveness",
-          href: "#",
+          label: "Business Website Solutions",
+          desc: "Modern websites ready to customize and launch",
         },
         {
-          label: "SIP Trunk Integration",
-          desc: "Connecting DID numbers with web-based dialer system",
-          href: "#",
+          label: "Admin Dashboard Systems",
+          desc: "Manage users, data, and analytics easily",
         },
         {
-          label: "Role-Based Access Control",
-          desc: "Managing user roles, permissions and feature access",
-          href: "#",
+          label: "E-Commerce Platforms",
+          desc: "Complete online store solutions",
         },
         {
-          label: "Notification System Fixes",
-          desc: "Improving real-time alerts and sound updates",
-          href: "#",
+          label: "Custom Software Projects",
+          desc: "Tailored systems built for your needs",
         },
         {
-          label: "Team & Channel Management",
-          desc: "Creating and managing teams, channels, and users",
-          href: "#",
+          label: "Automation Tools",
+          desc: "Improve workflows with smart systems",
         },
       ],
     },
     whySection: {
       title: "ABOUT WORKHOLO",
       points: [
-        "Real-Time Messaging & Chat System",
-        "SIP Trunk & DID Integration",
-        "Role-Based Access Control",
-        "Multi-Team & Channel Management",
-        "Scalable Web Communication Platform",
+        "Ready-to-Launch Digital Products",
+        "Fully Customizable Solutions",
+        "Fast Development & Delivery",
+        "Scalable & Future-Ready Systems",
+        "Built for Real Business Needs",
       ],
       buttonText: "Get in Touch",
     },
@@ -108,36 +98,32 @@ const NAV_DATA = [
     items: [
       {
         id: "software-dev",
-        label: "Communication System Development",
+        label: "Website & Software Development",
         icon: Code,
         description:
-          "Delivering seamless digital experiences with expert software development.",
+          "We design and build websites and software tailored to your business needs.",
         links: [
           {
-            label: "Chat System Development",
-            desc: "Real-time messaging with notifications",
-            href: "#",
+            label: "Business Website Development",
+            desc: "Modern, responsive websites for any business",
           },
           {
-            label: "Web Application Development",
-            desc: "Scalable frontend and backend systems",
-            href: "#",
+            label: "Custom Web Applications",
+            desc: "Full-stack scalable web solutions",
           },
           {
-            label: "Authentication System",
-            desc: "Secure login and session handling",
-            href: "#",
+            label: "Admin Dashboard Systems",
+            desc: "Manage users, data, and operations",
           },
           {
-            label: "Role & Permission System",
-            desc: "Admin and user access control",
-            href: "#",
+            label: "Custom Software Solutions",
+            desc: "Built specifically for your workflows",
           },
         ],
       },
       {
-        id: "cloud-devops",
-        label: "Cloud & DevOps",
+        id: "cloud-hosting",
+        label: "Cloud Hosting & Deployment",
         icon: Cloud,
         description: "Hosting and managing real-time communication systems",
         links: [],
@@ -165,13 +151,13 @@ const NAV_DATA = [
       },
     ],
     whySection: {
-      title: "WHY MTOUCH LABS?",
+      title: "WHY WORKHOLO?",
       points: [
-        "Client-Centric, Result-Driven Approach",
-        "End-to-End IT & Digital Transformation Solutions",
-        "Efficient Development with Speed & Quality",
-        "Dedicated In-House Expert Team",
-        "Proven Track Record Across 20+ Industries",
+        "Build → Customize → Launch Model",
+        "Ready-Made + Custom Solutions",
+        "Fast Delivery with Quality",
+        "Affordable for Startups & Businesses",
+        "Focused on Real Business Growth",
       ],
       buttonText: "Get in Touch",
     },
@@ -181,83 +167,45 @@ const NAV_DATA = [
     hasMegaMenu: true,
     items: [
       {
-        id: "on-demand",
-        label: "On-Demand & Delivery Apps",
+        id: "ready-products",
+        label: "Ready-Made Solutions",
         icon: ShoppingBag,
         description:
-          "Transforming everyday services into on-demand experiences.",
+          "Pre-built systems you can customize and launch instantly.",
         links: [
           {
-            label: "Food Delivery App",
-            desc: "Multi-restaurant ordering with real-time tracking",
-            href: "#",
+            label: "Business Website Templates",
+            desc: "Ready websites for quick deployment",
           },
           {
-            label: "Grocery Delivery App",
-            desc: "Quick commerce for daily essentials",
-            href: "#",
+            label: "Admin Dashboard Systems",
+            desc: "Manage business operations easily",
           },
           {
-            label: "Milk Delivery App",
-            desc: "Subscription-based daily delivery management",
-            href: "#",
+            label: "E-Commerce Platforms",
+            desc: "Launch your online store quickly",
           },
           {
-            label: "Car Wash App",
-            desc: "On-demand vehicle care at your doorstep",
-            href: "#",
-          },
-          {
-            label: "Chef Management App",
-            desc: "On-demand vehicle care at your doorstep",
-            href: "#",
+            label: "Booking Systems",
+            desc: "Appointment and service booking apps",
           },
         ],
       },
       {
-        id: "booking",
-        label: "Booking and Service Platforms",
-        icon: Calendar,
-        description: "Seamless scheduling and appointment management apps",
-        links: [],
-      },
-      {
-        id: "ecommerce",
-        label: "E-Commerce & Marketplace Solutions",
-        icon: ShoppingBag,
-        description: "Multi-vendor stores and online shopping platforms",
-        links: [],
-      },
-      {
-        id: "edu-ent",
-        label: "Education & Entertainment",
+        id: "guides",
+        label: "Guides & Insights",
         icon: BookOpen,
-        description: "eLearning platforms and interactive media solutions",
-        links: [],
-      },
-      {
-        id: "health",
-        label: "Healthcare & Wellness",
-        icon: HeartPulse,
-        description: "Patient management and telemedicine applications",
-        links: [],
-      },
-      {
-        id: "social",
-        label: "Social & Media Apps",
-        icon: Users,
-        description: "Community building and content sharing platforms",
+        description: "Learn about building and scaling digital products",
         links: [],
       },
     ],
     whySection: {
-      title: "OUR PRODUCT EDGE",
+      title: "KNOWLEDGE HUB",
       points: [
-        "Scalable & Future-Ready Architecture",
-        "AI-Enabled & Data-Driven Solutions",
-        "User-Centric UI/UX Design Excellence",
-        "High-Performance & Secure Platforms",
-        "Continuous Innovation & Product Optimization",
+        "How to Launch Your Website",
+        "Choosing the Right Software",
+        "Scaling Your Digital Business",
+        "Latest Tech Trends",
       ],
       buttonText: "Get in Touch",
     },
@@ -271,52 +219,23 @@ const NAV_DATA = [
         label: "Mobile App Developers",
         icon: Smartphone,
         description:
-          "Mobile App Development - From concept to code, we create apps that connect an...",
+          "Mobile App Development - From concept to code, we create apps that connect...",
         links: [
           {
             label: "Mobile App Developers",
             desc: "Full-cycle iOS & Android app specialists",
-            href: "#",
           },
           {
             label: "Native App Developers",
             desc: "Platform-specific apps for peak performance",
-            href: "#",
           },
           {
             label: "Android App Developers",
             desc: "Kotlin & Java experts for the Play Store",
-            href: "#",
           },
           {
             label: "Hybrid App Developers",
             desc: "Single codebase apps across iOS & Android",
-            href: "#",
-          },
-          {
-            label: "iOS App Developers",
-            desc: "Swift developers for iPhone & Apple ecosystem",
-            href: "#",
-          },
-          {
-            label: "Flutter App Developers",
-            desc: "Google's UI toolkit for beautiful cross-platform apps",
-            href: "#",
-          },
-          {
-            label: "iPad App Developers",
-            desc: "Tablet-optimized apps for enterprise & education",
-            href: "#",
-          },
-          {
-            label: "React Native Developers",
-            desc: "JavaScript-powered mobile apps with native feel",
-            href: "#",
-          },
-          {
-            label: "Custom Software Developers",
-            desc: "Bespoke solutions tailored to your workflow",
-            href: "#",
           },
         ],
       },
@@ -327,29 +246,15 @@ const NAV_DATA = [
         description: "Full-stack developers for scalable web applications",
         links: [],
       },
-      {
-        id: "enterprise-cloud",
-        label: "Enterprise & Cloud Developers",
-        icon: Cloud,
-        description: "AWS, DevOps and cloud infrastructure specialists",
-        links: [],
-      },
-      {
-        id: "design-creative",
-        label: "Design & Creative Experts",
-        icon: Palette,
-        description: "UI/UX designers and creative professionals on demand",
-        links: [],
-      },
     ],
     whySection: {
       title: "HIRING MADE EASY",
       points: [
         "Pre-Vetted & Skilled IT Professionals",
-        "Flexible Hiring Models (Hourly, Dedicated, Project-Based)",
-        "Quick Onboarding & Seamless Integration",
+        "Flexible Hiring Models",
+        "Quick Onboarding",
         "Cost-Effective Resource Engagement",
-        "Transparent Communication & Full Control",
+        "Transparent Communication",
       ],
       buttonText: "Start Hiring",
     },
@@ -359,11 +264,8 @@ const NAV_DATA = [
   { title: "Contact Us", hasMegaMenu: false },
 ];
 
-interface NavbarProps {
-  scrolled: boolean;
-}
-
-function NavbarZ({ scrolled }: NavbarProps) {
+function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
@@ -371,21 +273,27 @@ function NavbarZ({ scrolled }: NavbarProps) {
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 40);
+    };
+    window.addEventListener("scroll", handleScroll);
+
     const interval = setInterval(() => {
-      setCarouselIndex((prev) => (prev + 1) % TOP_BAR.Corousel.length);
+      setCarouselIndex((prev) => (prev + 1) % TOP_BAR.carousel.length);
     }, 3000);
 
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setActiveMegaMenu(null);
       }
     };
+
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearInterval(interval);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
   const handleNavHover = (title: string, hasMegaMenu: boolean) => {
@@ -406,95 +314,89 @@ function NavbarZ({ scrolled }: NavbarProps) {
       <div
         className={`transition-all duration-300 ${
           scrolled
-            ? "opacity-0 pointer-events-none"
+            ? "h-0 opacity-0 overflow-hidden"
             : "bg-[#0a0a0a] text-white py-1.5 px-6 lg:px-12 flex items-center justify-between text-[11px] font-medium border-b border-white/10"
         }`}
       >
         <div className="hidden md:flex items-center gap-5">
           <a
             href={`mailto:${TOP_BAR.email}`}
-            className="flex items-center gap-1.5 hover:text-[#0096FF] transition-colors"
+            className="flex items-center gap-1.5 hover:text-[#7B2CBF] transition-colors"
           >
-            <Mail size={12} className="text-white" />
+            <Mail size={12} />
             {TOP_BAR.email}
           </a>
           <a
             href={`tel:${TOP_BAR.phone1}`}
-            className="flex items-center gap-1.5 hover:text-[#0096FF] transition-colors"
+            className="flex items-center gap-1.5 hover:text-[#7B2CBF] transition-colors"
           >
-            <Phone size={12} className="text-white" />
+            <Phone size={12} />
             {TOP_BAR.phone1}
-          </a>
-          <a
-            href={`tel:${TOP_BAR.phone2}`}
-            className="flex items-center gap-1.5 hover:text-[#0096FF] transition-colors"
-          >
-            <Phone size={12} className="text-white" />
-            {TOP_BAR.phone2}
           </a>
         </div>
         <div className="flex items-center justify-center flex-1 overflow-hidden">
-          <div className="relative w-full max-w-[600px] px-2 h-[20px] overflow-hidden flex items-center justify-center">
+          <div className="relative w-full max-w-[600px] h-[20px] overflow-hidden flex items-center justify-center">
             <AnimatePresence mode="wait">
               <motion.span
                 key={carouselIndex}
-                initial={{ x: "100%", opacity: 0, filter: "blur(4px)" }}
-                animate={{ x: "0%", opacity: 1, filter: "blur(0px)" }}
-                exit={{ x: "-100%", opacity: 0, filter: "blur(4px)" }}
-                transition={{ duration: 0.6, ease: "easeInOut" }}
-                className="absolute w-full text-center px-1 text-[#EFEFEF] font-semibold tracking-[2px] text-[7px] md:text-[11px] lg:text-[12px]"
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -20, opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="absolute w-full text-center text-[#EFEFEF] font-semibold tracking-wider text-[10px] md:text-[11px]"
               >
-                {TOP_BAR.Corousel[carouselIndex]}
+                {TOP_BAR.carousel[carouselIndex]}
               </motion.span>
             </AnimatePresence>
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <span className="text-white/80">{TOP_BAR.locations}</span>
+        <div className="hidden sm:flex items-center gap-4">
+          <span className="text-white/60">{TOP_BAR.locations}</span>
         </div>
       </div>
 
       {/* Main Navbar */}
       <nav
-        className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${
+        className={`w-full transition-all duration-300 ${
           scrolled
-            ? "bg-[#EFEFEF] backdrop-blur-md py-2"
-            : "bg-transparent pt-8 pb-2"
+            ? "bg-white/95 backdrop-blur-md py-3 shadow-md"
+            : "bg-transparent py-5"
         }`}
         onMouseLeave={() => setActiveMegaMenu(null)}
       >
-        <div className="max-w-[1920px] mx-auto px-6 lg:px-12 flex items-center justify-between">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-12 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-3 cursor-pointer">
-            <div className="flex items-center">
-              <div className="w-10 h-10 flex items-center justify-center p-1.5">
-                <div className="text-white font-black text-xl leading-none">
-                  <img src={logo} alt={`Workholo-logo`} />
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <span
-                  className={`text-2xl font-bold tracking-tight leading-none ${
-                    scrolled ? "text-black" : "text-white"
-                  }`}
-                >
-                  WorkHolo
-                </span>
-              </div>
+          <div className="flex items-center gap-2 cursor-pointer group">
+            <div className="w-10 h-10 bg-[#7B2CBF] rounded-lg flex items-center justify-center text-white font-black text-xl shadow-lg group-hover:scale-110 transition-transform">
+              W
+            </div>
+            <div className="flex flex-col">
+              <span
+                className={`text-xl font-black tracking-tighter leading-none ${
+                  scrolled ? "text-black" : "text-white"
+                }`}
+              >
+                WORKHOLO
+              </span>
+              <span
+                className={`text-[9px] font-bold tracking-[0.2em] ${scrolled ? "text-gray-500" : "text-white/60"}`}
+              >
+                DIGITAL SOLUTIONS
+              </span>
             </div>
           </div>
 
           {/* Desktop Nav Links */}
-          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {NAV_DATA.map((nav) => (
               <div
                 key={nav.title}
-                className="relative h-full flex items-center group"
+                className="relative h-full flex items-center"
                 onMouseEnter={() => handleNavHover(nav.title, nav.hasMegaMenu)}
               >
                 <a
                   href="#"
-                  className={`text-[15px] font-bold flex items-center gap-1 transition-colors py-2 ${
+                  className={`text-[14px] font-bold flex items-center gap-1 transition-all py-2 ${
                     activeMegaMenu === nav.title
                       ? "text-[#7B2CBF]"
                       : scrolled
@@ -522,18 +424,24 @@ function NavbarZ({ scrolled }: NavbarProps) {
 
           {/* Right Actions */}
           <div className="flex items-center gap-4">
-            <button className="hidden lg:flex items-center gap-2 bg-[#7B2CBF] text-white px-5 py-2 text-[15px] font-bold hover:bg-[#9b62cd] hover:text-grey-300 transition-all duration-300 shadow-lg group">
-              Request Quote
+            <button
+              className={`hidden sm:flex items-center gap-2 px-6 py-2.5 rounded-full text-[14px] font-bold transition-all duration-300 shadow-lg group ${
+                scrolled
+                  ? "bg-[#7B2CBF] text-white hover:bg-[#6c09c4]"
+                  : "bg-white text-[#7B2CBF] hover:bg-gray-100"
+              }`}
+            >
+              Start Project
               <ArrowRight
                 size={16}
                 className="transition-transform group-hover:translate-x-1"
               />
             </button>
             <button
-              className="lg:hidden p-2 text-black"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className={`lg:hidden p-2 rounded-lg ${scrolled ? "text-black bg-gray-100" : "text-white bg-white/10"}`}
+              onClick={() => setMobileMenuOpen(true)}
             >
-              {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+              <Menu size={24} />
             </button>
           </div>
         </div>
@@ -542,63 +450,61 @@ function NavbarZ({ scrolled }: NavbarProps) {
         <AnimatePresence>
           {activeMegaMenu && (
             <motion.div
-              initial={{ opacity: 0, y: 5 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 5 }}
-              transition={{ duration: 0.15 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.2 }}
               className="absolute top-full left-0 w-full bg-white border-t border-gray-100 shadow-2xl hidden lg:block"
               ref={menuRef}
             >
-              <div className="max-w-[1920px] mx-auto flex min-h-[550px]">
+              <div className="max-w-[1440px] mx-auto flex min-h-[450px]">
                 {/* Left Sidebar */}
-                <div className="w-[300px] border-r border-gray-100 p-6 bg-white">
-                  <h3 className="text-[14px] font-black text-[#7B2CBF] uppercase tracking-wider mb-6">
-                    {activeMegaMenu.toUpperCase()}
+                <div className="w-[320px] border-r border-gray-100 p-8 bg-gray-50/50">
+                  <h3 className="text-[12px] font-black text-[#7B2CBF] uppercase tracking-widest mb-6">
+                    {activeMegaMenu} Categories
                   </h3>
-                  <div className="space-y-1">
+                  <div className="space-y-2">
                     {NAV_DATA.find(
                       (n) => n.title === activeMegaMenu,
                     )?.items?.map((item) => (
                       <button
                         key={item.id}
                         onMouseEnter={() => setActiveSubItem(item.id)}
-                        className={`w-full flex items-start gap-3 p-3.5 rounded-lg transition-all text-left group ${
+                        className={`w-full flex items-start gap-4 p-4 rounded-xl transition-all text-left group ${
                           activeSubItem === item.id
-                            ? "bg-blue-50/50 border-l-4 border-[#7B2CBF]"
-                            : "hover:bg-gray-50"
+                            ? "bg-white shadow-md ring-1 ring-black/5"
+                            : "hover:bg-white/50"
                         }`}
                       >
                         <div
-                          className={`p-2 rounded-md shrink-0 transition-colors ${activeSubItem === item.id ? "bg-[#7B2CBF] text-white" : "bg-blue-50 text-[#7B2CBF]"}`}
+                          className={`p-2.5 rounded-lg shrink-0 transition-all ${
+                            activeSubItem === item.id
+                              ? "bg-[#7B2CBF] text-white scale-110"
+                              : "bg-white text-[#7B2CBF] shadow-sm"
+                          }`}
                         >
-                          <item.icon size={18} />
+                          <item.icon size={20} />
                         </div>
-                        <div className="overflow-hidden">
+                        <div>
                           <div
-                            className={`text-[14px] font-bold leading-tight ${activeSubItem === item.id ? "text-[#7B2CBF]" : "text-gray-800"}`}
+                            className={`text-[15px] font-bold leading-tight ${activeSubItem === item.id ? "text-[#7B2CBF]" : "text-gray-800"}`}
                           >
                             {item.label}
                           </div>
-                          <p className="text-[11px] text-gray-500 mt-1 leading-tight line-clamp-2">
+                          <p className="text-[12px] text-gray-500 mt-1 leading-snug line-clamp-2">
                             {item.description}
                           </p>
                         </div>
-                        {activeSubItem === item.id && (
-                          <ArrowRight
-                            size={12}
-                            className="text-[#7B2CBF] ml-auto shrink-0 mt-1"
-                          />
-                        )}
                       </button>
                     ))}
                   </div>
                 </div>
 
                 {/* Center Content */}
-                <div className="flex-1 p-10 bg-white overflow-y-auto">
+                <div className="flex-1 p-10 bg-white">
                   {activeMegaMenu === "Home" ? (
                     <div className="space-y-8">
-                      <h4 className="text-[13px] font-black text-[#7B2CBF] uppercase tracking-widest border-b border-blue-100 pb-2 inline-block">
+                      <h4 className="text-[12px] font-black text-gray-400 uppercase tracking-widest">
                         {
                           NAV_DATA.find((n) => n.title === "Home")
                             ?.centerContent?.title
@@ -607,36 +513,31 @@ function NavbarZ({ scrolled }: NavbarProps) {
                       <div className="grid grid-cols-2 gap-x-12 gap-y-8">
                         {NAV_DATA.find(
                           (n) => n.title === "Home",
-                        )?.centerContent?.links.map((blog, idx) => (
-                          <a key={idx} href={blog.href} className="group block">
-                            <h5 className="text-[15px] font-bold text-gray-800 group-hover:text-[#7B2CBF] transition-colors mb-1">
-                              {blog.label}
+                        )?.centerContent?.links.map((link, idx) => (
+                          <a key={idx} href="#" className="group block">
+                            <h5 className="text-[16px] font-bold text-gray-900 group-hover:text-[#7B2CBF] transition-colors">
+                              {link.label}
                             </h5>
-                            <p className="text-[12px] text-gray-500 leading-relaxed group-hover:text-gray-700">
-                              {blog.desc}
+                            <p className="text-[13px] text-gray-500 mt-1 leading-relaxed">
+                              {link.desc}
                             </p>
-                            <div className="mt-2 flex items-center gap-1 text-[11px] font-bold text-[#7B2CBF] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">
-                              Read More <ArrowRight size={10} />
+                            <div className="mt-2 flex items-center gap-1 text-[12px] font-bold text-[#7B2CBF] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">
+                              Learn More <ArrowRight size={12} />
                             </div>
                           </a>
                         ))}
-                      </div>
-                      <div className="flex justify-end pt-4">
-                        <a
-                          href="#"
-                          className="flex items-center gap-2 text-[#7B2CBF] font-bold text-sm hover:underline"
-                        >
-                          View All Blogs <ArrowRight size={16} />
-                        </a>
                       </div>
                     </div>
                   ) : (
                     activeSubItem && (
                       <div className="space-y-8">
-                        <h4 className="text-[13px] font-black text-[#7B2CBF] uppercase tracking-widest border-b border-blue-100 pb-2 inline-block">
-                          {NAV_DATA.find((n) => n.title === activeMegaMenu)
-                            ?.items?.find((i) => i.id === activeSubItem)
-                            ?.label.toUpperCase()}
+                        <h4 className="text-[12px] font-black text-gray-400 uppercase tracking-widest">
+                          {
+                            NAV_DATA.find(
+                              (n) => n.title === activeMegaMenu,
+                            )?.items?.find((i) => i.id === activeSubItem)?.label
+                          }{" "}
+                          Features
                         </h4>
                         <div className="grid grid-cols-2 gap-x-12 gap-y-6">
                           {NAV_DATA.find((n) => n.title === activeMegaMenu)
@@ -644,19 +545,19 @@ function NavbarZ({ scrolled }: NavbarProps) {
                             ?.links.map((link, idx) => (
                               <a
                                 key={idx}
-                                href={link.href}
-                                className="group flex flex-col py-1 transition-all"
+                                href="#"
+                                className="group flex flex-col p-4 rounded-xl hover:bg-gray-50 transition-all"
                               >
                                 <div className="flex items-center justify-between">
-                                  <span className="text-[15px] font-bold text-gray-800 group-hover:text-[#7B2CBF] transition-colors">
+                                  <span className="text-[15px] font-bold text-gray-900 group-hover:text-[#7B2CBF] transition-colors">
                                     {link.label}
                                   </span>
                                   <ArrowRight
-                                    size={14}
+                                    size={16}
                                     className="text-[#7B2CBF] opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all"
                                   />
                                 </div>
-                                <span className="text-[11px] text-gray-400 group-hover:text-gray-500 transition-colors mt-0.5">
+                                <span className="text-[12px] text-gray-500 mt-1">
                                   {link.desc}
                                 </span>
                               </a>
@@ -668,36 +569,38 @@ function NavbarZ({ scrolled }: NavbarProps) {
                 </div>
 
                 {/* Right Sidebar */}
-                <div className="w-[320px] bg-[#6c09c4] p-10 text-white flex flex-col">
-                  <div className="flex-1">
-                    <h3 className="text-[16px] font-black mb-8 leading-tight tracking-wide border-b border-white/20 pb-4">
+                <div className="w-[340px] bg-[#7B2CBF] p-10 text-white flex flex-col justify-between relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl" />
+                  <div className="relative z-10">
+                    <h3 className="text-[18px] font-black mb-8 border-b border-white/20 pb-4">
                       {
                         NAV_DATA.find((n) => n.title === activeMegaMenu)
                           ?.whySection?.title
                       }
                     </h3>
-                    <ul className="space-y-5">
+                    <ul className="space-y-6">
                       {NAV_DATA.find(
                         (n) => n.title === activeMegaMenu,
                       )?.whySection?.points.map((point, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          <div className="w-5 h-5 rounded-full bg-blue-400/30 flex items-center justify-center shrink-0 mt-0.5">
-                            <CheckCircle2 size={14} className="text-white" />
-                          </div>
-                          <span className="text-[13px] font-medium leading-relaxed text-blue-50">
+                          <CheckCircle2
+                            size={18}
+                            className="text-white shrink-0 mt-0.5"
+                          />
+                          <span className="text-[14px] font-medium leading-tight text-white/90">
                             {point}
                           </span>
                         </li>
                       ))}
                     </ul>
                   </div>
-                  <button className="mt-10 w-full bg-white text-[#6c09c4] py-4 rounded-lg font-bold text-[15px] hover:bg-blue-50 transition-all shadow-xl shadow-black/10 flex items-center justify-center gap-2 group">
+                  <button className="relative z-10 mt-12 w-full bg-white text-[#7B2CBF] py-4 rounded-xl font-black text-[15px] hover:bg-gray-100 transition-all shadow-xl flex items-center justify-center gap-2 group">
                     {
                       NAV_DATA.find((n) => n.title === activeMegaMenu)
                         ?.whySection?.buttonText
                     }
                     <ArrowRight
-                      size={18}
+                      size={20}
                       className="transition-transform group-hover:translate-x-1"
                     />
                   </button>
@@ -708,95 +611,87 @@ function NavbarZ({ scrolled }: NavbarProps) {
         </AnimatePresence>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {mobileMenuOpen && (
-          <motion.div
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 bg-white z-[60] lg:hidden overflow-y-auto"
-          >
-            <div className="p-6 flex flex-col h-full">
-              <div className="flex items-center justify-between mb-10">
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setMobileMenuOpen(false)}
+              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] lg:hidden"
+            />
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              className="fixed top-0 right-0 h-full w-[85%] max-w-[400px] bg-white z-[70] lg:hidden shadow-2xl flex flex-col"
+            >
+              <div className="p-6 flex items-center justify-between border-b border-gray-100">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 flex items-center justify-center">
-                    <img src={logo} alt={`WorkHolo-logo`}/>
+                  <div className="w-8 h-8 bg-[#7B2CBF] rounded flex items-center justify-center text-white font-bold">
+                    W
                   </div>
-                  <span className="text-xl font-bold text-gray-900">
-                    WorkHolo
+                  <span className="text-lg font-black text-gray-900">
+                    WORKHOLO
                   </span>
                 </div>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
-                  className="p-2 text-black"
+                  className="p-2 text-gray-500 hover:text-black"
                 >
-                  <X size={28} />
+                  <X size={24} />
                 </button>
               </div>
 
-              <div className="flex flex-col gap-5">
+              <div className="flex-1 overflow-y-auto p-6 space-y-2">
                 {NAV_DATA.map((nav) => (
-                  <div
-                    key={nav.title}
-                    className="border-b border-gray-100 pb-3"
-                  >
-                    <div className="flex items-center justify-between py-2">
-                      <span className="text-[17px] font-bold text-gray-900">
-                        {nav.title}
-                      </span>
+                  <div key={nav.title} className="group">
+                    <button className="w-full flex items-center justify-between py-4 text-[16px] font-bold text-gray-900 border-b border-gray-50">
+                      {nav.title}
                       {nav.hasMegaMenu && (
                         <ChevronDown size={18} className="text-gray-400" />
                       )}
-                    </div>
+                    </button>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-auto pt-10 space-y-6">
-                <div className="grid grid-cols-1 gap-4">
+              <div className="p-8 bg-gray-50 space-y-6">
+                <div className="space-y-4">
                   <a
                     href={`tel:${TOP_BAR.phone1}`}
-                    className="flex items-center gap-3 text-gray-700 text-sm font-bold"
+                    className="flex items-center gap-3 text-gray-700 font-bold"
                   >
-                    <Phone size={18} className="text-[#0096FF]" />
+                    <Phone size={20} className="text-[#7B2CBF]" />
                     {TOP_BAR.phone1}
                   </a>
                   <a
                     href={`mailto:${TOP_BAR.email}`}
-                    className="flex items-center gap-3 text-gray-700 text-sm font-bold"
+                    className="flex items-center gap-3 text-gray-700 font-bold"
                   >
-                    <Mail size={18} className="text-[#0096FF]" />
+                    <Mail size={20} className="text-[#7B2CBF]" />
                     {TOP_BAR.email}
                   </a>
                 </div>
-                <button className="w-full bg-[#0096FF] text-white py-4 rounded-xl font-bold text-lg shadow-lg shadow-blue-100">
-                  Request Quote
+                <button className="w-full bg-[#7B2CBF] text-white py-4 rounded-xl font-black text-lg shadow-lg shadow-[#7B2CBF]/20">
+                  Get Started
                 </button>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </header>
   );
 }
 
-export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 40);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+export default function App() {
   return (
     <div>
-      <NavbarZ scrolled={scrolled} />
+      <Navbar />
     </div>
   );
 }
