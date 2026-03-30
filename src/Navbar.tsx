@@ -1,3 +1,4 @@
+import logo from "../src/assets/WorkHolo-logo.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -366,9 +367,13 @@ function Navbar() {
       >
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2 cursor-pointer group">
-            <div className="w-10 h-10 bg-[#7B2CBF] rounded-lg flex items-center justify-center text-white font-black text-xl shadow-lg group-hover:scale-110 transition-transform">
-              W
+          <div className="flex items-center gap-1 cursor-pointer group">
+            <div className="w-12 h-12">
+              <img
+                src={logo}
+                alt="WorkHolo Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="flex flex-col">
               <span
@@ -381,7 +386,7 @@ function Navbar() {
               <span
                 className={`text-[9px] font-bold tracking-[0.2em] ${scrolled ? "text-gray-500" : "text-white/60"}`}
               >
-                DIGITAL SOLUTIONS
+                Custom Software Solution A-Z
               </span>
             </div>
           </div>
@@ -631,8 +636,12 @@ function Navbar() {
             >
               <div className="p-6 flex items-center justify-between border-b border-gray-100">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-[#7B2CBF] rounded flex items-center justify-center text-white font-bold">
-                    W
+                  <div className="w-12 h-12">
+                    <img
+                      src={logo}
+                      alt="WorkHolo Logo"
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <span className="text-lg font-black text-gray-900">
                     WORKHOLO
