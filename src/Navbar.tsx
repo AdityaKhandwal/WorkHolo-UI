@@ -1,6 +1,8 @@
-import logoImage from "../src/assets/WorkHolo-logo.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
+const logoImage = "../src/assets/WorkHolo-logo.png";
 
 /**
  * @license
@@ -38,6 +40,12 @@ const TOP_BAR = {
     "Launch Faster with WorkHolo Solutions",
   ],
   locations: "India | Serving Clients Worldwide",
+};
+
+const createPath = (parent: string, label: string) => {
+  return `/${parent.toLowerCase()}/${label
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")}`;
 };
 
 const NAV_DATA = [
@@ -496,6 +504,16 @@ const NAV_DATA = [
   { title: "Contact Us", hasMegaMenu: false },
 ];
 
+const ROUTES: Record<string, string> = {
+  Home: "/",
+  Services: "/services",
+  Products: "/products",
+  Resources: "/resources",
+  Portfolio: "/portfolio",
+  Careers: "/careers",
+  "Contact Us": "/contact",
+};
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [carouselIndex, setCarouselIndex] = useState(0);
@@ -504,6 +522,7 @@ export default function Navbar() {
   const [activeSubItem, setActiveSubItem] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -599,7 +618,7 @@ export default function Navbar() {
       >
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-1 cursor-pointer group">
+          <div onClick={() => navigate("/")} className="flex items-center gap-1 cursor-pointer group">
             <div className="w-12 h-12">
               <img src={logoImage} className={`w-full h-full object-contain`} />
             </div>
@@ -627,8 +646,8 @@ export default function Navbar() {
                 className="relative h-full flex items-center"
                 onMouseEnter={() => handleNavHover(nav.title, nav.hasMegaMenu)}
               >
-                <a
-                  href="#"
+                <Link
+                  to={ROUTES[nav.title] || "/"}
                   className={`text-[14px] font-bold flex items-center gap-1 transition-all py-2 ${
                     activeMegaMenu === nav.title
                       ? "text-[#7B2CBF]"
@@ -644,7 +663,7 @@ export default function Navbar() {
                       className={`transition-transform duration-300 ${activeMegaMenu === nav.title ? "rotate-180" : ""}`}
                     />
                   )}
-                </a>
+                </Link>
                 {activeMegaMenu === nav.title && (
                   <motion.div
                     layoutId="nav-underline"
@@ -658,6 +677,7 @@ export default function Navbar() {
           {/* Right Actions */}
           <div className="flex items-center gap-4">
             <button
+              onClick={() => navigate("/contact")}
               className={`hidden sm:flex items-center gap-2 px-6 py-2.5 rounded-full text-[14px] font-bold transition-all duration-300 shadow-lg group ${
                 scrolled
                   ? "bg-[#7B2CBF] text-white hover:bg-[#6c09c4]"
@@ -747,7 +767,7 @@ export default function Navbar() {
                         {NAV_DATA.find(
                           (n) => n.title === "Home",
                         )?.centerContent?.links.map((link, idx) => (
-                          <a key={idx} href="#" className="group block">
+                          <Link key={idx} to={createPath("home", link.label)} className="group block">
                             <h5 className="text-[16px] font-bold text-gray-900 group-hover:text-[#7B2CBF] transition-colors">
                               {link.label}
                             </h5>
@@ -757,7 +777,7 @@ export default function Navbar() {
                             <div className="mt-2 flex items-center gap-1 text-[12px] font-bold text-[#7B2CBF] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">
                               Learn More <ArrowRight size={12} />
                             </div>
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
@@ -776,9 +796,9 @@ export default function Navbar() {
                           {NAV_DATA.find((n) => n.title === activeMegaMenu)
                             ?.items?.find((i) => i.id === activeSubItem)
                             ?.links.map((link, idx) => (
-                              <a
+                              <Link
                                 key={idx}
-                                href="#"
+                                to={createPath(activeMegaMenu || "", link.label)}
                                 className="group flex flex-col p-4 rounded-xl hover:bg-gray-50 transition-all"
                               >
                                 <div className="flex items-center justify-between">
@@ -793,7 +813,7 @@ export default function Navbar() {
                                 <span className="text-[12px] text-gray-500 mt-1">
                                   {link.desc}
                                 </span>
-                              </a>
+                              </Link>
                             ))}
                         </div>
                       </div>
@@ -827,7 +847,7 @@ export default function Navbar() {
                       ))}
                     </ul>
                   </div>
-                  <button className="relative z-10 mt-12 w-full bg-white text-[#7B2CBF] py-4 rounded-xl font-black text-[15px] hover:bg-gray-100 transition-all shadow-xl flex items-center justify-center gap-2 group">
+                  <button onClick={() => navigate("/contact")} className="relative z-10 mt-12 w-full bg-white text-[#7B2CBF] py-4 rounded-xl font-black text-[15px] hover:bg-gray-100 transition-all shadow-xl flex items-center justify-center gap-2 group">
                     {
                       NAV_DATA.find((n) => n.title === activeMegaMenu)
                         ?.whySection?.buttonText
@@ -863,7 +883,7 @@ export default function Navbar() {
               className="fixed top-0 right-0 h-full w-[85%] max-w-[400px] bg-white z-[70] lg:hidden shadow-2xl flex flex-col"
             >
               <div className="p-6 flex items-center justify-between border-b border-gray-100">
-                <div className="flex items-center gap-2">
+                <div onClick={() => { navigate("/"); setMobileMenuOpen(false); }} className="flex items-center gap-2 cursor-pointer">
                   <div className="w-12 h-12">
                     <img
                       src={logoImage}
@@ -888,22 +908,30 @@ export default function Navbar() {
                     key={nav.title}
                     className="border-b border-gray-50 last:border-0"
                   >
-                    <button
-                      onClick={() =>
-                        setMobileExpanded(
-                          mobileExpanded === nav.title ? null : nav.title,
-                        )
-                      }
-                      className="w-full flex items-center justify-between py-4 px-2 text-[16px] font-bold text-gray-900"
-                    >
-                      {nav.title}
+                    <div className="flex items-center justify-between">
+                      <Link
+                        to={ROUTES[nav.title] || "/"}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="flex-1 text-left py-4 px-2 text-[16px] font-bold text-gray-900"
+                      >
+                        {nav.title}
+                      </Link>
                       {nav.hasMegaMenu && (
-                        <ChevronDown
-                          size={18}
-                          className={`text-gray-400 transition-transform ${mobileExpanded === nav.title ? "rotate-180" : ""}`}
-                        />
+                        <button
+                          onClick={() =>
+                            setMobileExpanded(
+                              mobileExpanded === nav.title ? null : nav.title,
+                            )
+                          }
+                          className="p-4"
+                        >
+                          <ChevronDown
+                            size={18}
+                            className={`text-gray-400 transition-transform ${mobileExpanded === nav.title ? "rotate-180" : ""}`}
+                          />
+                        </button>
                       )}
-                    </button>
+                    </div>
                     <AnimatePresence>
                       {nav.hasMegaMenu && mobileExpanded === nav.title && (
                         <motion.div
@@ -924,13 +952,14 @@ export default function Navbar() {
                               </div>
                               <div className="grid grid-cols-1 gap-1 pl-9">
                                 {item.links.map((link, idx) => (
-                                  <a
+                                  <Link
                                     key={idx}
-                                    href="#"
+                                    to={ROUTES[nav.title] || "/"}
+                                    onClick={() => setMobileMenuOpen(false)}
                                     className="text-[13px] text-gray-500 py-1.5 hover:text-[#7B2CBF]"
                                   >
                                     {link.label}
-                                  </a>
+                                  </Link>
                                 ))}
                               </div>
                             </div>
@@ -959,7 +988,7 @@ export default function Navbar() {
                     {TOP_BAR.email}
                   </a>
                 </div>
-                <button className="w-full bg-[#7B2CBF] text-white py-4 rounded-xl font-black text-lg shadow-lg shadow-[#7B2CBF]/20">
+                <button onClick={() => { navigate("/contact"); setMobileMenuOpen(false); }} className="w-full bg-[#7B2CBF] text-white py-4 rounded-xl font-black text-lg shadow-lg shadow-[#7B2CBF]/20">
                   Get Started
                 </button>
               </div>
