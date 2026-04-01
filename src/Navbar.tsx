@@ -25,7 +25,6 @@ import {
   CheckCircle2,
   ArrowRight,
   ShieldCheck,
-  Zap,
 } from "lucide-react";
 
 const TOP_BAR = {
