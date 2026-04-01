@@ -1,6 +1,11 @@
-import logo from "../src/assets/WorkHolo-logo.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 
 import {
   Menu,
@@ -20,6 +25,7 @@ import {
   CheckCircle2,
   ArrowRight,
   ShieldCheck,
+  Zap,
 } from "lucide-react";
 
 const TOP_BAR = {
@@ -99,26 +105,58 @@ const NAV_DATA = [
     items: [
       {
         id: "software-dev",
-        label: "Website & Software Development",
+        label: "Software Development",
         icon: Code,
         description:
           "We design and build websites and software tailored to your business needs.",
         links: [
           {
-            label: "Business Website Development",
-            desc: "Modern, responsive websites for any business",
+            label: "Mobile App Development",
+            desc: "Custom iOS, Android & cross-platform solution",
           },
           {
-            label: "Custom Web Applications",
-            desc: "Full-stack scalable web solutions",
+            label: "iOs App Development",
+            desc: "Native iPhone apps with seamless UX",
           },
           {
-            label: "Admin Dashboard Systems",
-            desc: "Manage users, data, and operations",
+            label: "Android App Development",
+            desc: "Robust apps for the Android ecosystem",
           },
           {
-            label: "Custom Software Solutions",
-            desc: "Built specifically for your workflows",
+            label: "ipad App Development",
+            desc: "Optimized tablet experiences for enterprise",
+          },
+          {
+            label: "Flutter App Development",
+            desc: "Cross-platform apps from a single codebase",
+          },
+          {
+            label: "React Native App Development",
+            desc: "High-performance hybrid mobile apps",
+          },
+          {
+            label: "Cross-Platform Development",
+            desc: "build once, deploy everywhere",
+          },
+           {
+            label: "Web Application Development",
+            desc: "Scalable web apps built for your business",
+          },
+          {
+            label: "Custom Software Development",
+            desc: "Tailored solution for unique business needs",
+          },
+          {
+            label: "CMS & Portal Development",
+            desc: "Optimized tablet experiences for enterprise",
+          },
+          {
+            label: "Enterprise Application Development",
+            desc: "Scalable, Secure & cloud-native enterprise software",
+          },
+           {
+            label: "App maintainance & Support",
+            desc: "Ongoing updates, bug fixes & performance optimization",
           },
         ],
       },
@@ -127,28 +165,113 @@ const NAV_DATA = [
         label: "Cloud Hosting & Deployment",
         icon: Cloud,
         description: "Hosting and managing real-time communication systems",
-        links: [],
+        links: [ {
+            label: "Cloud Services",
+            desc: "Secure, scalable cloud infrastructure and deployment solutions",
+          },
+          {
+            label: "Cloud Migration Services",
+            desc: "Seamless migration of application and data to modern cloud platforms",
+          },
+           {
+            label: "Cloud Security Services",
+            desc: "Advanced cloud security, compliance, and threat protection for your infrastructure",
+          },{
+            label: "IoT Development",
+            desc: "Custom IoT solutions with device integration, cloud connectivity, and real-time analytics",
+          },
+          {
+            label: "DevOps Services",
+            desc: "Ci/CD automation, infrastructure as code, and faster release cycles",
+          },
+           {
+            label: "DevOps Consulting Services",
+            desc: "Strategic DevOps advisory to improve performance and scalability",
+          }, {
+            label: "Cloud Managed Services",
+            desc: "24/7 monitoring, optimization, and ongoing cloud management support",
+          },
+           {
+            label: "AWS Cloud Services",
+            desc: "Scalable cloud solutions on AWS including deployment, migration, DevOps, and secure infrastructure management",
+          },],
       },
       {
         id: "salesforce",
         label: "Salesforce",
         icon: ShieldCheck,
         description: "CRM customization, integration and consulting",
-        links: [],
+        links: [ {
+            label: "Salesforce Consulting",
+            desc: "CRM implementtion, customization & integration",
+          },
+           {
+            label: "SalesForce Implementation",
+            desc: "End-to-end CRM setup, migration & deployment",
+          }, {
+            label: "Lightning Migration & Development",
+            desc: "Classic to Lightning upgrade & LWC development",
+          },
+           {
+            label: "Salesforce Integration",
+            desc: "Connect Salesforce with ERP, marketing & APIs",
+          },],
       },
       {
         id: "design-exp",
         label: "Design & Experience",
         icon: Palette,
         description: "User-centric UI/UX design that drives engagement",
-        links: [],
+        links: [ {
+            label: "UI/UX Design Company",
+            desc: "User-centered interfaces that enhance usability and drive conversions",
+          },
+           {
+            label: "Product Design Services",
+            desc: "End-to-end product design from concept to scalble digital solutions",
+          }, {
+            label: "Design sustem Development",
+            desc: "Consisent, scalable UI systems for faster and unified product development",
+          },
+           {
+            label: "Mobile App Design",
+            desc: "Engaging mobile app experience built for performance and clarity",
+          },
+         {
+            label: "UX Research Services",
+            desc: "Responsive, conversion-focused websites tailored to your brand",
+          },],
       },
       {
         id: "digital-marketing",
         label: "Digital Marketing Solutions",
         icon: TrendingUp,
         description: "SEO, PPC and social media strategies that grow revenue",
-        links: [],
+        links: [ {
+            label: "Digital Marketing",
+            desc: "Full-funnel strategies to grow your brand",
+          }, {
+            label: "PPC Advertising",
+            desc: "Targeting paid compaigns with high ROI",
+          }, {
+            label: "Social Media Marketing",
+            desc: "Boost app visibility and downloads",
+          }, {
+            label: "Content Marketing Services",
+            desc: "Boost app visibility and Downloads",
+          }, {
+            label: "SEO Services",
+            desc: "Rank higher and drive organic traffic",
+          }, {
+            label: "ASO Services",
+            desc: "Boost app visibility and downloads",
+          }, {
+            label: "Conversion Rate Optimization",
+            desc: "Boost app visiblity and downloads",
+          }, {
+            label: "Mobile App Design",
+            desc: "Boost app visibility and downloads",
+          },],
       },
     ],
     whySection: {
@@ -169,35 +292,127 @@ const NAV_DATA = [
     items: [
       {
         id: "ready-products",
-        label: "Ready-Made Solutions",
+        label: "On-Demand & Delivery Apps",
         icon: ShoppingBag,
         description:
-          "Pre-built systems you can customize and launch instantly.",
+          "On Demand and Delivery apps-Transforming everyday services into on",
         links: [
           {
-            label: "Business Website Templates",
-            desc: "Ready websites for quick deployment",
+            label: "Food Delivery App",
+            desc: "Multi-restaurant ordering with real-time tracking",
           },
           {
-            label: "Admin Dashboard Systems",
-            desc: "Manage business operations easily",
+            label: "rocery Delivery App",
+            desc: "Quick commerce for daily essentials",
           },
           {
-            label: "E-Commerce Platforms",
-            desc: "Launch your online store quickly",
+            label: "Milk delivery App",
+            desc: "Subscription-based daily delivery management",
           },
           {
-            label: "Booking Systems",
-            desc: "Appointment and service booking apps",
+            label: "Car Wash App",
+            desc: "On-Demand vehicle care t your doorstep",
+          },
+           {
+            label: "Chef Management App",
+            desc: "On-Demand vehicle care t your doorstep",
           },
         ],
       },
       {
-        id: "guides",
-        label: "Guides & Insights",
+        id: "Booking",
+        label: "Booking and Servce Platforms",
         icon: BookOpen,
-        description: "Learn about building and scaling digital products",
-        links: [],
+        description: "Seamless scheduling and appointment management apps",
+        links: [{
+            label: "Taxi Booking App",
+            desc: "Ride-hailing with smart route optimization",
+          },
+          {
+            label: "Hotel Booking App",
+            desc: "Seamless hotel search, compare & reserve",
+          },
+           {
+            label: "Ticket Booking App",
+            desc: "Events, travel & entertainment ticketing",
+          },
+        {
+            label: "Real Estate App",
+            desc: "Property listing, virtual tours & lead management",
+          },],
+      },
+
+      {
+        id: "E-Commerce",
+        label: "E-Commerce & Marketplace Solution",
+        icon: ShoppingBag,
+        description:
+          "Multi-vendor stores and online shopping platforms",
+        links: [
+          {
+            label: "eCommerce App",
+            desc: "Scalable online stores with seamless checkout",
+          },
+          {
+            label: "Online Shopping App",
+            desc: "Feature-rich shopping experience for customers",
+          },
+          {
+            label: "Multi-Vendor Marketplace",
+            desc: "Connect multiple sellers on one platform",
+          },
+        ],
+      },
+      {
+        id: "education",
+        label: "Education & Entertainment",
+        icon: ShoppingBag,
+        description:
+          "eLearning platforms and interactive media solutions",
+        links: [
+          {
+            label: "E-Learning App",
+            desc: "Interactive courses, quizzes & certifications",
+          },
+          {
+            label: "Gaming App",
+            desc: "Engaging mobile games with monetization",
+          },
+          {
+            label: "OTT App",
+            desc: "Video sreaming like Netflix & Hotstar",
+          },
+        ],
+      },
+      {
+        id: "healthcare",
+        label: "Healthcare & Wellness",
+        icon: ShoppingBag,
+        description:
+          "Patient management and telemedicine applications",
+        links: [
+          {
+            label: "Diagnostic App",
+            desc: "Lab booking, reports & health tracking",
+          },
+          {
+            label: "Sports & Fitness App",
+            desc: "Workout plans, tracking & community features",
+          },
+        ],
+      },
+         {
+        id: "Social&Media",
+        label: "Social & Media Apps",
+        icon: ShoppingBag,
+        description:
+          "Community building and content sharing platforms",
+        links: [
+          {
+            label: "Social Media App",
+            desc: "Community platform with feeds, chat & sharing",
+          },
+        ],
       },
     ],
     whySection: {
@@ -265,12 +480,13 @@ const NAV_DATA = [
   { title: "Contact Us", hasMegaMenu: false },
 ];
 
-function Navbar() {
+export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
   const [activeSubItem, setActiveSubItem] = useState<string | null>(null);
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -368,12 +584,8 @@ function Navbar() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-1 cursor-pointer group">
-            <div className="w-12 h-12">
-              <img
-                src={logo}
-                alt="WorkHolo Logo"
-                className="w-full h-full object-contain"
-              />
+            <div className="w-10 h-10 bg-[#7B2CBF] rounded-lg flex items-center justify-center text-white">
+              <Zap size={24} />
             </div>
             <div className="flex flex-col">
               <span
@@ -386,7 +598,7 @@ function Navbar() {
               <span
                 className={`text-[9px] font-bold tracking-[0.2em] ${scrolled ? "text-gray-500" : "text-white/60"}`}
               >
-                Custom Software Solution A-Z
+                Custom Software Solution
               </span>
             </div>
           </div>
@@ -433,7 +645,7 @@ function Navbar() {
               className={`hidden sm:flex items-center gap-2 px-6 py-2.5 rounded-full text-[14px] font-bold transition-all duration-300 shadow-lg group ${
                 scrolled
                   ? "bg-[#7B2CBF] text-white hover:bg-[#6c09c4]"
-                  : "bg-white text-[#7B2CBF] hover:bg-gray-100"
+                  : "bg-[#7B2CBF] text-white hover:bg-gray-100 hover:text-black"
               }`}
             >
               Start Project
@@ -475,7 +687,7 @@ function Navbar() {
                       <button
                         key={item.id}
                         onMouseEnter={() => setActiveSubItem(item.id)}
-                        className={`w-full flex items-start gap-4 p-4 rounded-xl transition-all text-left group ${
+                        className={`w-full flex items-start gap-2 p-2 rounded-xl transition-all text-left group ${
                           activeSubItem === item.id
                             ? "bg-white shadow-md ring-1 ring-black/5"
                             : "hover:bg-white/50"
@@ -636,12 +848,8 @@ function Navbar() {
             >
               <div className="p-6 flex items-center justify-between border-b border-gray-100">
                 <div className="flex items-center gap-2">
-                  <div className="w-12 h-12">
-                    <img
-                      src={logo}
-                      alt="WorkHolo Logo"
-                      className="w-full h-full object-contain"
-                    />
+                  <div className="w-10 h-10 bg-[#7B2CBF] rounded-lg flex items-center justify-center text-white">
+                    <Zap size={20} />
                   </div>
                   <span className="text-lg font-black text-gray-900">
                     WORKHOLO
@@ -655,15 +863,49 @@ function Navbar() {
                 </button>
               </div>
 
-              <div className="flex-1 overflow-y-auto p-6 space-y-2">
+              <div className="flex-1 overflow-y-auto p-4 space-y-2">
                 {NAV_DATA.map((nav) => (
-                  <div key={nav.title} className="group">
-                    <button className="w-full flex items-center justify-between py-4 text-[16px] font-bold text-gray-900 border-b border-gray-50">
+                  <div key={nav.title} className="border-b border-gray-50 last:border-0">
+                    <button
+                      onClick={() => setMobileExpanded(mobileExpanded === nav.title ? null : nav.title)}
+                      className="w-full flex items-center justify-between py-4 px-2 text-[16px] font-bold text-gray-900"
+                    >
                       {nav.title}
                       {nav.hasMegaMenu && (
-                        <ChevronDown size={18} className="text-gray-400" />
+                        <ChevronDown
+                          size={18}
+                          className={`text-gray-400 transition-transform ${mobileExpanded === nav.title ? "rotate-180" : ""}`}
+                        />
                       )}
                     </button>
+                    <AnimatePresence>
+                      {nav.hasMegaMenu && mobileExpanded === nav.title && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          className="overflow-hidden bg-gray-50/50 rounded-xl px-4 py-2 mb-2"
+                        >
+                          {nav.items?.map((item) => (
+                            <div key={item.id} className="py-3">
+                              <div className="flex items-center gap-3 mb-2">
+                                <div className="p-1.5 bg-white rounded-md text-[#7B2CBF] shadow-sm">
+                                  <item.icon size={16} />
+                                </div>
+                                <span className="font-bold text-gray-800 text-[14px]">{item.label}</span>
+                              </div>
+                              <div className="grid grid-cols-1 gap-1 pl-9">
+                                {item.links.map((link, idx) => (
+                                  <a key={idx} href="#" className="text-[13px] text-gray-500 py-1.5 hover:text-[#7B2CBF]">
+                                    {link.label}
+                                  </a>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </div>
                 ))}
               </div>
@@ -672,16 +914,16 @@ function Navbar() {
                 <div className="space-y-4">
                   <a
                     href={`tel:${TOP_BAR.phone1}`}
-                    className="flex items-center gap-3 text-gray-700 font-bold"
+                    className="flex items-center gap-3 text-gray-700 font-bold text-[14px]"
                   >
-                    <Phone size={20} className="text-[#7B2CBF]" />
+                    <Phone size={18} className="text-[#7B2CBF]" />
                     {TOP_BAR.phone1}
                   </a>
                   <a
                     href={`mailto:${TOP_BAR.email}`}
-                    className="flex items-center gap-3 text-gray-700 font-bold"
+                    className="flex items-center gap-3 text-gray-700 font-bold text-[14px]"
                   >
-                    <Mail size={20} className="text-[#7B2CBF]" />
+                    <Mail size={18} className="text-[#7B2CBF]" />
                     {TOP_BAR.email}
                   </a>
                 </div>
@@ -694,13 +936,5 @@ function Navbar() {
         )}
       </AnimatePresence>
     </header>
-  );
-}
-
-export default function App() {
-  return (
-    <div>
-      <Navbar />
-    </div>
   );
 }
