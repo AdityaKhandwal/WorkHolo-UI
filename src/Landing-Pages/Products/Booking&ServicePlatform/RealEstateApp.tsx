@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { motion, useAnimation } from "motion/react";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 /**
@@ -8,30 +8,19 @@ import { useInView } from "react-intersection-observer";
  */
 
 import { 
-  Phone, 
-  Mail, 
   Globe, 
   ChevronRight, 
   Plus, 
   Search, 
-  Home, 
-  MapPin, 
+  Home,  
   Layout, 
   Smartphone, 
-  Database, 
-  Cloud, 
+  Database,  
   ShieldCheck, 
-  BarChart3, 
   MessageSquare, 
   Gavel, 
   Building2, 
   Key,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram,
-  Youtube,
-  Download,
   ArrowRight
 } from 'lucide-react';
 
@@ -63,64 +52,6 @@ const ScrollReveal = ({ children, className = "" }: { children: React.ReactNode,
     >
       {children}
     </motion.div>
-  );
-};
-
-const Navbar = () => {
-  return (
-    <nav className="sticky top-0 z-50 bg-black text-white py-4 px-6 md:px-12 flex items-center justify-between shadow-xl">
-      <div className="flex items-center gap-2">
-        <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-          <span className="text-black font-bold text-xl italic">m</span>
-        </div>
-        <span className="text-xl font-bold tracking-tight">mTouch Labs</span>
-        <div className="hidden md:block border border-gray-600 rounded px-1 text-[10px] uppercase">ISO Certified</div>
-      </div>
-      
-      <div className="hidden lg:flex items-center gap-8 text-[13px] font-bold uppercase tracking-wider">
-        <a href="#" className="hover:text-[#7B2CBF] transition-colors flex items-center gap-1">Home <ChevronRight className="w-3 h-3 rotate-90" /></a>
-        <a href="#" className="hover:text-[#7B2CBF] transition-colors flex items-center gap-1">Services <ChevronRight className="w-3 h-3 rotate-90" /></a>
-        <a href="#" className="text-[#7B2CBF] flex items-center gap-1">Products <ChevronRight className="w-3 h-3 rotate-90" /></a>
-        <a href="#" className="hover:text-[#7B2CBF] transition-colors flex items-center gap-1">Resources <ChevronRight className="w-3 h-3 rotate-90" /></a>
-        <a href="#" className="hover:text-[#7B2CBF] transition-colors">Portfolio</a>
-        <a href="#" className="hover:text-[#7B2CBF] transition-colors">Careers</a>
-        <a href="#" className="hover:text-[#7B2CBF] transition-colors">Contact Us</a>
-      </div>
-
-      <button className="bg-[#7B2CBF] hover:bg-[#6A25A3] text-white px-8 py-3 rounded-full text-sm font-bold flex items-center gap-2 transition-all shadow-lg hover:shadow-purple-500/20">
-        Request Quote <ArrowRight className="w-4 h-4" />
-      </button>
-    </nav>
-  );
-};
-
-const TopBar = () => {
-  return (
-    <div className="bg-black text-white py-2 px-6 md:px-12 flex flex-wrap items-center justify-between text-[11px] border-b border-gray-800">
-      <div className="flex items-center gap-4">
-        <div className="flex items-center gap-1">
-          <Mail className="w-3 h-3 text-blue-400" />
-          <span>contact@mtouchlabs.com</span>
-        </div>
-        <div className="flex items-center gap-1">
-          <span className="text-orange-400">🇮🇳</span>
-          <span>+91 9390683154</span>
-        </div>
-        <div className="flex items-center gap-1">
-          <span className="text-blue-400">🇺🇸</span>
-          <span>+1 (551) 222-0070</span>
-        </div>
-      </div>
-      <div className="flex items-center gap-4">
-        <span className="text-yellow-500 font-bold">NASSCOM</span>
-        <span>SME Inspire Awards 2026 🏆</span>
-        <div className="flex items-center gap-4 border-l border-gray-700 pl-4">
-          <span>Hyderabad</span>
-          <span>Bangalore</span>
-          <span>USA</span>
-        </div>
-      </div>
-    </div>
   );
 };
 
@@ -428,164 +359,6 @@ const CTASection = () => {
         </ScrollReveal>
       </div>
     </section>
-  );
-};
-
-const Footer = () => {
-  return (
-    <footer className="bg-[#0A0E12] text-white pt-20 pb-10">
-      <div className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-          <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-8">
-              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                <span className="text-black font-bold text-xl italic">m</span>
-              </div>
-              <span className="text-xl font-bold tracking-tight">mTouch Labs</span>
-              <div className="border border-gray-600 rounded px-1 text-[10px] uppercase">ISO Certified</div>
-            </div>
-            <p className="text-gray-400 leading-relaxed mb-8">
-              A global technology partner engineering next-generation digital solutions that accelerate business transformation across industries.
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
-                <Mail className="w-5 h-5 text-blue-400" />
-                <span>contact@mtouchlabs.com</span>
-              </div>
-              <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
-                <Phone className="w-5 h-5 text-blue-400" />
-                <span>+91 9390683154</span>
-              </div>
-              <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
-                <Phone className="w-5 h-5 text-blue-400" />
-                <span>+1 (551) 222-0070</span>
-              </div>
-            </div>
-            <div className="flex gap-4 mt-8">
-              {[Linkedin, Twitter, Facebook, Instagram, Youtube].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-500 transition-all">
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-bold mb-8 uppercase tracking-wider">Company</h4>
-            <ul className="space-y-4 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Services</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-bold mb-8 uppercase tracking-wider">Services</h4>
-            <ul className="space-y-4 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Custom Software Development</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Cloud & DevOps Solutions</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Mobile Application Development</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Salesforce Consulting</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Quality Assurance & Testing</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">AI & Data Analytics</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <div className="bg-gray-800 rounded-xl overflow-hidden mb-6 h-48 relative">
-              <img 
-                src="https://picsum.photos/seed/map/400/300" 
-                alt="Map" 
-                className="w-full h-full object-cover opacity-50"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-blue-500 p-2 rounded-full">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-              </div>
-            </div>
-            <button className="w-full bg-[#7B2CBF] hover:bg-[#6A25A3] text-white py-4 rounded-full font-bold flex items-center justify-center gap-2 transition-all shadow-lg hover:shadow-purple-500/20">
-              Download Brochure <ArrowRight className="w-5 h-5" />
-            </button>
-          </div>
-        </div>
-
-        <div className="border-t border-gray-800 pt-12">
-          <div className="flex items-center gap-2 mb-8">
-            <Globe className="w-6 h-6 text-blue-400" />
-            <h4 className="text-xl font-bold">Global Presence</h4>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-sm text-gray-400">
-            <div>
-              <h5 className="text-blue-400 font-bold mb-4 flex items-center gap-2">
-                <span className="w-2 h-2 bg-blue-400 rounded-full"></span> INDIA
-              </h5>
-              <ul className="space-y-2">
-                <li>Hyderabad</li>
-                <li>Bangalore</li>
-                <li>Chennai</li>
-                <li>Coimbatore</li>
-                <li>Kochi</li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="text-blue-400 font-bold mb-4 flex items-center gap-2">
-                <span className="w-2 h-2 bg-blue-400 rounded-full"></span> AMERICAS
-              </h5>
-              <ul className="space-y-2">
-                <li>United States</li>
-                <li>Canada</li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="text-blue-400 font-bold mb-4 flex items-center gap-2">
-                <span className="w-2 h-2 bg-blue-400 rounded-full"></span> EUROPE
-              </h5>
-              <ul className="space-y-2">
-                <li>United Kingdom</li>
-                <li>Germany</li>
-                <li>Ireland</li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="text-blue-400 font-bold mb-4 flex items-center gap-2">
-                <span className="w-2 h-2 bg-blue-400 rounded-full"></span> ASIA PACIFIC
-              </h5>
-              <ul className="space-y-2">
-                <li>Singapore</li>
-                <li>Australia</li>
-                <li>New Zealand</li>
-                <li>India</li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="text-blue-400 font-bold mb-4 flex items-center gap-2">
-                <span className="w-2 h-2 bg-blue-400 rounded-full"></span> MIDDLE EAST
-              </h5>
-              <ul className="space-y-2">
-                <li>UAE</li>
-                <li>Dubai</li>
-                <li>Saudi Arabia</li>
-                <li>Qatar</li>
-                <li>Kuwait</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-20 pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 gap-4">
-          <p>© 2026 mTouch Labs Pvt. Ltd. All rights reserved.</p>
-          <div className="flex gap-8">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Refund Policy</a>
-          </div>
-        </div>
-      </div>
-    </footer>
   );
 };
 
