@@ -1,8 +1,7 @@
+import logoImage from "../src/assets/WorkHolo-logo.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
-const logoImage = "../src/assets/WorkHolo-logo.png";
 
 /**
  * @license
@@ -618,7 +617,10 @@ export default function Navbar() {
       >
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12 flex items-center justify-between">
           {/* Logo */}
-          <div onClick={() => navigate("/")} className="flex items-center gap-1 cursor-pointer group">
+          <div
+            onClick={() => navigate("/")}
+            className="flex items-center gap-1 cursor-pointer group"
+          >
             <div className="w-12 h-12">
               <img src={logoImage} className={`w-full h-full object-contain`} />
             </div>
@@ -767,7 +769,11 @@ export default function Navbar() {
                         {NAV_DATA.find(
                           (n) => n.title === "Home",
                         )?.centerContent?.links.map((link, idx) => (
-                          <Link key={idx} to={createPath("home", link.label)} className="group block">
+                          <Link
+                            key={idx}
+                            to={createPath("home", link.label)}
+                            className="group block"
+                          >
                             <h5 className="text-[16px] font-bold text-gray-900 group-hover:text-[#7B2CBF] transition-colors">
                               {link.label}
                             </h5>
@@ -798,7 +804,10 @@ export default function Navbar() {
                             ?.links.map((link, idx) => (
                               <Link
                                 key={idx}
-                                to={createPath(activeMegaMenu || "", link.label)}
+                                to={createPath(
+                                  activeMegaMenu || "",
+                                  link.label,
+                                )}
                                 className="group flex flex-col p-4 rounded-xl hover:bg-gray-50 transition-all"
                               >
                                 <div className="flex items-center justify-between">
@@ -847,7 +856,10 @@ export default function Navbar() {
                       ))}
                     </ul>
                   </div>
-                  <button onClick={() => navigate("/contact")} className="relative z-10 mt-12 w-full bg-white text-[#7B2CBF] py-4 rounded-xl font-black text-[15px] hover:bg-gray-100 transition-all shadow-xl flex items-center justify-center gap-2 group">
+                  <button
+                    onClick={() => navigate("/contact")}
+                    className="relative z-10 mt-12 w-full bg-white text-[#7B2CBF] py-4 rounded-xl font-black text-[15px] hover:bg-gray-100 transition-all shadow-xl flex items-center justify-center gap-2 group"
+                  >
                     {
                       NAV_DATA.find((n) => n.title === activeMegaMenu)
                         ?.whySection?.buttonText
@@ -883,7 +895,13 @@ export default function Navbar() {
               className="fixed top-0 right-0 h-full w-[85%] max-w-[400px] bg-white z-[70] lg:hidden shadow-2xl flex flex-col"
             >
               <div className="p-6 flex items-center justify-between border-b border-gray-100">
-                <div onClick={() => { navigate("/"); setMobileMenuOpen(false); }} className="flex items-center gap-2 cursor-pointer">
+                <div
+                  onClick={() => {
+                    navigate("/");
+                    setMobileMenuOpen(false);
+                  }}
+                  className="flex items-center gap-2 cursor-pointer"
+                >
                   <div className="w-12 h-12">
                     <img
                       src={logoImage}
@@ -988,7 +1006,13 @@ export default function Navbar() {
                     {TOP_BAR.email}
                   </a>
                 </div>
-                <button onClick={() => { navigate("/contact"); setMobileMenuOpen(false); }} className="w-full bg-[#7B2CBF] text-white py-4 rounded-xl font-black text-lg shadow-lg shadow-[#7B2CBF]/20">
+                <button
+                  onClick={() => {
+                    navigate("/contact");
+                    setMobileMenuOpen(false);
+                  }}
+                  className="w-full bg-[#7B2CBF] text-white py-4 rounded-xl font-black text-lg shadow-lg shadow-[#7B2CBF]/20"
+                >
                   Get Started
                 </button>
               </div>
