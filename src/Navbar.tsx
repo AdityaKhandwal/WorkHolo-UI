@@ -1,3 +1,4 @@
+import logoImage from "../src/assets/WorkHolo-logo.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -5,7 +6,6 @@ import { useEffect, useRef, useState } from "react";
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-
 
 import {
   Menu,
@@ -138,7 +138,7 @@ const NAV_DATA = [
             label: "Cross-Platform Development",
             desc: "build once, deploy everywhere",
           },
-           {
+          {
             label: "Web Application Development",
             desc: "Scalable web apps built for your business",
           },
@@ -154,7 +154,7 @@ const NAV_DATA = [
             label: "Enterprise Application Development",
             desc: "Scalable, Secure & cloud-native enterprise software",
           },
-           {
+          {
             label: "App maintainance & Support",
             desc: "Ongoing updates, bug fixes & performance optimization",
           },
@@ -165,7 +165,8 @@ const NAV_DATA = [
         label: "Cloud Hosting & Deployment",
         icon: Cloud,
         description: "Hosting and managing real-time communication systems",
-        links: [ {
+        links: [
+          {
             label: "Cloud Services",
             desc: "Secure, scalable cloud infrastructure and deployment solutions",
           },
@@ -173,10 +174,11 @@ const NAV_DATA = [
             label: "Cloud Migration Services",
             desc: "Seamless migration of application and data to modern cloud platforms",
           },
-           {
+          {
             label: "Cloud Security Services",
             desc: "Advanced cloud security, compliance, and threat protection for your infrastructure",
-          },{
+          },
+          {
             label: "IoT Development",
             desc: "Custom IoT solutions with device integration, cloud connectivity, and real-time analytics",
           },
@@ -184,94 +186,111 @@ const NAV_DATA = [
             label: "DevOps Services",
             desc: "Ci/CD automation, infrastructure as code, and faster release cycles",
           },
-           {
+          {
             label: "DevOps Consulting Services",
             desc: "Strategic DevOps advisory to improve performance and scalability",
-          }, {
+          },
+          {
             label: "Cloud Managed Services",
             desc: "24/7 monitoring, optimization, and ongoing cloud management support",
           },
-           {
+          {
             label: "AWS Cloud Services",
             desc: "Scalable cloud solutions on AWS including deployment, migration, DevOps, and secure infrastructure management",
-          },],
+          },
+        ],
       },
       {
         id: "salesforce",
         label: "Salesforce",
         icon: ShieldCheck,
         description: "CRM customization, integration and consulting",
-        links: [ {
+        links: [
+          {
             label: "Salesforce Consulting",
             desc: "CRM implementtion, customization & integration",
           },
-           {
+          {
             label: "SalesForce Implementation",
             desc: "End-to-end CRM setup, migration & deployment",
-          }, {
+          },
+          {
             label: "Lightning Migration & Development",
             desc: "Classic to Lightning upgrade & LWC development",
           },
-           {
+          {
             label: "Salesforce Integration",
             desc: "Connect Salesforce with ERP, marketing & APIs",
-          },],
+          },
+        ],
       },
       {
         id: "design-exp",
         label: "Design & Experience",
         icon: Palette,
         description: "User-centric UI/UX design that drives engagement",
-        links: [ {
+        links: [
+          {
             label: "UI/UX Design Company",
             desc: "User-centered interfaces that enhance usability and drive conversions",
           },
-           {
+          {
             label: "Product Design Services",
             desc: "End-to-end product design from concept to scalble digital solutions",
-          }, {
+          },
+          {
             label: "Design sustem Development",
             desc: "Consisent, scalable UI systems for faster and unified product development",
           },
-           {
+          {
             label: "Mobile App Design",
             desc: "Engaging mobile app experience built for performance and clarity",
           },
-         {
+          {
             label: "UX Research Services",
             desc: "Responsive, conversion-focused websites tailored to your brand",
-          },],
+          },
+        ],
       },
       {
         id: "digital-marketing",
         label: "Digital Marketing Solutions",
         icon: TrendingUp,
         description: "SEO, PPC and social media strategies that grow revenue",
-        links: [ {
+        links: [
+          {
             label: "Digital Marketing",
             desc: "Full-funnel strategies to grow your brand",
-          }, {
+          },
+          {
             label: "PPC Advertising",
             desc: "Targeting paid compaigns with high ROI",
-          }, {
+          },
+          {
             label: "Social Media Marketing",
             desc: "Boost app visibility and downloads",
-          }, {
+          },
+          {
             label: "Content Marketing Services",
             desc: "Boost app visibility and Downloads",
-          }, {
+          },
+          {
             label: "SEO Services",
             desc: "Rank higher and drive organic traffic",
-          }, {
+          },
+          {
             label: "ASO Services",
             desc: "Boost app visibility and downloads",
-          }, {
+          },
+          {
             label: "Conversion Rate Optimization",
             desc: "Boost app visiblity and downloads",
-          }, {
+          },
+          {
             label: "Mobile App Design",
             desc: "Boost app visibility and downloads",
-          },],
+          },
+        ],
       },
     ],
     whySection: {
@@ -313,7 +332,7 @@ const NAV_DATA = [
             label: "Car Wash App",
             desc: "On-Demand vehicle care t your doorstep",
           },
-           {
+          {
             label: "Chef Management App",
             desc: "On-Demand vehicle care t your doorstep",
           },
@@ -324,7 +343,8 @@ const NAV_DATA = [
         label: "Booking and Servce Platforms",
         icon: BookOpen,
         description: "Seamless scheduling and appointment management apps",
-        links: [{
+        links: [
+          {
             label: "Taxi Booking App",
             desc: "Ride-hailing with smart route optimization",
           },
@@ -332,22 +352,22 @@ const NAV_DATA = [
             label: "Hotel Booking App",
             desc: "Seamless hotel search, compare & reserve",
           },
-           {
+          {
             label: "Ticket Booking App",
             desc: "Events, travel & entertainment ticketing",
           },
-        {
+          {
             label: "Real Estate App",
             desc: "Property listing, virtual tours & lead management",
-          },],
+          },
+        ],
       },
 
       {
         id: "E-Commerce",
         label: "E-Commerce & Marketplace Solution",
         icon: ShoppingBag,
-        description:
-          "Multi-vendor stores and online shopping platforms",
+        description: "Multi-vendor stores and online shopping platforms",
         links: [
           {
             label: "eCommerce App",
@@ -367,8 +387,7 @@ const NAV_DATA = [
         id: "education",
         label: "Education & Entertainment",
         icon: ShoppingBag,
-        description:
-          "eLearning platforms and interactive media solutions",
+        description: "eLearning platforms and interactive media solutions",
         links: [
           {
             label: "E-Learning App",
@@ -388,8 +407,7 @@ const NAV_DATA = [
         id: "healthcare",
         label: "Healthcare & Wellness",
         icon: ShoppingBag,
-        description:
-          "Patient management and telemedicine applications",
+        description: "Patient management and telemedicine applications",
         links: [
           {
             label: "Diagnostic App",
@@ -401,12 +419,11 @@ const NAV_DATA = [
           },
         ],
       },
-         {
+      {
         id: "Social&Media",
         label: "Social & Media Apps",
         icon: ShoppingBag,
-        description:
-          "Community building and content sharing platforms",
+        description: "Community building and content sharing platforms",
         links: [
           {
             label: "Social Media App",
@@ -584,8 +601,8 @@ export default function Navbar() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-1 cursor-pointer group">
-            <div className="w-10 h-10 bg-[#7B2CBF] rounded-lg flex items-center justify-center text-white">
-              <Zap size={24} />
+            <div className="w-12 h-12">
+              <img src={logoImage} className={`w-full h-full object-contain`} />
             </div>
             <div className="flex flex-col">
               <span
@@ -848,8 +865,11 @@ export default function Navbar() {
             >
               <div className="p-6 flex items-center justify-between border-b border-gray-100">
                 <div className="flex items-center gap-2">
-                  <div className="w-10 h-10 bg-[#7B2CBF] rounded-lg flex items-center justify-center text-white">
-                    <Zap size={20} />
+                  <div className="w-12 h-12">
+                    <img
+                      src={logoImage}
+                      className={`w-full h-full object-contain`}
+                    />
                   </div>
                   <span className="text-lg font-black text-gray-900">
                     WORKHOLO
@@ -865,9 +885,16 @@ export default function Navbar() {
 
               <div className="flex-1 overflow-y-auto p-4 space-y-2">
                 {NAV_DATA.map((nav) => (
-                  <div key={nav.title} className="border-b border-gray-50 last:border-0">
+                  <div
+                    key={nav.title}
+                    className="border-b border-gray-50 last:border-0"
+                  >
                     <button
-                      onClick={() => setMobileExpanded(mobileExpanded === nav.title ? null : nav.title)}
+                      onClick={() =>
+                        setMobileExpanded(
+                          mobileExpanded === nav.title ? null : nav.title,
+                        )
+                      }
                       className="w-full flex items-center justify-between py-4 px-2 text-[16px] font-bold text-gray-900"
                     >
                       {nav.title}
@@ -892,11 +919,17 @@ export default function Navbar() {
                                 <div className="p-1.5 bg-white rounded-md text-[#7B2CBF] shadow-sm">
                                   <item.icon size={16} />
                                 </div>
-                                <span className="font-bold text-gray-800 text-[14px]">{item.label}</span>
+                                <span className="font-bold text-gray-800 text-[14px]">
+                                  {item.label}
+                                </span>
                               </div>
                               <div className="grid grid-cols-1 gap-1 pl-9">
                                 {item.links.map((link, idx) => (
-                                  <a key={idx} href="#" className="text-[13px] text-gray-500 py-1.5 hover:text-[#7B2CBF]">
+                                  <a
+                                    key={idx}
+                                    href="#"
+                                    className="text-[13px] text-gray-500 py-1.5 hover:text-[#7B2CBF]"
+                                  >
                                     {link.label}
                                   </a>
                                 ))}
