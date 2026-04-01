@@ -65,31 +65,64 @@ const NAV_DATA = [
         label: "Blog",
         icon: BookOpen,
         description: "Discover expert ideas and innovations on our Blogs",
-        links: [],
+        links: [
+          {
+            label: "NASSCOM SME Inspire Award 2026",
+            desc: "mTouch Labs wins Digital Transformation Catalyst award at NASSCOM Mumbai",
+          },
+          {
+            label: "Next.js 16 for Enterprise",
+            desc: "Why Next.js 16 is the best enterprise web framework in 2026",
+          },
+          {
+            label: "Building Future of Digital India",
+            desc: "How technology is shaping India's digital transformation journey",
+          },
+          {
+            label: "Digital Transformation Journey",
+            desc: "From 2025 achievements to the road ahead in 2026",
+          },
+          {
+            label: "Top 10 Free AI Tools",
+            desc: "Essential AI-powered tools every software developer should use",
+          },
+          {
+            label: "Top eCommerce Niches in the US",
+            desc: "Most profitable eCommerce niches to explore in the US market",
+          },
+        ],
       },
     ],
     centerContent: {
       title: "LATEST SOLUTIONS",
       links: [
         {
-          label: "Business Website Solutions",
-          desc: "Modern websites ready to customize and launch",
+          label: "Company Overview",
+          desc: "mTouch Labs delivers innovative mobile and web app solutions for modern businesses",
         },
         {
-          label: "Admin Dashboard Systems",
-          desc: "Manage users, data, and analytics easily",
+          label: "Vision & Mission",
+          desc: "Driving digital innovation with purpose and empowering businesses globally",
         },
         {
-          label: "E-Commerce Platforms",
-          desc: "Complete online store solutions",
+          label: "Leadership Team",
+          desc: "Meet the experienced minds leading mTouch Labs to digital excellence",
         },
         {
-          label: "Custom Software Projects",
-          desc: "Tailored systems built for your needs",
+          label: "Our Journey",
+          desc: "14+ years of building world-class digital products across 20+ industries",
         },
         {
-          label: "Automation Tools",
-          desc: "Improve workflows with smart systems",
+          label: "Awards & Recognition",
+          desc: "Industry accolades celebrating our commitment to quality and innovation",
+        },
+        {
+          label: "NASSCOM Membership",
+          desc: "Proud member of India's premier IT industry association",
+        },
+        {
+          label: "Life at mTouch Labs",
+          desc: "Explore our vibrant culture, talented people, and collaborative work environment",
         },
       ],
     },
@@ -465,16 +498,36 @@ const NAV_DATA = [
             desc: "Full-cycle iOS & Android app specialists",
           },
           {
-            label: "Native App Developers",
-            desc: "Platform-specific apps for peak performance",
-          },
-          {
             label: "Android App Developers",
             desc: "Kotlin & Java experts for the Play Store",
           },
           {
+            label: "iOS App Developers",
+            desc: "Swift developers for iPhone & Apple ecosystem",
+          },
+          {
+            label: "iPad App Developers",
+            desc: "Tablet-optimized apps for enterprise & education",
+          },
+          {
+            label: "Custom Software Developers",
+            desc: "Bespoke solutions tailored to your workflow",
+          },
+          {
+            label: "Native App Developers",
+            desc: "Platform-specific apps for peak performance",
+          },
+          {
             label: "Hybrid App Developers",
             desc: "Single codebase apps across iOS & Android",
+          },
+          {
+            label: "Flutter App Developers",
+            desc: "Google's UI toolkit for cross-platform apps",
+          },
+          {
+            label: "React Native Developers",
+            desc: "JavaScript-powered mobile apps with native feel",
           },
         ],
       },
@@ -483,7 +536,122 @@ const NAV_DATA = [
         label: "Web App Developers",
         icon: Globe,
         description: "Full-stack developers for scalable web applications",
-        links: [],
+        links: [
+          {
+            label: "Web Developers",
+            desc: "Frontend & backend engineers for modern web",
+          },
+          {
+            label: "WordPress Developers",
+            desc: "Custom themes, plugins & CMS solutions",
+          },
+          {
+            label: "PHP Developers",
+            desc: "Server-side scripting & web app backends",
+          },
+          {
+            label: "Custom CMS Developers",
+            desc: "Tailored content management platforms",
+          },
+          {
+            label: "Angular Developers",
+            desc: "Enterprise-grade SPAs with TypeScript",
+          },
+          {
+            label: "React Developers",
+            desc: "Component-driven UIs with React & Next.js",
+          },
+          {
+            label: "Swift Developers",
+            desc: "Apple platform specialists for macOS & iOS",
+          },
+          {
+            label: "Laravel Developers",
+            desc: "Elegant PHP framework for scalable APIs",
+          },
+          {
+            label: "Magento Developers",
+            desc: "Adobe Commerce for large-scale eCommerce",
+          },
+          {
+            label: "WooCommerce Developers",
+            desc: "WordPress-powered online store specialists",
+          },
+        ],
+      },
+
+      {
+        id: "Enterprise&Cloud",
+        label: "Enterprise & Cloud Developers",
+        icon: Globe,
+        description: "AWS, DevOps and cloud infrastructure specialists",
+        links: [
+          {
+            label: "JavaScript Developers",
+            desc: "Versatile JS engineers for web & server",
+          },
+          {
+            label: "Full Stack Developers",
+            desc: "End-to-end development from UI to database",
+          },
+          {
+            label: "MEAN Stack Developers",
+            desc: "MongoDB, Express, Angular & Node.js experts",
+          },
+          {
+            label: "MERN Stack Developers",
+            desc: "MongoDB, Express, React & Node.js specialists",
+          },
+          {
+            label: "Vue.js Developers",
+            desc: "Lightweight, reactive frontend framework experts",
+          },
+          {
+            label: "Node.js Developers",
+            desc: "High-performance server-side JavaScript",
+          },
+          {
+            label: "AWS Developers",
+            desc: "Cloud architecture, Lambda & infrastructure",
+          },
+          {
+            label: "Dedicated Developers",
+            desc: "Full-time remote devs integrated with your team",
+          },
+          {
+            label: "Salesforce Developers",
+            desc: "Apex, Lightning & CRM customization pros",
+          },
+        ],
+      },
+
+      {
+        id: "Design & Creative Experts",
+        label: "Design & Creative Experts",
+        icon: Globe,
+        description: "UI/UX designers and creative professionals on demand",
+        links: [
+          {
+            label: "UI/UX Designers",
+            desc: "User research, wireframes & visual design",
+          },
+          {
+            label: "Mobile App Designers",
+            desc: "Pixel-perfect mobile interfaces & prototypes",
+          },
+          {
+            label: "Quality Analysts",
+            desc: "Manual & automated testing specialists",
+          },
+          {
+            label: "PWA Developers",
+            desc: "Progressive web apps with offline support",
+          },
+          {
+            label: "Shopify Developers",
+            desc: "Custom Shopify stores & Liquid theme experts",
+          },
+        ],
       },
     ],
     whySection: {
@@ -972,7 +1140,7 @@ export default function Navbar() {
                                 {item.links.map((link, idx) => (
                                   <Link
                                     key={idx}
-                                    to={ROUTES[nav.title] || "/"}
+                                    to={createPath(nav.title, link.label)}
                                     onClick={() => setMobileMenuOpen(false)}
                                     className="text-[13px] text-gray-500 py-1.5 hover:text-[#7B2CBF]"
                                   >
