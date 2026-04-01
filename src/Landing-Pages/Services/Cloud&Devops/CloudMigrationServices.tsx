@@ -60,7 +60,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: { question: string
 
 // --- Main Application ---
 
-export default function App() {
+export default function CloudMigrationServices() {
   const [activeAccordion, setActiveAccordion] = useState<number | null>(0);
 
   return (

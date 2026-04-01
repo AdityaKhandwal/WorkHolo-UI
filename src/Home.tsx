@@ -131,7 +131,7 @@ const PORTFOLIO = [
   },
 ];
 
-export default function App() {
+export default function Home() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
 

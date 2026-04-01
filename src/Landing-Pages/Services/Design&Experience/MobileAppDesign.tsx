@@ -825,7 +825,7 @@ const Footer = () => {
 
 // --- Main App ---
 
-export default function App() {
+export default function MobileAppDesign() {
   return (
     <div className="min-h-screen selection:bg-accent selection:text-white">
       <Navbar />
