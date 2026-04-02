@@ -23,7 +23,7 @@ import {
 // --- Constants & Types ---
 
 const PRIMARY_PURPLE = '#7B2CBF';
-const ACCENT_ORANGE = '#F59E0B';
+const ACCENT_ORANGE = '#7B2CBF';
 
 // --- Components ---
 

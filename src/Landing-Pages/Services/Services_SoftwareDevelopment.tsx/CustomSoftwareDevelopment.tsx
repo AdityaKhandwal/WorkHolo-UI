@@ -20,7 +20,7 @@ import {
 // Custom components for the replica
 
 const Hero = () => (
-  <section className="bg-[#1d1c1c] pt-32 pb-20 relative overflow-hidden">
+  <section className="bg-[#262525] pt-32 pb-20 relative overflow-hidden">
     <div className="max-w-[1440px] mx-auto px-4 md:px-8 relative z-10">
       <div className="flex items-center gap-2 text-gray-400 text-sm mb-8">
         <span>Home</span>

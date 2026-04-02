@@ -89,7 +89,7 @@ export default function CloudMigrationServices() {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-7xl font-black text-white mb-8 tracking-tight leading-[1.1]"
           >
-            Cloud <span className="text-[#f59e0b]">Migration</span> Services
+            Cloud <span className="text-[#7B2CBF]">Migration</span> Services
           </motion.h1>
 
           <motion.p 
@@ -117,7 +117,7 @@ export default function CloudMigrationServices() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-8 leading-tight">
-              What Are <span className="text-[#f59e0b]">Cloud Migration</span> Services?
+              What Are <span className="text-[#7B2CBF]">Cloud Migration</span> Services?
             </h2>
             <p className="text-slate-600 text-lg leading-relaxed mb-8">
               Cloud migration services involve transferring applications, databases, workloads, and infrastructure from on-premise or legacy systems to modern cloud environments — including infrastructure assessment, dependency mapping, risk mitigation, security validation, and post-migration optimization.
@@ -170,7 +170,7 @@ export default function CloudMigrationServices() {
 
           <div className="order-1 lg:order-2">
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-8 leading-tight">
-              Our Migration <span className="text-[#f59e0b]">Capabilities</span>
+              Our Migration <span className="text-[#7B2CBF]">Capabilities</span>
             </h2>
             <p className="text-slate-600 text-lg mb-8 font-medium">Structured migration across all workload types:</p>
             <ul className="space-y-5">
@@ -195,7 +195,7 @@ export default function CloudMigrationServices() {
       <section className="py-24 px-4 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-4">
-            Our Migration <span className="text-[#f59e0b]">Services</span>
+            Our Migration <span className="text-[#7B2CBF]">Services</span>
           </h2>
           <p className="text-slate-500 text-lg font-medium">From assessment to post-migration optimization</p>
         </div>
@@ -250,7 +250,7 @@ export default function CloudMigrationServices() {
       <section className="py-24 px-4 md:px-12 bg-slate-50 overflow-hidden">
         <div className="max-w-7xl mx-auto text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-4">
-            Our Migration <span className="text-[#f59e0b]">Methodology</span>
+            Our Migration <span className="text-[#7B2CBF]">Methodology</span>
           </h2>
           <p className="text-slate-500 text-lg font-medium">Each phase is documented and monitored to ensure accuracy.</p>
         </div>
@@ -293,7 +293,7 @@ export default function CloudMigrationServices() {
       <section className="py-24 px-4 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-4">
-            Why Choose mTouch Labs for <span className="text-[#f59e0b]">Cloud Migration</span>?
+            Why Choose mTouch Labs for <span className="text-[#7B2CBF]">Cloud Migration</span>?
           </h2>
           <p className="text-slate-500 text-lg font-medium">We ensure migration enhances performance and stability.</p>
         </div>
@@ -319,7 +319,7 @@ export default function CloudMigrationServices() {
       <section className="py-24 px-4 md:px-12 bg-slate-50">
         <div className="max-w-7xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-4">
-            Industries We <span className="text-[#f59e0b]">Serve</span>
+            Industries We <span className="text-[#7B2CBF]">Serve</span>
           </h2>
         </div>
 
@@ -351,7 +351,7 @@ export default function CloudMigrationServices() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
-              Cloud <span className="text-[#f59e0b]">Migration Technologies</span>
+              Cloud <span className="text-[#7B2CBF]">Migration Technologies</span>
             </h2>
             <p className="text-slate-600 text-lg mb-10 font-medium">Enterprise migration tools and cloud platforms for secure transitions.</p>
             
@@ -389,7 +389,7 @@ export default function CloudMigrationServices() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-4">
-              Frequently Asked <span className="text-[#f59e0b]">Questions</span>
+              Frequently Asked <span className="text-[#7B2CBF]">Questions</span>
             </h2>
             <p className="text-slate-500 text-lg font-medium">Everything about cloud migration</p>
           </div>
@@ -431,12 +431,12 @@ export default function CloudMigrationServices() {
         
         <div className="max-w-4xl mx-auto relative z-10">
           <h2 className="text-4xl md:text-6xl font-black text-white mb-8 leading-tight">
-            Ready to Migrate to the <span className="text-[#f59e0b]">Cloud</span>?
+            Ready to Migrate to the <span className="text-[#7B2CBF]">Cloud</span>?
           </h2>
           <p className="text-slate-300 text-xl mb-12 font-medium leading-relaxed">
             Let's discuss how structured cloud migration can modernize your infrastructure with zero disruption.
           </p>
-          <button className="bg-[#f59e0b] hover:bg-orange-600 text-white px-12 py-5 rounded-xl text-lg font-black transition-all shadow-lg shadow-orange-500/20">
+          <button className="bg-[#7B2CBF] hover:bg-orange-600 text-white px-12 py-5 rounded-xl text-lg font-black transition-all shadow-lg shadow-orange-500/20">
             Start Your Migration
           </button>
         </div>
