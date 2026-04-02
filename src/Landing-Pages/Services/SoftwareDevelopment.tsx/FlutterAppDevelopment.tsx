@@ -18,25 +18,19 @@ import {
 
 
 const Hero = () => (
-  <section className="relative bg-[#050b17] py-24 px-4 overflow-hidden">
+  <section className="relative bg-[#050b17] py-36 px-4 overflow-hidden">
     <div className="absolute inset-0 opacity-10 pointer-events-none">
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,#00a3ff,transparent_70%)]"></div>
     </div>
     <div className="max-w-7xl mx-auto text-center relative z-10">
-      <div className="flex items-center justify-center gap-2 text-sm font-medium mb-8 opacity-80">
-        <a href="#" className="hover:text-[#00a3ff]">Home</a>
-        <span className="text-white/30">/</span>
-        <a href="#" className="hover:text-[#00a3ff]">Services</a>
-        <span className="text-white/30">/</span>
-        <span className="text-[#f39c12]">Flutter App Development</span>
-      </div>
+      
       <motion.h1 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="text-4xl md:text-6xl font-display font-extrabold text-white mb-6 leading-tight"
       >
-        Scalable <span className="text-[#f39c12]">Flutter App</span> <br /> Development Company
+        Scalable <span className="text-[#7B2CBF]">Flutter App</span> <br /> Development Company
       </motion.h1>
       <motion.h2 
         initial={{ opacity: 0, y: 20 }}
@@ -63,7 +57,7 @@ const WhatIsFlutter = () => (
     <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
       <div>
         <h2 className="text-4xl font-display font-extrabold text-[#050b17] mb-8">
-          What Is <span className="text-[#f39c12]">Flutter App</span> <br /> Development?
+          What Is <span className="text-[#7B2CBF]">Flutter App</span> <br /> Development?
         </h2>
         <p className="text-gray-600 text-lg leading-relaxed mb-6">
           Flutter app development involves building mobile applications using Google's Flutter framework, allowing developers to create cross-platform apps from a unified codebase with native-like performance.
@@ -72,7 +66,7 @@ const WhatIsFlutter = () => (
           A professional Flutter development company ensures consistent UI across devices, faster time-to-market, optimized app performance, and scalable architecture — ideal for businesses seeking rapid deployment without compromising quality.
         </p>
         <p className="text-gray-600 text-lg leading-relaxed">
-          As a trusted <span className="text-[#f39c12] font-bold">mobile app development company</span>, we leverage Flutter to deliver visually consistent, high-performance apps across both iOS and Android platforms.
+          As a trusted <span className="text-[#7B2CBF] font-bold">mobile app development company</span>, we leverage Flutter to deliver visually consistent, high-performance apps across both iOS and Android platforms.
         </p>
       </div>
       <div className="grid grid-cols-2 gap-6">
@@ -114,7 +108,7 @@ const Expertise = () => (
       </div>
       <div>
         <h2 className="text-4xl font-display font-extrabold text-[#050b17] mb-8">
-          Our <span className="text-[#f39c12]">Flutter Expertise</span>
+          Our <span className="text-[#7B2CBF]">Flutter Expertise</span>
         </h2>
         <p className="text-gray-600 text-lg mb-8">
           We build cross-platform apps with structured engineering and scalable architecture:
@@ -128,7 +122,7 @@ const Expertise = () => (
             "Testing & Optimization — cross-device testing, performance benchmarking",
           ].map((item, i) => (
             <li key={i} className="flex items-start gap-3">
-              <CheckCircle2 className="text-[#f39c12] shrink-0 mt-1" size={20} />
+              <CheckCircle2 className="text-[#7B2CBF] shrink-0 mt-1" size={20} />
               <span className="text-gray-700 font-medium">{item}</span>
             </li>
           ))}
@@ -142,7 +136,7 @@ const Services = () => (
   <section className="py-24 px-4 bg-white">
     <div className="max-w-7xl mx-auto text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-display font-extrabold text-[#050b17] mb-6">
-        End-to-End <span className="text-[#f39c12]">Flutter Development Services</span>
+        End-to-End <span className="text-[#7B2CBF]">Flutter Development Services</span>
       </h2>
       <p className="text-gray-500 text-lg max-w-2xl mx-auto">
         From MVP to enterprise scale, we cover every stage of Flutter app delivery
@@ -176,7 +170,7 @@ const Process = () => (
   <section className="py-24 px-4 bg-gray-50 overflow-hidden">
     <div className="max-w-7xl mx-auto text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-display font-extrabold text-[#050b17] mb-6">
-        Our Flutter <span className="text-[#f39c12]">Development Process</span>
+        Our Flutter <span className="text-[#7B2CBF]">Development Process</span>
       </h2>
       <p className="text-gray-500 text-lg">We focus on predictable delivery and scalable design.</p>
     </div>
@@ -205,7 +199,7 @@ const WhyChoose = () => (
   <section className="py-24 px-4 bg-white">
     <div className="max-w-7xl mx-auto text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-display font-extrabold text-[#050b17] mb-6">
-        Why Choose <span className="text-[#f39c12]">mTouch Labs</span> for Flutter?
+        Why Choose <span className="text-[#7B2CBF]">mTouch Labs</span> for Flutter?
       </h2>
       <p className="text-gray-500 text-lg max-w-3xl mx-auto">
         We combine speed with structured engineering to deliver reliable cross-platform apps.
@@ -221,7 +215,7 @@ const WhyChoose = () => (
         "Long-term support & maintenance",
       ].map((item, i) => (
         <div key={i} className="flex items-center gap-4 bg-gray-50 p-4 rounded-full border border-gray-100 hover:border-[#00a3ff]/30 transition-colors">
-          <div className="w-3 h-3 bg-[#f39c12] rounded-full"></div>
+          <div className="w-3 h-3 bg-[#7B2CBF] rounded-full"></div>
           <span className="font-bold text-[#050b17]">{item}</span>
         </div>
       ))}
@@ -233,7 +227,7 @@ const Industries = () => (
   <section className="py-24 px-4 bg-gray-50">
     <div className="max-w-7xl mx-auto text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-display font-extrabold text-[#050b17] mb-6">
-        Industries We <span className="text-[#f39c12]">Serve</span>
+        Industries We <span className="text-[#7B2CBF]">Serve</span>
       </h2>
     </div>
     <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -250,7 +244,7 @@ const Industries = () => (
           whileHover={{ scale: 1.02 }}
           className={`p-10 rounded-3xl flex flex-col items-center text-center transition-all ${
             item.active 
-              ? "bg-white border-2 border-[#f39c12] shadow-xl" 
+              ? "bg-white border-2 border-[#7B2CBF] shadow-xl" 
               : "bg-white border border-gray-100 hover:shadow-lg"
           }`}
         >
@@ -267,10 +261,10 @@ const Technologies = () => (
     <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
       <div>
         <h2 className="text-4xl md:text-5xl font-display font-extrabold text-[#050b17] mb-8">
-          Technologies <span className="text-[#f39c12]">We Work With</span>
+          Technologies <span className="text-[#7B2CBF]">We Work With</span>
         </h2>
         <p className="text-gray-500 text-lg mb-10 leading-relaxed">
-          Our Flutter solutions integrate with modern backend and cloud infrastructure. We also offer <span className="text-[#f39c12] font-bold">cross-platform development</span> using other frameworks.
+          Our Flutter solutions integrate with modern backend and cloud infrastructure. We also offer <span className="text-[#7B2CBF] font-bold">cross-platform development</span> using other frameworks.
         </p>
         <div className="flex flex-wrap gap-3">
           {[
@@ -291,7 +285,7 @@ const Technologies = () => (
         ].map((item, i) => (
           <div key={i} className={`p-10 rounded-3xl text-center transition-all ${
             item.active 
-              ? "bg-white border-2 border-[#f39c12] shadow-xl" 
+              ? "bg-white border-2 border-[#7B2CBF] shadow-xl" 
               : "bg-white border border-gray-100 shadow-sm"
           }`}>
             <div className="text-5xl font-black text-[#00a3ff] mb-3">{item.val}</div>
@@ -317,7 +311,7 @@ const FAQ = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-extrabold text-[#050b17] mb-6">
-            Frequently Asked <span className="text-[#f39c12]">Questions</span>
+            Frequently Asked <span className="text-[#7B2CBF]">Questions</span>
           </h2>
           <p className="text-gray-500 text-lg">Everything you need to know about Flutter app development</p>
         </div>
@@ -354,16 +348,16 @@ const FAQ = () => {
 const CTA = () => (
   <section className="py-24 px-4 bg-[#050b17] relative overflow-hidden">
     <div className="absolute inset-0 opacity-10">
-      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,#f39c12,transparent_70%)]"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,#7B2CBF,transparent_70%)]"></div>
     </div>
     <div className="max-w-4xl mx-auto text-center relative z-10">
       <h2 className="text-4xl md:text-5xl font-display font-extrabold text-white mb-8">
-        Ready to Build <span className="text-[#f39c12]">Cross-Platform Apps</span>?
+        Ready to Build <span className="text-[#7B2CBF]">Cross-Platform Apps</span>?
       </h2>
       <p className="text-white/70 text-xl mb-12">
         Let's discuss how Flutter can accelerate your mobile app delivery and reduce development costs.
       </p>
-      <button className="bg-[#f39c12] hover:bg-[#e67e22] text-white px-10 py-4 rounded-full font-black text-lg transition-all transform hover:scale-105 shadow-xl">
+      <button className="bg-[#7B2CBF] hover:bg-[#4c0b85] text-white px-10 py-4 rounded-full font-black text-lg transition-all transform hover:scale-105 shadow-xl">
         Get a Free Consultation
       </button>
     </div>

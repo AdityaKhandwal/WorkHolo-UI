@@ -16,15 +16,15 @@ const Hero = () => {
     <section className="relative pt-20 pb-32 overflow-hidden">
       <div className="container-custom text-center relative z-10">
         <div className="flex items-center justify-center gap-2 text-[14px] text-gray-400 mb-6">
-          <span>Home</span> <ChevronRight size={14} /> <span>Services</span> <ChevronRight size={14} /> <span className="text-[#f39c12]">Mobile App Development</span>
+          <span>Home</span> <ChevronRight size={14} /> <span>Services</span> <ChevronRight size={14} /> <span className="text-[#7B2CBF]">Mobile App Development</span>
         </div>
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Mobile <span className="text-[#f39c12] italic">App Development</span> <br /> Company
+          Mobile <span className="text-[#7B2CBF] italic">App Development</span> <br /> Company
         </h1>
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
           Custom iOS, Android, and cross-platform apps built for scalable growth.
         </p>
-        <button className="bg-[#f39c12] hover:bg-[#e67e22] text-white px-8 py-3.5 rounded-lg font-bold text-lg transition-all flex items-center gap-2 mx-auto">
+        <button className="bg-[#7B2CBF] hover:bg-[#e67e22] text-white px-8 py-3.5 rounded-lg font-bold text-lg transition-all flex items-center gap-2 mx-auto">
           Contact Us <ArrowRight size={20} />
         </button>
       </div>
@@ -68,7 +68,7 @@ const Services = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Mobile App <span className="text-[#f39c12]">Development Services</span>
+            Mobile App <span className="text-[#7B2CBF]">Development Services</span>
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
             Our mobile app development services help businesses build innovative digital products that improve customer engagement and support business growth.
@@ -119,11 +119,11 @@ const Process = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#05070a]">
+    <section className="py-24 bg-[#072553]">
       <div className="container-custom">
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Our Development <span className="text-[#f39c12]">Process</span>
+          <h2 className="text-3xl text-[#EFEFEF] md:text-5xl font-bold mb-6">
+            Our Development <span className="text-[#7B2CBF]">Process</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             A structured approach that ensures quality at every stage
@@ -137,10 +137,10 @@ const Process = () => {
           <div className="grid grid-cols-2 md:grid-cols-6 gap-8 relative z-10">
             {steps.map((step) => (
               <div key={step.id} className="text-center group">
-                <div className="w-16 h-16 bg-[#05070a] border-2 border-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-500 transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+                <div className="w-16 h-16 bg-[#98b9ea] border-2 border-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-500 transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
                   <span className="text-xl font-bold">{step.id}</span>
                 </div>
-                <h4 className="font-bold text-lg">{step.title}</h4>
+                <h4 className="font-bold text-lg text-[#EFEFEF]">{step.title}</h4>
               </div>
             ))}
           </div>
@@ -169,7 +169,7 @@ const Technologies = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold mb-8">
-              Technologies <span className="text-[#f39c12]">We Use</span>
+              Technologies <span className="text-[#7B2CBF]">We Use</span>
             </h2>
             <p className="text-gray-600 text-lg mb-10 leading-relaxed">
               Our development team uses modern technologies to build scalable mobile applications. By selecting the right technology stack for each project, we ensure that applications remain secure, scalable, and future ready.
@@ -209,11 +209,11 @@ const Industries = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#05070a]">
+    <section className="py-24 bg-[#031c42]">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Industries We <span className="text-[#f39c12]">Serve</span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[#EFEFEF]">
+            Industries We <span className="text-[#7B2CBF]">Serve</span>
           </h2>
           <p className="text-gray-400 max-w-3xl mx-auto text-lg">
             Our experience across multiple industries allows us to develop mobile applications tailored to specific business needs. Each industry requires unique digital solutions, and our team focuses on building applications that address real challenges and improve user engagement.
@@ -222,7 +222,7 @@ const Industries = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {industries.map((item) => (
-            <div key={item.title} className="p-8 bg-white/5 border border-white/10 rounded-2xl text-center hover:bg-white/10 transition-all group cursor-pointer">
+            <div key={item.title} className="p-8 bg-white/5 border text-[#EFEFEF] border-white/10 rounded-2xl text-center hover:bg-white/10 transition-all group cursor-pointer">
               <div className="text-4xl mb-4 grayscale group-hover:grayscale-0 transition-all">{item.icon}</div>
               <h4 className="font-bold text-lg">{item.title}</h4>
             </div>
@@ -247,7 +247,7 @@ const WhyChoose = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold mb-8">
-              Why Choose <span className="text-[#f39c12]">mTouch Labs</span>
+              Why Choose <span className="text-[#7B2CBF]">mTouch Labs</span>
             </h2>
             <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
               <p>
@@ -304,7 +304,7 @@ const FAQ = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Frequently Asked <span className="text-[#f39c12]">Questions</span>
+            Frequently Asked <span className="text-[#7B2CBF]">Questions</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Everything you need to know about our mobile development services
@@ -318,7 +318,7 @@ const FAQ = () => {
                 className="w-full px-8 py-6 flex justify-between items-center text-left font-bold text-lg hover:bg-gray-50 transition-colors"
                 onClick={() => setOpenIndex(openIndex === i ? -1 : i)}
               >
-                <span className={openIndex === i ? 'text-[#f39c12]' : ''}>{faq.q}</span>
+                <span className={openIndex === i ? 'text-[#7B2CBF]' : ''}>{faq.q}</span>
                 <ChevronDown size={20} className={`transition-transform duration-300 ${openIndex === i ? 'rotate-180' : ''}`} />
               </button>
               <AnimatePresence>
@@ -375,7 +375,7 @@ export default function MobileDevelopement() {
       {/* "Let's Chat" Badge */}
       <div className="fixed bottom-8 left-8 z-[100] hidden md:block">
         <div className="bg-black/80 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex items-center gap-4 shadow-2xl">
-          <div className="w-12 h-12 bg-[#f39c12] rounded-full flex items-center justify-center text-white">
+          <div className="w-12 h-12 bg-[#7B2CBF] rounded-full flex items-center justify-center text-white">
             <MessageCircle size={24} />
           </div>
           <div>

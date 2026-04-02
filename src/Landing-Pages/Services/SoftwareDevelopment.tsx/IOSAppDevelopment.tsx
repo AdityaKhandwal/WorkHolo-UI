@@ -19,7 +19,7 @@ import {
 
 const Hero = () => {
   return (
-    <section className="relative pt-32 pb-20 bg-[#7B2CBF] overflow-hidden">
+    <section className="relative pt-32 pb-20 bg-[#15013d] overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,_rgba(255,255,255,0.2)_0%,_transparent_50%)]"></div>
       </div>
@@ -30,7 +30,7 @@ const Hero = () => {
         </div>
         
         <h1 className="text-white text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">
-          iOS <span className="text-[#F2A900]">App Development</span> Company
+          iOS <span className="text-[#7B2CBF]">App Development</span> Company
         </h1>
         
         <h2 className="text-white/90 text-2xl lg:text-3xl font-bold mb-8">
@@ -47,10 +47,10 @@ const Hero = () => {
 
 const IntroSection = () => {
   const features = [
-    { icon: <Zap className="text-[#F2A900]" />, title: "Swift Native", desc: "Swift-based native development for high performance." },
-    { icon: <Smartphone className="text-[#F2A900]" />, title: "iPhone & iPad", desc: "Optimized for all Apple devices and screen sizes." },
-    { icon: <ShieldCheck className="text-[#F2A900]" />, title: "App Store Compliant", desc: "Strict adherence to Apple's HIG and App Store guidelines." },
-    { icon: <Globe className="text-[#F2A900]" />, title: "High Performance", desc: "Optimized backend and frontend for speed." }
+    { icon: <Zap className="text-[#7B2CBF]" />, title: "Swift Native", desc: "Swift-based native development for high performance." },
+    { icon: <Smartphone className="text-[#7B2CBF]" />, title: "iPhone & iPad", desc: "Optimized for all Apple devices and screen sizes." },
+    { icon: <ShieldCheck className="text-[#7B2CBF]" />, title: "App Store Compliant", desc: "Strict adherence to Apple's HIG and App Store guidelines." },
+    { icon: <Globe className="text-[#7B2CBF]" />, title: "High Performance", desc: "Optimized backend and frontend for speed." }
   ];
 
   return (
@@ -58,7 +58,7 @@ const IntroSection = () => {
       <div className="max-w-[1440px] mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <div>
           <h2 className="text-4xl lg:text-5xl font-extrabold text-[#050505] leading-tight mb-8">
-            How is an <span className="text-[#F2A900]">iOS App Development</span> and Company Builds and Delivers Mobile Apps?
+            How is an <span className="text-[#7B2CBF]">iOS App Development</span> and Company Builds and Delivers Mobile Apps?
           </h2>
           <p className="text-[#666666] text-lg leading-relaxed mb-6">
             An iOS app development company specializes in designing, developing, testing, and deploying applications for Apple devices using Swift and native iOS frameworks.
@@ -117,14 +117,14 @@ const StatsSection = () => {
         
         <div>
           <h2 className="text-4xl lg:text-5xl font-extrabold text-[#050505] leading-tight mb-6">
-            Security & <span className="text-[#F2A900]">Performance</span> Standards
+            Security & <span className="text-[#7B2CBF]">Performance</span> Standards
           </h2>
           <p className="text-[#666666] text-lg mb-8">Our iOS applications include enterprise-grade security:</p>
           <ul className="space-y-4">
             {features.map((f, i) => (
               <li key={i} className="flex items-start gap-3">
-                <div className="mt-1 bg-[#F2A900]/10 p-1 rounded">
-                  <Check size={18} className="text-[#F2A900]" />
+                <div className="mt-1 bg-[#7B2CBF]/10 p-1 rounded">
+                  <Check size={18} className="text-[#7B2CBF]" />
                 </div>
                 <span className="text-[#333333] text-lg font-medium">{f}</span>
               </li>
@@ -149,14 +149,14 @@ const ServicesSection = () => {
       <div className="max-w-[1440px] mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-extrabold text-[#050505] mb-4">
-            Our iOS <span className="text-[#F2A900]">Development Services</span>
+            Our iOS <span className="text-[#7B2CBF]">Development Services</span>
           </h2>
           <p className="text-[#666666] text-lg">From consumer apps to enterprise mobility</p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((s, i) => (
-            <div key={i} className={`p-10 rounded-2xl border ${i === 3 ? 'border-[#F2A900] bg-white' : 'border-gray-100 bg-[#F8F9FA]'} transition-all hover:shadow-xl`}>
+            <div key={i} className={`p-10 rounded-2xl border ${i === 3 ? 'border-[#7B2CBF] bg-white' : 'border-gray-100 bg-[#F8F9FA]'} transition-all hover:shadow-xl`}>
               <span className="inline-block bg-[#0096FF] text-white px-3 py-1 rounded-md text-xs font-bold mb-6">{s.id}</span>
               <h3 className="text-2xl font-bold text-[#050505] mb-4">{s.title}</h3>
               <p className="text-[#666666] leading-relaxed text-lg">{s.desc}</p>
@@ -195,7 +195,7 @@ const ProcessSection = () => {
     <section className="py-20 bg-white border-t border-gray-100">
       <div className="max-w-[1440px] mx-auto px-6 text-center">
         <h2 className="text-4xl lg:text-5xl font-extrabold text-[#050505] mb-4">
-          Our iOS <span className="text-[#F2A900]">Development Process</span>
+          Our iOS <span className="text-[#7B2CBF]">Development Process</span>
         </h2>
         <p className="text-[#666666] text-lg mb-16">We follow a structured lifecycle for reliable and predictable delivery.</p>
         
@@ -240,7 +240,7 @@ const WhyChooseSection = () => {
         <div className="flex flex-wrap justify-center gap-4">
           {reasons.map((r, i) => (
             <div key={i} className="bg-white px-8 py-4 rounded-full shadow-sm border border-gray-100 flex items-center gap-3 group hover:border-[#0096FF] transition-all">
-              <div className="w-2 h-2 bg-[#F2A900] rounded-full"></div>
+              <div className="w-2 h-2 bg-[#7B2CBF] rounded-full"></div>
               <span className="text-[#050505] font-bold text-lg">{r}</span>
             </div>
           ))}
@@ -264,12 +264,12 @@ const IndustriesSection = () => {
     <section className="py-20 bg-white">
       <div className="max-w-[1440px] mx-auto px-6">
         <h2 className="text-4xl lg:text-5xl font-extrabold text-[#050505] text-center mb-16">
-          Industries We <span className="text-[#F2A900]">Serve</span>
+          Industries We <span className="text-[#7B2CBF]">Serve</span>
         </h2>
         
         <div className="grid md:grid-cols-3 gap-8">
           {industries.map((ind, i) => (
-            <div key={i} className={`p-12 rounded-2xl border text-center transition-all hover:shadow-xl group ${i === 5 ? 'border-[#F2A900]' : 'border-gray-100 bg-[#F8F9FA]'}`}>
+            <div key={i} className={`p-12 rounded-2xl border text-center transition-all hover:shadow-xl group ${i === 5 ? 'border-[#7B2CBF]' : 'border-gray-100 bg-[#F8F9FA]'}`}>
               <div className="text-5xl mb-6 grayscale group-hover:grayscale-0 transition-all">{ind.icon}</div>
               <h3 className="text-2xl font-bold text-[#050505]">{ind.title}</h3>
             </div>
@@ -299,7 +299,7 @@ const TechStackSection = () => {
       <div className="max-w-[1440px] mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <div>
           <h2 className="text-4xl lg:text-5xl font-extrabold text-[#050505] mb-6">
-            Our <span className="text-[#F2A900]">Technology Stack</span>
+            Our <span className="text-[#7B2CBF]">Technology Stack</span>
           </h2>
           <p className="text-[#666666] text-lg leading-relaxed mb-8">
             We leverage Apple's latest frameworks and modern development tools to build high-performance, future-ready iOS applications.
@@ -342,7 +342,7 @@ const FAQSection = () => {
       <div className="max-w-[1440px] mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-extrabold text-[#050505] mb-4">
-            Frequently Asked <span className="text-[#F2A900]">Questions</span>
+            Frequently Asked <span className="text-[#7B2CBF]">Questions</span>
           </h2>
           <p className="text-[#666666] text-lg">Everything about iOS app development</p>
         </div>
@@ -370,15 +370,15 @@ const FAQSection = () => {
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-[#0A0A0A] relative overflow-hidden">
+    <section className="py-20 bg-[#15013d] relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 text-center relative z-10">
         <h2 className="text-4xl lg:text-6xl font-extrabold text-white mb-6">
-          Build Your <span className="text-[#F2A900]">iOS App</span> Today
+          Build Your <span className="text-[#7B2CBF]">iOS App</span> Today
         </h2>
         <p className="text-white/70 text-xl max-w-2xl mx-auto mb-10">
           Let's discuss how we can build a high-performance iPhone app for your business.
         </p>
-        <button className="bg-[#F2A900] hover:bg-[#d99700] text-[#050505] px-10 py-4 rounded-lg font-extrabold text-xl transition-all shadow-[0_10px_20px_rgba(242,169,0,0.2)]">
+        <button className="bg-[#7B2CBF] hover:bg-[#4a0884] text-[#050505] hover:text-[#EFEFEF] px-10 py-4 rounded-lg font-extrabold text-xl transition-all shadow-[0_10px_20px_rgba(242,169,0,0.2)]">
           Start Your iOS Project
         </button>
       </div>

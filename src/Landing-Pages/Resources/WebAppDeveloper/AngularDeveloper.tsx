@@ -25,7 +25,7 @@ import {
 // --- Components ---
 const Hero = () => {
   return (
-    <section className="relative pt-40 pb-24 px-4 md:px-12 overflow-hidden bg-gradient-to-b from-dark-bg to-[#0A1128]">
+    <section className="relative pt-40 pb-24 px-4 md:px-12 overflow-hidden bg-gradient-to-b from-[#2944a3] to-[#0A1128]">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none opacity-20">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-blue rounded-full blur-[120px]" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-purple rounded-full blur-[120px]" />
@@ -292,7 +292,7 @@ const SecondaryHero = () => {
           If you're looking to hire Angular developers in India who understand enterprise architecture and scalable frontend engineering, mTouch Labs is ready to collaborate. Create modern, structured, and future-ready web platforms with us.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-brand-purple hover:bg-purple-700 text-white px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-lg shadow-brand-purple/20">
+          <button className="bg-brand-purple hover:bg-purple-700 text-black px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-lg shadow-brand-purple/20">
             Contact Us Today <ArrowRight size={20} />
           </button>
           <button className="bg-[#25D366] hover:bg-[#128C7E] text-white px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 transition-all">

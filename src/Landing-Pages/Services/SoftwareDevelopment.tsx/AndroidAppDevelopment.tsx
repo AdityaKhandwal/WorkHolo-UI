@@ -41,11 +41,11 @@ const Hero = () => {
             <span className="text-white/30">/</span>
             <span className="text-white/60 text-sm uppercase tracking-[0.2em]">Services</span>
             <span className="text-white/30">/</span>
-            <span className="text-[#F19E38] text-sm uppercase tracking-[0.2em] font-semibold">Android App Development</span>
+            <span className="text-[#7B2CBF] text-sm uppercase tracking-[0.2em] font-semibold">Android App Development</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-[1.1]">
-            Native <span className="text-[#F19E38]">Android App</span><br/>
+            Native <span className="text-[#7B2CBF]">Android App</span><br/>
             Development Company
           </h1>
           
@@ -54,7 +54,7 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <button className="w-full sm:w-auto bg-[#F19E38] hover:bg-[#D98A2C] text-white px-10 py-4 rounded-lg font-bold text-lg transition-all shadow-lg shadow-orange-500/20">
+            <button className="w-full sm:w-auto bg-[#7B2CBF] hover:bg-[#7B2CBF] text-white px-10 py-4 rounded-lg font-bold text-lg transition-all shadow-lg shadow-orange-500/20">
               Get a Free Consultation
             </button>
           </div>
@@ -97,7 +97,7 @@ const ExpertiseSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#0B0D17] mb-8 leading-tight">
-              Our <span className="text-[#F19E38]">Android Expertise</span>
+              Our <span className="text-[#7B2CBF]">Android Expertise</span>
             </h2>
             <p className="text-gray-600 text-lg mb-10 leading-relaxed">
               We deliver end-to-end native Android development with structured engineering:
@@ -105,7 +105,7 @@ const ExpertiseSection = () => {
             <div className="space-y-4">
               {points.map((point, idx) => (
                 <div key={idx} className="flex items-start">
-                  <CheckCircle2 className="w-6 h-6 text-[#F19E38] mr-4 flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#7B2CBF] mr-4 flex-shrink-0 mt-1" />
                   <span className="text-gray-800 font-medium">{point}</span>
                 </div>
               ))}
@@ -160,7 +160,7 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B0D17] mb-4">
-            End-to-End <span className="text-[#F19E38]">Android Development Services</span>
+            End-to-End <span className="text-[#7B2CBF]">Android Development Services</span>
           </h2>
           <p className="text-gray-600 text-lg">From concept to Play Store launch, we cover every stage of Android app delivery</p>
         </div>
@@ -195,7 +195,7 @@ const LifecycleSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B0D17] mb-4">
-            Our Android <span className="text-[#F19E38]">Development Lifecycle</span>
+            Our Android <span className="text-[#7B2CBF]">Development Lifecycle</span>
           </h2>
           <p className="text-gray-600 text-lg">A structured process ensures predictable results and scalable architecture.</p>
         </div>
@@ -235,7 +235,7 @@ const IndustriesSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B0D17] mb-4">
-            Industries We <span className="text-[#F19E38]">Serve</span>
+            Industries We <span className="text-[#7B2CBF]">Serve</span>
           </h2>
         </div>
 
@@ -271,10 +271,10 @@ const TechSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#0B0D17] mb-8">
-              Technologies <span className="text-[#F19E38]">We Work With</span>
+              Technologies <span className="text-[#7B2CBF]">We Work With</span>
             </h2>
             <p className="text-gray-600 text-lg mb-10 leading-relaxed">
-              Our Android apps are built on modern, scalable technology stacks. For cross-platform needs, explore our <span className="text-[#F19E38] cursor-pointer hover:underline">cross-platform development services</span>.
+              Our Android apps are built on modern, scalable technology stacks. For cross-platform needs, explore our <span className="text-[#7B2CBF] cursor-pointer hover:underline">cross-platform development services</span>.
             </p>
             <div className="flex flex-wrap gap-3">
               {techs.map((tech, idx) => (
@@ -314,7 +314,7 @@ const FAQSection = () => {
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B0D17] mb-4">
-            Frequently Asked <span className="text-[#F19E38]">Questions</span>
+            Frequently Asked <span className="text-[#7B2CBF]">Questions</span>
           </h2>
           <p className="text-gray-600 text-lg">Everything you need to know about Android app development</p>
         </div>
@@ -355,12 +355,12 @@ const CTASection = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-[#0091FF]/5 pointer-events-none"></div>
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
         <h2 className="text-4xl md:text-6xl font-bold text-white mb-8">
-          Ready to Build <span className="text-[#F19E38]">Powerful Android Apps?</span>
+          Ready to Build <span className="text-[#7B2CBF]">Powerful Android Apps?</span>
         </h2>
         <p className="text-white/60 text-xl max-w-3xl mx-auto mb-12">
           Let's discuss how native Android development can deliver a scalable, high-performance mobile experience for your business.
         </p>
-        <button className="bg-[#F19E38] hover:bg-[#D98A2C] text-white px-12 py-5 rounded-lg font-bold text-xl transition-all">
+        <button className="bg-[#7B2CBF] hover:bg-[#3b0768] text-white px-12 py-5 rounded-lg font-bold text-xl transition-all">
           Get a Free Consultation
         </button>
       </div>
@@ -382,7 +382,7 @@ export default function AndroidAppDevelopment() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
                 <h2 className="text-4xl md:text-5xl font-bold text-[#0B0D17] mb-8 leading-tight">
-                  What Does an <span className="text-[#F19E38]">Android App Development</span> Company Do?
+                  What Does an <span className="text-[#7B2CBF]">Android App Development</span> Company Do?
                 </h2>
                 <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                   An Android app development company designs, develops, tests, and deploys mobile applications specifically for Android devices using native technologies such as Kotlin and Android SDK.
@@ -391,7 +391,7 @@ export default function AndroidAppDevelopment() {
                   Professional Android development ensures compatibility across diverse devices, optimized performance and memory usage, secure data handling, Google Play Store compliance, and long-term scalability.
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  As a full-service <span className="text-[#F19E38] cursor-pointer hover:underline">mobile app development company</span>, we build native Android apps engineered for high performance and seamless integration within the Google ecosystem.
+                  As a full-service <span className="text-[#7B2CBF] cursor-pointer hover:underline">mobile app development company</span>, we build native Android apps engineered for high performance and seamless integration within the Google ecosystem.
                 </p>
               </div>
               
@@ -418,7 +418,7 @@ export default function AndroidAppDevelopment() {
         <section className="py-24 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6 text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-[#0B0D17] mb-4">
-              Why Choose <span className="text-[#F19E38]">mTouch Labs</span> for Android?
+              Why Choose <span className="text-[#7B2CBF]">mTouch Labs</span> for Android?
             </h2>
             <p className="text-gray-600 text-lg mb-16">We build Android applications that are reliable, scalable, and future-ready.</p>
             
@@ -432,7 +432,7 @@ export default function AndroidAppDevelopment() {
                 "Ongoing maintenance & upgrades"
               ].map((pill, idx) => (
                 <div key={idx} className="bg-white border border-gray-200 px-8 py-3 rounded-full flex items-center shadow-sm">
-                  <div className="w-2 h-2 bg-[#F19E38] rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-[#7B2CBF] rounded-full mr-3"></div>
                   <span className="text-gray-800 font-semibold">{pill}</span>
                 </div>
               ))}
