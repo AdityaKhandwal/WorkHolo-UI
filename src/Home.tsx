@@ -326,7 +326,7 @@ export default function Home() {
             <div className="relative w-full max-w-6xl">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: window.innerWidth < 768 ? -80 : -40 }}
+                animate={{ opacity: 1, y: window.innerWidth < 768 ? -70 : -40 }}
                 transition={{ duration: 1 }}
                 className="text-[8vw] md:text-[8vw] lg:text-[8vw] font-black font-display leading-[0.85] uppercase tracking-tighter  "
               >
