@@ -321,14 +321,14 @@ export default function Home() {
         </div>
 
         {/* Layer 3: Main Content (z-20) */}
-        <div className="container mx-auto px-6 lg:px-12 relative z-20">
+        <div className="container mt-14 mx-auto px-6 lg:px-12 relative z-20">
           <div className="flex flex-col items-center text-center">
             <div className="relative w-full max-w-6xl">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: window.innerWidth < 768 ? 11 : -40 }}
                 transition={{ duration: 1 }}
-                className="text-[10vw] md:text-[10vw] lg:text-[10vw] font-black font-display leading-[0.85] uppercase tracking-tighter  "
+                className="text-[8vw] md:text-[8vw] lg:text-[8vw] font-black font-display leading-[0.85] uppercase tracking-tighter  "
               >
                <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-purple-400 z-50">WorkHolo</span>  <br />
                 <span className="text-white/10 outline-text">
