@@ -328,9 +328,9 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: window.innerWidth < 768 ? 11 : -40 }}
                 transition={{ duration: 1 }}
-                className="text-[10vw] md:text-[10vw] lg:text-[10vw] font-black font-display leading-[0.85] uppercase tracking-tighter"
+                className="text-[10vw] md:text-[10vw] lg:text-[10vw] font-black font-display leading-[0.85] uppercase tracking-tighter  "
               >
-                WorkHolo <br />
+               <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-purple-400 z-50">WorkHolo</span>  <br />
                 <span className="text-white/10 outline-text">
                   Build. Customize. Sell.
                 </span>

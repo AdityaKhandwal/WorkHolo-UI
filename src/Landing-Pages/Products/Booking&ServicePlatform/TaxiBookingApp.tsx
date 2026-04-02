@@ -91,7 +91,7 @@ const FAQItem = ({ question, answer }: FAQItemProps) => {
 
 // --- Main Component ---
 
-export default function App() {
+export default function TaxiBookingApp() {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {

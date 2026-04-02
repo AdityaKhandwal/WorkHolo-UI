@@ -1,6 +1,8 @@
 import ASOServices from "./Landing-Pages/Services/DigitalMarketingSolution/ASOServices";
 import AWSCloudServices from "./Landing-Pages/Services/Cloud&Devops/AWSCloudServices";
-import AndroidAppDevelopment from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/AndroidAppDevelopment";
+import AndroidAppDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/AndroidAppDevelopment";
+import AngularDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/AngularDeveloper";
+import CMSDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/CustomCMSDeveloper";
 import CarWashApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/CarWashApp";
 import ChefManagementApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/ChefManagementApp";
 import CloudManagedServices from "./Landing-Pages/Services/Cloud&Devops/CloudManagedServices";
@@ -9,42 +11,62 @@ import CloudSecurityServices from "./Landing-Pages/Services/Cloud&Devops/CloudSe
 import CloudServices from "./Landing-Pages/Services/Cloud&Devops/CloudServices";
 import ContentMarketingServices from "./Landing-Pages/Services/DigitalMarketingSolution/ContentMarketingServices";
 import ConversionRateOptimization from "./Landing-Pages/Services/DigitalMarketingSolution/ConversionRateOptimization";
-import CustomSOftwareDevelopment from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/CustomSoftwareDevelopment";
+import CustomSOftwareDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/CustomSoftwareDevelopment";
+import DedicatedDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/DedicatedDeveloper";
 import DesignSystemDevelopment from "./Landing-Pages/Services/Design&Experience/DesignSystemDevelopment";
 import DevOpsConsultingServices from "./Landing-Pages/Services/Cloud&Devops/DevOpsConsultingServices";
 import DevOpsServices from "./Landing-Pages/Services/Cloud&Devops/DevOpsServices";
 import DigitalMarketing from "./Landing-Pages/Services/DigitalMarketingSolution/DigitalMarketing";
 import ECommerceApp from "./Landing-Pages/Products/E-Commerce&MarketPlaceSolution/e-CommerceApp";
 import ELearningApp from "./Landing-Pages/Products/Education&Entertainment/E-LearningApp";
-import FlutterAppDevelopment from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/FlutterAppDevelopment";
+import FlutterAppDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/FlutterAppDevelopment";
 import FoodDeliveryApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/FoodDeliveryApp";
+import Footer from "./Footer";
+import FullStackDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/FullStackDeveloper";
 import GamingApp from "./Landing-Pages/Products/Education&Entertainment/GamingApp";
 import GroceryDeliveryApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/GroceryDeliveryApp";
 import Home from "./Home";
 import HotelBookingApp from "./Landing-Pages/Products/Booking&ServicePlatform/HotelBookingApp";
-import IOSAppDevelopment from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/IOSAppDevelopment";
+import HybridAppDeveloper from "./Landing-Pages/Resources/MobileAppDeveloper/HybridAppDeveloper";
+import IOSAppDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/IOSAppDevelopment";
 import IOTDevelopment from "./Landing-Pages/Services/Cloud&Devops/IOTDevelopment";
-import IPadAppDevelopment from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/IPadAppDevelopment";
+import IPadAppDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/IPadAppDevelopment";
+import JavaScriptDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/JavaScriptDeveloper";
+import LaravelDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/LaravelDeveloper";
 import LightnigMigrationDevelopment from "./Landing-Pages/Services/SalesForce/LightnigMigration&Development";
+import MERNStackDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/MERNStackDeveloper";
+import MeanStackDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/MeanStackDeveloper";
 import MilkDeliveryApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/MilkDeliveryApp";
 import MobileAppDesign from "./Landing-Pages/Services/Design&Experience/MobileAppDesign";
-import MobileDevelopement from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/Mobile-Development";
+import MobileDevelopement from "./Landing-Pages/Services/SoftwareDevelopment.tsx/Mobile-Development";
 import MultiVendorMarketPlace from "./Landing-Pages/Products/E-Commerce&MarketPlaceSolution/MultiVendorMarketPlace";
+import NativeAppDeveloper from "./Landing-Pages/Resources/MobileAppDeveloper/NativeAppDeveloper";
 import Navbar from "./Navbar";
+import NodeJsDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/NodeJsDeveloper";
+import PHPDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/PHPDeveloper";
+import PWADeveloper from "./Landing-Pages/Resources/Design&CreativeExperts/PWADeveloper";
 import ProductDesignServices from "./Landing-Pages/Services/Design&Experience/ProductDesignServices";
-import ReactNativeAppDevelopment from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/ReactNativeAppDevelopment";
+import QualityAnalystDeveloper from "./Landing-Pages/Resources/Design&CreativeExperts/QualityAnalysts";
+import ReactDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/ReactDeveloper";
+import ReactNativeAppDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/ReactNativeAppDevelopment";
 import RealEstateApp from "./Landing-Pages/Products/Booking&ServicePlatform/RealEstateApp";
 import SEOServices from "./Landing-Pages/Services/DigitalMarketingSolution/SEOServices";
 import SalesForceConsulting from "./Landing-Pages/Services/SalesForce/SalesForceConsulting";
+import SalesForceDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/SalesForceDdeveloper";
 import SalesForceImplementationServices from "./Landing-Pages/Services/SalesForce/SalesForceImplementationServices";
 import SalesForceIntegrationServices from "./Landing-Pages/Services/SalesForce/SalesForceIntegrationServices";
+import ShopifyDeveloper from "./Landing-Pages/Resources/Design&CreativeExperts/ShopifyDeveloper";
 import SocialMediaMarketing from "./Landing-Pages/Services/DigitalMarketingSolution/SocialMediaMarketing";
 import SportsAndFitness from "./Landing-Pages/Products/HealthCare&WellNess/Sports&FitnessApp";
+import SwiftDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/SwiftDeveloper";
 import TaxiBookingApp from "./Landing-Pages/Products/Booking&ServicePlatform/TaxiBookingApp";
 import TicketBookingApp from "./Landing-Pages/Products/Booking&ServicePlatform/TicketBookingApp";
 import UIUXDesign from "./Landing-Pages/Services/Design&Experience/UI&UXDesign";
 import UXReasearchServices from "./Landing-Pages/Services/Design&Experience/UXResearchServices";
-import WebAppDevelopment from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/WebAppDevelopment";
+import VueJsDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/VueJsDeveloper";
+import WebAppDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/WebAppDevelopment";
+import WooCommerceDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/WooCommerceDeveloper";
+import WordPressDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/WordPressDeveloper";
 import { Route, Routes } from "react-router-dom";
 import { PPC } from "./Landing-Pages/Services/DigitalMarketingSolution/PPC";
 
@@ -57,9 +79,10 @@ const Page = ({ name }: { name: string }) => (
 
 export default function App() {
   return (
+
+
 <>
       <Navbar />
-
       <Routes>
         {/* MAIN ROUTES */}
         <Route path="/" element={<Home />} />
@@ -145,49 +168,49 @@ export default function App() {
 <Route path="/products/sports-fitness-app" element={<SportsAndFitness />} />
 
 
-
-
 {/* MOBILE APP DEVELOPERS */}
 <Route path="/resources/mobile-app-developers" element={<MobileAppDesign />} />
 <Route path="/resources/android-app-developers" element={<AndroidAppDevelopment />} />
 <Route path="/resources/ios-app-developers" element={<IOSAppDevelopment />} />
 <Route path="/resources/ipad-app-developers" element={<IPadAppDevelopment />} />
 <Route path="/resources/custom-software-developers" element={<CustomSOftwareDevelopment />} />
-<Route path="/resources/native-app-developers" element={<Page name="Native App Developers" />} />
-<Route path="/resources/hybrid-app-developers" element={<Page name="Hybrid App Developers" />} />
+<Route path="/resources/native-app-developers" element={<NativeAppDeveloper />} />
+<Route path="/resources/hybrid-app-developers" element={<HybridAppDeveloper />} />
 <Route path="/resources/flutter-app-developers" element={<FlutterAppDevelopment />} />
 <Route path="/resources/react-native-developers" element={<ReactNativeAppDevelopment />} />
 
 {/* WEB DEVELOPERS */}
 <Route path="/resources/web-developers" element={<WebAppDevelopment />} />
-<Route path="/resources/wordpress-developers" element={<Page name="WordPress Developers" />} />
-<Route path="/resources/php-developers" element={<Page name="PHP Developers" />} />
-<Route path="/resources/custom-cms-developers" element={<Page name="Custom CMS Developers" />} />
-<Route path="/resources/angular-developers" element={<Page name="Angular Developers" />} />
-<Route path="/resources/react-developers" element={<Page name="React Developers" />} />
-<Route path="/resources/swift-developers" element={<Page name="Swift Developers" />} />
-<Route path="/resources/laravel-developers" element={<Page name="Laravel Developers" />} />
+<Route path="/resources/wordpress-developers" element={<WordPressDeveloper />} />
+<Route path="/resources/php-developers" element={<PHPDeveloper />} />
+<Route path="/resources/custom-cms-developers" element={<CMSDeveloper />} />
+<Route path="/resources/angular-developers" element={<AngularDeveloper/>} />
+<Route path="/resources/react-developers" element={<ReactDeveloper />} />
+<Route path="/resources/swift-developers" element={<SwiftDeveloper />} />
+<Route path="/resources/laravel-developers" element={<LaravelDeveloper />} />
 <Route path="/resources/magento-developers" element={<Page name="Magento Developers" />} />
-<Route path="/resources/woocommerce-developers" element={<Page name="WooCommerce Developers" />} />
+<Route path="/resources/woocommerce-developers" element={<WooCommerceDeveloper />} />
 
 {/* ENTERPRISE & CLOUD */}
-<Route path="/resources/javascript-developers" element={<Page name="JavaScript Developers" />} />
-<Route path="/resources/full-stack-developers" element={<Page name="Full Stack Developers" />} />
-<Route path="/resources/mean-stack-developers" element={<Page name="MEAN Stack Developers" />} />
-<Route path="/resources/mern-stack-developers" element={<Page name="MERN Stack Developers" />} />
-<Route path="/resources/vue-js-developers" element={<Page name="Vue.js Developers" />} />
-<Route path="/resources/node-js-developers" element={<Page name="Node.js Developers" />} />
+<Route path="/resources/javascript-developers" element={<JavaScriptDeveloper />} />
+<Route path="/resources/full-stack-developers" element={<FullStackDeveloper />} />
+<Route path="/resources/mean-stack-developers" element={<MeanStackDeveloper />} />
+<Route path="/resources/mern-stack-developers" element={<MERNStackDeveloper />} />
+<Route path="/resources/vue-js-developers" element={<VueJsDeveloper />} />
+<Route path="/resources/node-js-developers" element={<NodeJsDeveloper />} />
 <Route path="/resources/aws-developers" element={<Page name="AWS Developers" />} />
-<Route path="/resources/dedicated-developers" element={<Page name="Dedicated Developers" />} />
-<Route path="/resources/salesforce-developers" element={<Page name="Salesforce Developers" />} />
+<Route path="/resources/dedicated-developers" element={<DedicatedDeveloper />} />
+<Route path="/resources/salesforce-developers" element={<SalesForceDeveloper />} />
 
 {/* DESIGN & CREATIVE */}
 <Route path="/resources/ui-ux-designers" element={<UIUXDesign />} />
 <Route path="/resources/mobile-app-designers" element={<MobileAppDesign />} />
-<Route path="/resources/quality-analysts" element={<Page name="Quality Analysts" />} />
-<Route path="/resources/pwa-developers" element={<Page name="PWA Developers" />} />
-<Route path="/resources/shopify-developers" element={<Page name="Shopify Developers" />} />
+<Route path="/resources/quality-analysts" element={<QualityAnalystDeveloper />} />
+<Route path="/resources/pwa-developers" element={<PWADeveloper />} />
+<Route path="/resources/shopify-developers" element={<ShopifyDeveloper />} />
       </Routes>
+
+      <Footer/>
       </>
   );
 }

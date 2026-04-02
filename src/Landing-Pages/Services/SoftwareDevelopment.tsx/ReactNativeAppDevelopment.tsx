@@ -713,7 +713,7 @@ const ContactSection = () => {
                 className="w-full px-6 py-4 rounded-2xl bg-white border border-gray-200 focus:border-[#00a8ff] focus:ring-4 focus:ring-[#00a8ff]/10 outline-none transition-all resize-none"
               ></textarea>
             </div>
-            <button className="w-full bg-[#0a0a0a] hover:bg-black text-white py-5 rounded-2xl font-black text-lg transition-all shadow-xl shadow-black/10">
+            <button className="w-full bg-[#7B2CBF] hover:bg-black text-white py-5 rounded-2xl font-black text-lg transition-all shadow-xl shadow-black/10">
               Send Message
             </button>
           </form>
@@ -746,59 +746,6 @@ const CTASection = () => {
   );
 };
 
-const GlobalPresence = () => {
-  const regions = [
-    {
-      name: "INDIA",
-      cities: ["Hyderabad", "Bangalore", "Chennai", "Coimbatore", "Kochi"],
-    },
-    { name: "AMERICAS", cities: ["United States", "Canada"] },
-    { name: "EUROPE", cities: ["United Kingdom", "Germany", "Ireland"] },
-    {
-      name: "ASIA PACIFIC",
-      cities: ["Singapore", "Australia", "New Zealand", "India"],
-    },
-    {
-      name: "MIDDLE EAST",
-      cities: ["UAE", "Dubai", "Saudi Arabia", "Qatar", "Kuwait"],
-    },
-  ];
-
-  return (
-    <section className="py-24 px-4 md:px-12 bg-[#0a0a0a] border-t border-white/5">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-3 mb-16">
-          <Globe className="text-[#00a8ff]" size={24} />
-          <h2 className="text-2xl font-black font-display text-white uppercase tracking-widest">
-            Global Presence
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
-          {regions.map((region, i) => (
-            <div key={i}>
-              <h4 className="text-[#00a8ff] font-black text-xs uppercase tracking-[0.2em] mb-8 flex items-center gap-2">
-                <span className="w-2 h-2 bg-[#00a8ff] rounded-full" />{" "}
-                {region.name}
-              </h4>
-              <ul className="space-y-4 text-white/50 font-medium text-sm">
-                {region.cities.map((city, j) => (
-                  <li
-                    key={j}
-                    className="hover:text-white transition-colors cursor-default"
-                  >
-                    {city}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
 // --- Main App ---
 
 export default function ReactNativeAppDevelopment() {
@@ -817,7 +764,6 @@ export default function ReactNativeAppDevelopment() {
           <FAQSection />
           <ContactSection />
           <CTASection />
-          <GlobalPresence />
         </main>
       </div>
 
