@@ -20,7 +20,7 @@ import {
 // Custom components for the replica
 
 const Hero = () => (
-  <section className="bg-[#7B2CBF] pt-32 pb-20 relative overflow-hidden">
+  <section className="bg-[#1d1c1c] pt-32 pb-20 relative overflow-hidden">
     <div className="max-w-[1440px] mx-auto px-4 md:px-8 relative z-10">
       <div className="flex items-center gap-2 text-gray-400 text-sm mb-8">
         <span>Home</span>
@@ -37,7 +37,7 @@ const Hero = () => (
           transition={{ duration: 0.6 }}
           className="text-white text-5xl md:text-7xl font-bold leading-tight mb-6"
         >
-          Custom <span className="text-[#F59E0B]">Software</span> Development
+          Custom <span className="text-[#7B2CBF]">Software</span> Development
         </motion.h1>
 
         <motion.h2
@@ -77,7 +77,7 @@ const WhatIsSection = () => (
     <div className="max-w-[1440px] mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-16 items-center">
       <div>
         <h2 className="text-4xl md:text-5xl font-bold text-[#0B1120] mb-8">
-          What Is <span className="text-[#F59E0B]">Custom Software</span>{" "}
+          What Is <span className="text-[#7B2CBF]">Custom Software</span>{" "}
           Development?
         </h2>
         <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
@@ -159,7 +159,7 @@ const SecuritySection = () => (
 
       <div>
         <h2 className="text-4xl md:text-5xl font-bold text-[#0B1120] mb-8">
-          Security-First <span className="text-[#F59E0B]">Engineering</span>
+          Security-First <span className="text-[#7B2CBF]">Engineering</span>
         </h2>
         <p className="text-gray-600 text-lg mb-8">
           Security is embedded throughout the lifecycle:
@@ -194,7 +194,7 @@ const ServicesSection = () => (
   <section className="bg-gray-50 py-24">
     <div className="max-w-[1440px] mx-auto px-4 md:px-8 text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-bold text-[#0B1120] mb-6">
-        Our Custom <span className="text-[#F59E0B]">Software Services</span>
+        Our Custom <span className="text-[#7B2CBF]">Software Services</span>
       </h2>
       <p className="text-gray-600 text-xl">
         From automation to enterprise platforms
@@ -257,7 +257,7 @@ const ProcessSection = () => (
   <section className="bg-white py-24 overflow-hidden">
     <div className="max-w-[1440px] mx-auto px-4 md:px-8 text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-bold text-[#0B1120] mb-6">
-        Our Development <span className="text-[#F59E0B]">Process</span>
+        Our Development <span className="text-[#7B2CBF]">Process</span>
       </h2>
       <p className="text-gray-600 text-xl max-w-3xl mx-auto">
         We follow a structured methodology to ensure predictable outcomes and
@@ -302,7 +302,7 @@ const WhyChooseSection = () => (
   <section className="bg-gray-50 py-24">
     <div className="max-w-[1440px] mx-auto px-4 md:px-8 text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-bold text-[#0B1120] mb-6">
-        Why Choose <span className="text-[#F59E0B]">mTouch Labs</span>?
+        Why Choose <span className="text-[#7B2CBF]">mTouch Labs</span>?
       </h2>
       <p className="text-gray-600 text-xl">
         We don't just develop applications — we build sustainable digital
@@ -355,7 +355,7 @@ const FAQSection = () => {
       <div className="max-w-[1440px] mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B1120] mb-6">
-            Frequently Asked <span className="text-[#F59E0B]">Questions</span>
+            Frequently Asked <span className="text-[#7B2CBF]">Questions</span>
           </h2>
           <p className="text-gray-600 text-xl">
             Everything about custom software development
@@ -401,17 +401,17 @@ const FAQSection = () => {
 };
 
 const CTASection = () => (
-  <section className="bg-[#7B2CBF] py-24 relative overflow-hidden">
+  <section className="bg-[#262525] py-24 relative overflow-hidden">
     <div className="max-w-[1440px] mx-auto px-4 md:px-8 text-center relative z-10">
       <h2 className="text-4xl md:text-6xl font-bold text-white mb-8">
         Build Your Custom{" "}
-        <span className="text-[#F59E0B]">Software Solution</span>
+        <span className="text-[#7B2CBF]">Software Solution</span>
       </h2>
       <p className="text-gray-400 text-xl md:text-2xl max-w-3xl mx-auto mb-12">
         Let's discuss how tailored software can automate your operations and
         accelerate growth.
       </p>
-      <button className="bg-[#F59E0B] hover:bg-orange-500 text-white px-12 py-5 rounded-xl font-bold text-xl transition-all shadow-lg hover:shadow-orange-500/20">
+      <button className="bg-[#7B2CBF] hover:bg-orange-500 text-white px-12 py-5 rounded-xl font-bold text-xl transition-all shadow-lg hover:shadow-orange-500/20">
         Start Your Project
       </button>
     </div>

@@ -641,7 +641,7 @@ const FloatingWidgets = () => {
 
 // --- Main App ---
 
-export default function App() {
+export default function ProductDesignServices() {
   return (
     <div className="min-h-screen bg-white">
       <main>

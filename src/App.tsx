@@ -1,6 +1,8 @@
 import ASOServices from "./Landing-Pages/Services/DigitalMarketingSolution/ASOServices";
 import AWSCloudServices from "./Landing-Pages/Services/Cloud&Devops/AWSCloudServices";
 import AndroidAppDevelopment from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/AndroidAppDevelopment";
+import CarWashApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/CarWashApp";
+import ChefManagementApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/ChefManagementApp";
 import CloudManagedServices from "./Landing-Pages/Services/Cloud&Devops/CloudManagedServices";
 import CloudMigrationServices from "./Landing-Pages/Services/Cloud&Devops/CloudMigrationServices";
 import CloudSecurityServices from "./Landing-Pages/Services/Cloud&Devops/CloudSecurityServices";
@@ -12,22 +14,34 @@ import DesignSystemDevelopment from "./Landing-Pages/Services/Design&Experience/
 import DevOpsConsultingServices from "./Landing-Pages/Services/Cloud&Devops/DevOpsConsultingServices";
 import DevOpsServices from "./Landing-Pages/Services/Cloud&Devops/DevOpsServices";
 import DigitalMarketing from "./Landing-Pages/Services/DigitalMarketingSolution/DigitalMarketing";
+import ECommerceApp from "./Landing-Pages/Products/E-Commerce&MarketPlaceSolution/e-CommerceApp";
+import ELearningApp from "./Landing-Pages/Products/Education&Entertainment/E-LearningApp";
 import FlutterAppDevelopment from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/FlutterAppDevelopment";
+import FoodDeliveryApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/FoodDeliveryApp";
+import GamingApp from "./Landing-Pages/Products/Education&Entertainment/GamingApp";
+import GroceryDeliveryApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/GroceryDeliveryApp";
 import Home from "./Home";
+import HotelBookingApp from "./Landing-Pages/Products/Booking&ServicePlatform/HotelBookingApp";
 import IOSAppDevelopment from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/IOSAppDevelopment";
 import IOTDevelopment from "./Landing-Pages/Services/Cloud&Devops/IOTDevelopment";
 import IPadAppDevelopment from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/IPadAppDevelopment";
 import LightnigMigrationDevelopment from "./Landing-Pages/Services/SalesForce/LightnigMigration&Development";
+import MilkDeliveryApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/MilkDeliveryApp";
 import MobileAppDesign from "./Landing-Pages/Services/Design&Experience/MobileAppDesign";
 import MobileDevelopement from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/Mobile-Development";
+import MultiVendorMarketPlace from "./Landing-Pages/Products/E-Commerce&MarketPlaceSolution/MultiVendorMarketPlace";
 import Navbar from "./Navbar";
 import ProductDesignServices from "./Landing-Pages/Services/Design&Experience/ProductDesignServices";
 import ReactNativeAppDevelopment from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/ReactNativeAppDevelopment";
+import RealEstateApp from "./Landing-Pages/Products/Booking&ServicePlatform/RealEstateApp";
 import SEOServices from "./Landing-Pages/Services/DigitalMarketingSolution/SEOServices";
 import SalesForceConsulting from "./Landing-Pages/Services/SalesForce/SalesForceConsulting";
 import SalesForceImplementationServices from "./Landing-Pages/Services/SalesForce/SalesForceImplementationServices";
 import SalesForceIntegrationServices from "./Landing-Pages/Services/SalesForce/SalesForceIntegrationServices";
 import SocialMediaMarketing from "./Landing-Pages/Services/DigitalMarketingSolution/SocialMediaMarketing";
+import SportsAndFitness from "./Landing-Pages/Products/HealthCare&WellNess/Sports&FitnessApp";
+import TaxiBookingApp from "./Landing-Pages/Products/Booking&ServicePlatform/TaxiBookingApp";
+import TicketBookingApp from "./Landing-Pages/Products/Booking&ServicePlatform/TicketBookingApp";
 import UIUXDesign from "./Landing-Pages/Services/Design&Experience/UI&UXDesign";
 import UXReasearchServices from "./Landing-Pages/Services/Design&Experience/UXResearchServices";
 import WebAppDevelopment from "./Landing-Pages/Services/Services_SoftwareDevelopment.tsx/WebAppDevelopment";
@@ -104,17 +118,75 @@ export default function App() {
 <Route path="/services/aso-services" element={<ASOServices/>} />
 <Route path="/services/conversion-rate-optimization" element={<ConversionRateOptimization />} />
 
-        {/* PRODUCTS */}
-        <Route path="/products/food-delivery-app" element={<Page name="Food Delivery" />} />
-        <Route path="/products/grocery-delivery-app" element={<Page name="Grocery Delivery" />} />
-        <Route path="/products/taxi-booking-app" element={<Page name="Taxi Booking" />} />
-        <Route path="/products/ecommerce-app" element={<Page name="Ecommerce" />} />
+{/* ON-DEMAND & DELIVERY */}
+<Route path="/products/food-delivery-app" element={<FoodDeliveryApp />} />
+<Route path="/products/Grocery-delivery-app" element={<GroceryDeliveryApp />} />
+<Route path="/products/milk-delivery-app" element={<MilkDeliveryApp />} />
+<Route path="/products/car-wash-app" element={<CarWashApp />} />
+<Route path="/products/chef-management-app" element={<ChefManagementApp />} />
 
-        {/* RESOURCES */}
-        <Route path="/resources/web-developers" element={<Page name="Web Developers" />} />
-        <Route path="/resources/react-developers" element={<Page name="React Developers" />} />
-        <Route path="/resources/node-js-developers" element={<Page name="Node Developers" />} />
+{/* BOOKING */}
+<Route path="/products/taxi-booking-app" element={<TaxiBookingApp />} />
+<Route path="/products/hotel-booking-app" element={<HotelBookingApp />} />
+<Route path="/products/ticket-booking-app" element={<TicketBookingApp />} />
+<Route path="/products/real-estate-app" element={<RealEstateApp />} />
 
+{/* E-COMMERCE */}
+<Route path="/products/ecommerce-app" element={<ECommerceApp />} />
+<Route path="/products/online-shopping-app" element={<Page name="Online Shopping App" />} />
+<Route path="/products/multi-vendor-marketplace" element={<MultiVendorMarketPlace />} />
+
+{/* EDUCATION & ENTERTAINMENT */}
+<Route path="/products/e-learning-app" element={<ELearningApp />} />
+<Route path="/products/gaming-app" element={<GamingApp />} />
+
+{/* HEALTHCARE */}
+<Route path="/products/diagnostic-app" element={<Page name="Diagnostic App" />} />
+<Route path="/products/sports-fitness-app" element={<SportsAndFitness />} />
+
+
+
+
+{/* MOBILE APP DEVELOPERS */}
+<Route path="/resources/mobile-app-developers" element={<MobileAppDesign />} />
+<Route path="/resources/android-app-developers" element={<AndroidAppDevelopment />} />
+<Route path="/resources/ios-app-developers" element={<IOSAppDevelopment />} />
+<Route path="/resources/ipad-app-developers" element={<IPadAppDevelopment />} />
+<Route path="/resources/custom-software-developers" element={<CustomSOftwareDevelopment />} />
+<Route path="/resources/native-app-developers" element={<Page name="Native App Developers" />} />
+<Route path="/resources/hybrid-app-developers" element={<Page name="Hybrid App Developers" />} />
+<Route path="/resources/flutter-app-developers" element={<FlutterAppDevelopment />} />
+<Route path="/resources/react-native-developers" element={<ReactNativeAppDevelopment />} />
+
+{/* WEB DEVELOPERS */}
+<Route path="/resources/web-developers" element={<WebAppDevelopment />} />
+<Route path="/resources/wordpress-developers" element={<Page name="WordPress Developers" />} />
+<Route path="/resources/php-developers" element={<Page name="PHP Developers" />} />
+<Route path="/resources/custom-cms-developers" element={<Page name="Custom CMS Developers" />} />
+<Route path="/resources/angular-developers" element={<Page name="Angular Developers" />} />
+<Route path="/resources/react-developers" element={<Page name="React Developers" />} />
+<Route path="/resources/swift-developers" element={<Page name="Swift Developers" />} />
+<Route path="/resources/laravel-developers" element={<Page name="Laravel Developers" />} />
+<Route path="/resources/magento-developers" element={<Page name="Magento Developers" />} />
+<Route path="/resources/woocommerce-developers" element={<Page name="WooCommerce Developers" />} />
+
+{/* ENTERPRISE & CLOUD */}
+<Route path="/resources/javascript-developers" element={<Page name="JavaScript Developers" />} />
+<Route path="/resources/full-stack-developers" element={<Page name="Full Stack Developers" />} />
+<Route path="/resources/mean-stack-developers" element={<Page name="MEAN Stack Developers" />} />
+<Route path="/resources/mern-stack-developers" element={<Page name="MERN Stack Developers" />} />
+<Route path="/resources/vue-js-developers" element={<Page name="Vue.js Developers" />} />
+<Route path="/resources/node-js-developers" element={<Page name="Node.js Developers" />} />
+<Route path="/resources/aws-developers" element={<Page name="AWS Developers" />} />
+<Route path="/resources/dedicated-developers" element={<Page name="Dedicated Developers" />} />
+<Route path="/resources/salesforce-developers" element={<Page name="Salesforce Developers" />} />
+
+{/* DESIGN & CREATIVE */}
+<Route path="/resources/ui-ux-designers" element={<UIUXDesign />} />
+<Route path="/resources/mobile-app-designers" element={<MobileAppDesign />} />
+<Route path="/resources/quality-analysts" element={<Page name="Quality Analysts" />} />
+<Route path="/resources/pwa-developers" element={<Page name="PWA Developers" />} />
+<Route path="/resources/shopify-developers" element={<Page name="Shopify Developers" />} />
       </Routes>
       </>
   );

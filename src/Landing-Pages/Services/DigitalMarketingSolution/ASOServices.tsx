@@ -626,7 +626,7 @@ const BoostCTA = () => {
   );
 };
 
-export default function App() {
+export default function ASOServices() {
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#7B2CBF] selection:text-white">
       <Hero />

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 /**
@@ -7,14 +7,9 @@ import { AnimatePresence, motion } from "framer-motion";
  */
 
 import {
-  Mail,
-  Phone,
   Globe,
-  ChevronDown,
   ArrowRight,
   Plus,
-  Menu,
-  X,
   CheckCircle2,
   Smartphone,
   Palette,
@@ -133,171 +128,12 @@ const FAQItem = ({
 
 // --- Main App ---
 
-export default function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+export default function GroceryDeliveryApp() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white p-3">
       {/* --- Top Bar --- */}
-      <div className="bg-[#050505] text-white py-2 hidden lg:block">
-        <div className="container-custom flex justify-between items-center text-xs font-medium">
-          <div className="flex items-center gap-6">
-            <a
-              href="mailto:contact@mtouchlabs.com"
-              className="flex items-center gap-2 hover:text-[#7B2CBF] transition-colors"
-            >
-              <Mail size={14} /> contact@mtouchlabs.com
-            </a>
-            <a
-              href="tel:+919390683154"
-              className="flex items-center gap-2 hover:text-[#7B2CBF] transition-colors"
-            >
-              <Phone size={14} /> +91 9390683154
-            </a>
-            <a
-              href="tel:+15512220070"
-              className="flex items-center gap-2 hover:text-[#7B2CBF] transition-colors"
-            >
-              <Globe size={14} /> +1 (551) 222-0070
-            </a>
-          </div>
-          <div className="flex items-center gap-8">
-            <span className="text-[#FFD700]">
-              NASSCOM{" "}
-              <span className="text-white">SME Inspire Awards 2026 🏆</span>
-            </span>
-            <div className="flex items-center gap-4">
-              <span className="hover:text-[#7B2CBF] cursor-pointer">
-                Hyderabad
-              </span>
-              <span className="text-gray-600">|</span>
-              <span className="hover:text-[#7B2CBF] cursor-pointer">
-                Bangalore
-              </span>
-              <span className="text-gray-600">|</span>
-              <span className="hover:text-[#7B2CBF] cursor-pointer">USA</span>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* --- Header --- */}
-      <header
-        className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? "bg-black shadow-lg py-3" : "bg-black py-5"}`}
-      >
-        <div className="container-custom flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <div className="bg-white p-1 rounded-sm">
-              <img
-                src="https://picsum.photos/seed/logo/40/40"
-                alt="mTouch Labs"
-                className="h-8 md:h-10"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <span className="text-white font-bold text-xl md:text-2xl tracking-tight">
-              mTouch Labs
-            </span>
-            <div className="bg-yellow-500 text-[8px] font-bold px-1 rounded ml-1">
-              ISO
-            </div>
-          </div>
-
-          <nav className="hidden lg:flex items-center gap-8 text-white font-medium">
-            <a
-              href="#"
-              className="flex items-center gap-1 hover:text-[#7B2CBF] transition-colors"
-            >
-              Home <ChevronDown size={14} />
-            </a>
-            <a
-              href="#"
-              className="flex items-center gap-1 hover:text-[#7B2CBF] transition-colors"
-            >
-              Services <ChevronDown size={14} />
-            </a>
-            <a href="#" className="flex items-center gap-1 text-[#7B2CBF]">
-              Products <ChevronDown size={14} />
-            </a>
-            <a
-              href="#"
-              className="flex items-center gap-1 hover:text-[#7B2CBF] transition-colors"
-            >
-              Resources <ChevronDown size={14} />
-            </a>
-            <a href="#" className="hover:text-[#7B2CBF] transition-colors">
-              Portfolio
-            </a>
-            <a href="#" className="hover:text-[#7B2CBF] transition-colors">
-              Careers
-            </a>
-            <a href="#" className="hover:text-[#7B2CBF] transition-colors">
-              Contact Us
-            </a>
-          </nav>
-
-          <div className="flex items-center gap-4">
-            <Button variant="blue" className="hidden sm:flex text-sm py-2 px-5">
-              Request Quote <ArrowRight size={16} />
-            </Button>
-            <button
-              className="lg:hidden text-white"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        <AnimatePresence>
-          {isMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-black border-t border-gray-800 overflow-hidden"
-            >
-              <div className="container-custom py-6 flex flex-col gap-4 text-white">
-                <a href="#" className="py-2 border-b border-gray-800">
-                  Home
-                </a>
-                <a href="#" className="py-2 border-b border-gray-800">
-                  Services
-                </a>
-                <a
-                  href="#"
-                  className="py-2 border-b border-gray-800 text-[#7B2CBF]"
-                >
-                  Products
-                </a>
-                <a href="#" className="py-2 border-b border-gray-800">
-                  Resources
-                </a>
-                <a href="#" className="py-2 border-b border-gray-800">
-                  Portfolio
-                </a>
-                <a href="#" className="py-2 border-b border-gray-800">
-                  Careers
-                </a>
-                <a href="#" className="py-2">
-                  Contact Us
-                </a>
-                <Button variant="blue" className="w-full mt-4">
-                  Request Quote
-                </Button>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </header>
 
       {/* --- Hero Section --- */}
       <section className="relative bg-[#F0FDF4] pt-20 pb-32 overflow-hidden">

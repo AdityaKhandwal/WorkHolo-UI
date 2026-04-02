@@ -360,7 +360,7 @@ const NAV_DATA = [
             desc: "Multi-restaurant ordering with real-time tracking",
           },
           {
-            label: "rocery Delivery App",
+            label: "Grocery Delivery App",
             desc: "Quick commerce for daily essentials",
           },
           {
