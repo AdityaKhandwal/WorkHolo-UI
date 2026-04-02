@@ -54,13 +54,13 @@ const Hero = () => {
               Services
             </span>
             <ChevronRight size={14} className="text-white/40" />
-            <span className="text-[#f27d26] text-sm font-bold uppercase tracking-[0.2em]">
+            <span className="text-[#7B2CBF] text-sm font-bold uppercase tracking-[0.2em]">
               React Native App Development
             </span>
           </div>
 
           <h1 className="text-5xl md:text-8xl font-black font-display text-white mb-8 leading-[1.1] tracking-tight">
-            React Native <span className="text-[#f27d26]">App Development</span>{" "}
+            React Native <span className="text-[#7B2CBF]">App Development</span>{" "}
             <br /> Company
           </h1>
 
@@ -78,7 +78,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">
-            <button className="bg-[#f27d26] hover:bg-[#e67622] text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-[#f27d26]/20 transition-all transform hover:scale-105">
+            <button className="bg-[#7B2CBF] hover:bg-[#e67622] text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-[#7B2CBF]/20 transition-all transform hover:scale-105">
               Start Your Project
             </button>
             <button className="bg-white/5 hover:bg-white/10 text-white border border-white/20 px-10 py-4 rounded-xl font-bold text-lg transition-all">
@@ -136,7 +136,7 @@ const WhatIsSection = () => {
         <div>
           <h2 className="text-4xl md:text-5xl font-black font-display text-[#0a0a0a] mb-8 leading-tight">
             What Is React Native{" "}
-            <span className="text-[#f27d26]">App Development?</span>
+            <span className="text-[#7B2CBF]">App Development?</span>
           </h2>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
             React Native app development involves building mobile applications
@@ -222,7 +222,7 @@ const ExpertiseSection = () => {
         <div className="order-1 lg:order-2">
           <h2 className="text-4xl md:text-5xl font-black font-display text-[#0a0a0a] mb-8 leading-tight">
             Our React Native <br />{" "}
-            <span className="text-[#f27d26]">Development Expertise</span>
+            <span className="text-[#7B2CBF]">Development Expertise</span>
           </h2>
           <p className="text-lg text-gray-600 mb-10 leading-relaxed">
             We deliver end-to-end cross-platform solutions with native-level
@@ -232,7 +232,7 @@ const ExpertiseSection = () => {
             {points.map((p, i) => (
               <div key={i} className="flex items-start gap-4">
                 <CheckCircle2
-                  className="text-[#f27d26] mt-1 shrink-0"
+                  className="text-[#7B2CBF] mt-1 shrink-0"
                   size={20}
                 />
                 <p className="text-gray-700 font-medium">{p}</p>
@@ -280,7 +280,7 @@ const ServicesSection = () => {
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-black font-display text-[#0a0a0a] mb-6">
             Our React Native{" "}
-            <span className="text-[#f27d26]">Development Services</span>
+            <span className="text-[#7B2CBF]">Development Services</span>
           </h2>
           <p className="text-xl text-gray-500">
             Efficiency in development — precision in execution
@@ -326,7 +326,7 @@ const FrameworkSection = () => {
     <section className="py-24 px-4 md:px-12 bg-gray-50">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-6xl font-black font-display text-[#0a0a0a] mb-6">
-          Our Development <span className="text-[#f27d26]">Framework</span>
+          Our Development <span className="text-[#7B2CBF]">Framework</span>
         </h2>
         <p className="text-xl text-gray-500 mb-20 max-w-3xl mx-auto">
           Structured delivery and scalable code architecture from discovery to
@@ -378,7 +378,7 @@ const WhyChooseSection = () => {
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-6xl font-black font-display text-[#0a0a0a] mb-8">
           Why Choose mTouch Labs as Your <br />{" "}
-          <span className="text-[#f27d26]">
+          <span className="text-[#7B2CBF]">
             React Native Development Company?
           </span>
         </h2>
@@ -391,9 +391,9 @@ const WhyChooseSection = () => {
           {reasons.map((r, i) => (
             <div
               key={i}
-              className="px-8 py-4 bg-gray-50 border border-gray-100 rounded-full font-bold text-gray-700 shadow-sm hover:bg-white hover:border-[#f27d26] hover:text-[#f27d26] transition-all cursor-default"
+              className="px-8 py-4 bg-gray-50 border border-gray-100 rounded-full font-bold text-gray-700 shadow-sm hover:bg-white hover:border-[#7B2CBF] hover:text-[#7B2CBF] transition-all cursor-default"
             >
-              <span className="mr-2 text-[#f27d26]">•</span> {r}
+              <span className="mr-2 text-[#7B2CBF]">•</span> {r}
             </div>
           ))}
         </div>
@@ -435,7 +435,7 @@ const IndustriesSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-black font-display text-[#0a0a0a] mb-6">
-            Industries We <span className="text-[#f27d26]">Serve</span>
+            Industries We <span className="text-[#7B2CBF]">Serve</span>
           </h2>
         </div>
 
@@ -497,7 +497,7 @@ const StackSection = () => {
         <div>
           <h2 className="text-4xl md:text-5xl font-black font-display text-[#0a0a0a] mb-8 leading-tight">
             React Native{" "}
-            <span className="text-[#f27d26]">Development Stack</span>
+            <span className="text-[#7B2CBF]">Development Stack</span>
           </h2>
           <p className="text-lg text-gray-600 mb-10 leading-relaxed">
             We leverage the React Native ecosystem and modern tooling to deliver
@@ -562,7 +562,7 @@ const FAQSection = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-black font-display text-[#0a0a0a] mb-6">
-            Frequently Asked <span className="text-[#f27d26]">Questions</span>
+            Frequently Asked <span className="text-[#7B2CBF]">Questions</span>
           </h2>
           <p className="text-xl text-gray-500">
             Everything you need to know about our React Native development
@@ -584,7 +584,7 @@ const FAQSection = () => {
                   {faq.q}
                 </span>
                 {openIndex === i ? (
-                  <ChevronDown className="text-[#f27d26]" />
+                  <ChevronDown className="text-[#7B2CBF]" />
                 ) : (
                   <ChevronRight className="text-gray-400" />
                 )}
@@ -617,7 +617,7 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
         <div>
           <h2 className="text-4xl md:text-6xl font-black font-display text-[#0a0a0a] mb-8 leading-tight">
-            Get in <span className="text-[#f27d26]">Touch</span>
+            Get in <span className="text-[#7B2CBF]">Touch</span>
           </h2>
           <p className="text-xl text-gray-600 mb-12 leading-relaxed">
             Have a project in mind? Let's discuss how we can help you build
@@ -726,19 +726,19 @@ const ContactSection = () => {
 const CTASection = () => {
   return (
     <section className="py-24 px-4 md:px-12 bg-[#0a0a0a] relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#f27d26]/10 blur-[150px] rounded-full -mr-80 -mt-80" />
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#7B2CBF]/10 blur-[150px] rounded-full -mr-80 -mt-80" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#00a8ff]/10 blur-[150px] rounded-full -ml-80 -mb-80" />
 
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <h2 className="text-5xl md:text-7xl font-black font-display text-white mb-8 leading-tight">
           Ready to Build Your{" "}
-          <span className="text-[#f27d26]">React Native App?</span>
+          <span className="text-[#7B2CBF]">React Native App?</span>
         </h2>
         <p className="text-xl text-white/70 mb-12 max-w-3xl mx-auto leading-relaxed">
           Let's discuss how we can engineer a cross-platform solution that
           accelerates your time-to-market and scales with your business.
         </p>
-        <button className="bg-[#f27d26] hover:bg-[#e67622] text-white px-12 py-5 rounded-2xl font-black text-xl shadow-2xl shadow-[#f27d26]/30 transition-all transform hover:scale-105">
+        <button className="bg-[#7B2CBF] hover:bg-[#e67622] text-white px-12 py-5 rounded-2xl font-black text-xl shadow-2xl shadow-[#7B2CBF]/30 transition-all transform hover:scale-105">
           Start Your Project
         </button>
       </div>
