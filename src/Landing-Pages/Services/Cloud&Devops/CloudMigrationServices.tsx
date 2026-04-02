@@ -107,7 +107,7 @@ export default function CloudMigrationServices() {
             transition={{ delay: 0.2 }}
             className="text-slate-400 text-lg max-w-3xl mx-auto leading-relaxed mb-12"
           >
-            mTouch Labs delivers enterprise-grade cloud migration services that enable organizations to transition from legacy infrastructure to scalable cloud environments with minimal risk and operational disruption. Migration should improve efficiency, not introduce instability.
+            WorkHolo Labs delivers enterprise-grade cloud migration services that enable organizations to transition from legacy infrastructure to scalable cloud environments with minimal risk and operational disruption. Migration should improve efficiency, not introduce instability.
           </motion.p>
         </div>
       </section>
@@ -289,11 +289,11 @@ export default function CloudMigrationServices() {
         </div>
       </section>
 
-      {/* Why Choose mTouch Labs */}
+      {/* Why Choose WorkHolo Labs */}
       <section className="py-24 px-4 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-4">
-            Why Choose mTouch Labs for <span className="text-[#7B2CBF]">Cloud Migration</span>?
+            Why Choose WorkHolo Labs for <span className="text-[#7B2CBF]">Cloud Migration</span>?
           </h2>
           <p className="text-slate-500 text-lg font-medium">We ensure migration enhances performance and stability.</p>
         </div>

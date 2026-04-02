@@ -197,7 +197,7 @@ const StatsSection = () => {
             If your goal is to build a modern web product that is fast, flexible, and ready to scale, the MERN stack offers a powerful foundation.
           </p>
           <p className="mt-6 text-blue-600 font-semibold italic text-lg">
-            At mTouch Labs, we provide experienced MERN stack developers in India who create high-performance web applications built for real-world growth.
+            At WorkHolo Labs, we provide experienced MERN stack developers in India who create high-performance web applications built for real-world growth.
           </p>
         </div>
 
@@ -363,7 +363,7 @@ const CTASection = () => {
           Build Modern Web Applications with MERN
         </h2>
         <p className="text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
-          If you're looking to hire MERN stack developers in India who understand modern product engineering and scalable architecture, mTouch Labs is ready to collaborate. Create dynamic, future-ready web applications with confidence.
+          If you're looking to hire MERN stack developers in India who understand modern product engineering and scalable architecture, WorkHolo Labs is ready to collaborate. Create dynamic, future-ready web applications with confidence.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <button 

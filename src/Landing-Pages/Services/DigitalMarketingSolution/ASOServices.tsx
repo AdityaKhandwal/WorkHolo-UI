@@ -37,7 +37,7 @@ const Hero = () => {
           Increasing App Visibility, Downloads & Long-Term Store Performance
         </p>
         <p className="text-gray-400 max-w-3xl mx-auto mb-12 text-[15px] lg:text-[17px] leading-relaxed">
-          mTouch Labs provides professional ASO services designed to improve app
+          WorkHolo Labs provides professional ASO services designed to improve app
           discoverability, increase organic downloads, and enhance user
           acquisition performance across global marketplaces. App growth begins
           with discoverability.
@@ -290,7 +290,7 @@ const WhyChoose = () => {
     <section className="py-24 px-6 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl lg:text-6xl font-black text-[#050A18] mb-6">
-          Why Choose <span className="text-orange-500 italic">mTouch Labs</span>
+          Why Choose <span className="text-orange-500 italic">WorkHolo Labs</span>
           ?
         </h2>
         <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">

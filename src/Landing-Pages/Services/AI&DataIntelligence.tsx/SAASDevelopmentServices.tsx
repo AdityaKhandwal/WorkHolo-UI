@@ -63,7 +63,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto mb-10 leading-relaxed font-light"
         >
-          mTouch Labs delivers scalable and secure SaaS development services for startups, product companies, and enterprises looking to build high-performance cloud-based platforms. From MVP development to enterprise-scale SaaS ecosystems, we design and engineer subscription-driven software platforms built for growth.
+          WorkHolo Labs delivers scalable and secure SaaS development services for startups, product companies, and enterprises looking to build high-performance cloud-based platforms. From MVP development to enterprise-scale SaaS ecosystems, we design and engineer subscription-driven software platforms built for growth.
         </motion.p>
 
         <motion.div
@@ -94,7 +94,7 @@ const WhatIsSaaS = () => {
         <div>
           <h2 className="text-4xl font-bold mb-6 tracking-tight">What Is <span className="text-secondary">SaaS Development</span>?</h2>
           <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-            SaaS (Software as a Service) development involves building cloud-based applications that operate on subscription models and are accessible via the web. As a leading <span className="text-secondary font-semibold">custom software development company</span>, mTouch Labs extends its engineering expertise to SaaS product development.
+            SaaS (Software as a Service) development involves building cloud-based applications that operate on subscription models and are accessible via the web. As a leading <span className="text-secondary font-semibold">custom software development company</span>, WorkHolo Labs extends its engineering expertise to SaaS product development.
           </p>
           <p className="text-gray-600 text-lg mb-8 leading-relaxed">
             Our SaaS development services include multi-tenant architecture design, subscription & billing integration, secure cloud deployment, API-driven ecosystem development, and SaaS product scaling & optimization.
@@ -153,7 +153,7 @@ const WhyChooseUs = () => {
         </div>
 
         <div>
-          <h2 className="text-4xl font-bold mb-6 tracking-tight">Why mTouch Labs for <span className="text-secondary">SaaS Development</span></h2>
+          <h2 className="text-4xl font-bold mb-6 tracking-tight">Why WorkHolo Labs for <span className="text-secondary">SaaS Development</span></h2>
           <p className="text-gray-600 text-lg mb-8">We combine product engineering with cloud-native expertise:</p>
           <ul className="space-y-4">
             {benefits.map((b, i) => (

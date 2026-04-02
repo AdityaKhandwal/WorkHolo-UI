@@ -71,7 +71,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-gray-400 text-lg max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          mTouch Labs delivers structured email marketing services that transform email communication into a measurable revenue channel. Effective email marketing is systematic, not sporadic.
+          WorkHolo Labs delivers structured email marketing services that transform email communication into a measurable revenue channel. Effective email marketing is systematic, not sporadic.
         </motion.p>
       </div>
     </section>
@@ -287,7 +287,7 @@ const WhyChooseSection = () => {
     <section className="py-24 px-4 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-extrabold text-slate-900 mb-6">
-          Why Choose <span className="text-brand-orange">mTouch Labs</span>?
+          Why Choose <span className="text-brand-orange">WorkHolo Labs</span>?
         </h2>
         <p className="text-gray-500 text-lg mb-12">We transform email into a strategic growth asset.</p>
         
@@ -587,7 +587,7 @@ const ExecutivesSection = () => {
           <h2 className="text-4xl font-extrabold text-slate-900 mb-4">
             Our <span className="text-brand-orange">Leadership</span> Team
           </h2>
-          <p className="text-gray-500 text-lg">The visionaries behind mTouch Labs.</p>
+          <p className="text-gray-500 text-lg">The visionaries behind WorkHolo Labs.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -635,7 +635,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-bold text-slate-800">Email Us</h4>
-                <p className="text-gray-500">contact@mtouchlabs.com</p>
+                <p className="text-gray-500">contact@WorkHololabs.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">

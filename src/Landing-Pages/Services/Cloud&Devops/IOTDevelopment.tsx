@@ -50,7 +50,7 @@ const Hero = () => {
           </p>
           
           <p className="max-w-3xl mx-auto text-lg opacity-70 leading-relaxed mb-12">
-            mTouch Labs is a leading IoT development company in India delivering intelligent, secure, and scalable Internet of Things solutions for enterprises. We design, develop, and deploy IoT ecosystems that connect devices, collect real-time data, automate workflows, and enable predictive decision-making.
+            WorkHolo Labs is a leading IoT development company in India delivering intelligent, secure, and scalable Internet of Things solutions for enterprises. We design, develop, and deploy IoT ecosystems that connect devices, collect real-time data, automate workflows, and enable predictive decision-making.
           </p>
         </motion.div>
       </div>
@@ -143,7 +143,7 @@ const WhyAmongBest = () => {
         
         <div>
           <h2 className="text-4xl lg:text-5xl font-extrabold mb-8 leading-tight">
-            Why mTouch Labs Is Among the <span className="text-brand-accent">Best IoT Companies</span>
+            Why WorkHolo Labs Is Among the <span className="text-brand-accent">Best IoT Companies</span>
           </h2>
           <p className="text-lg opacity-80 mb-8">
             We combine hardware integration knowledge with cloud engineering capabilities:
@@ -347,7 +347,7 @@ const Process = () => {
 
         <div className="mt-32 text-center">
           <h2 className="text-4xl lg:text-5xl font-extrabold mb-8">
-            Why Choose <span className="text-brand-accent">mTouch Labs</span>?
+            Why Choose <span className="text-brand-accent">WorkHolo Labs</span>?
           </h2>
           <p className="text-xl opacity-70 mb-12">We deliver reliable IoT ecosystems with enterprise-grade security.</p>
           
@@ -382,7 +382,7 @@ const FAQ = () => {
     },
     {
       q: 'Why choose an IoT development company in India?',
-      a: 'India offers a large pool of skilled engineers, cost-effective development, and expertise in both hardware and software integration. Companies like mTouch Labs provide global-standard IoT solutions at competitive prices.',
+      a: 'India offers a large pool of skilled engineers, cost-effective development, and expertise in both hardware and software integration. Companies like WorkHolo Labs provide global-standard IoT solutions at competitive prices.',
     },
     {
       q: 'How secure are IoT solutions?',

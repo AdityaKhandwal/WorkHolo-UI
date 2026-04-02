@@ -85,7 +85,7 @@ const Stats = () => {
             WooCommerce combines the flexibility of WordPress with the power of a fully customizable eCommerce engine. For businesses that want control over design, functionality, and marketing integration, WooCommerce offers unmatched adaptability.
           </p>
           <p className="mt-8 text-blue-600 font-semibold italic text-lg">
-            At mTouch Labs, we provide experienced WooCommerce developers in India who build secure, scalable, and performance-driven online stores designed to grow with your brand.
+            At WorkHolo Labs, we provide experienced WooCommerce developers in India who build secure, scalable, and performance-driven online stores designed to grow with your brand.
           </p>
         </div>
 
@@ -281,7 +281,7 @@ const CTA = () => {
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10 text-center">
         <h2 className="text-4xl md:text-6xl font-bold text-white mb-8">Build a Store That Converts and Scales</h2>
         <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
-          If you're looking to hire WooCommerce developers in India who understand both technology and online sales strategy, mTouch Labs is ready to collaborate. Create a flexible and scalable eCommerce store built for long-term growth.
+          If you're looking to hire WooCommerce developers in India who understand both technology and online sales strategy, WorkHolo Labs is ready to collaborate. Create a flexible and scalable eCommerce store built for long-term growth.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

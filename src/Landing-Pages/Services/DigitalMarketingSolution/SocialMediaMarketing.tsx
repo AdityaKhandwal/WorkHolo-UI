@@ -42,7 +42,7 @@ const Hero = () => (
           Strategic Brand Growth Across Global Social Platforms
         </h2>
         <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed mb-12">
-          mTouch Labs delivers structured social media marketing services designed to strengthen brand visibility, audience engagement, and measurable growth across digital platforms. Strategy creates impact.
+          WorkHolo Labs delivers structured social media marketing services designed to strengthen brand visibility, audience engagement, and measurable growth across digital platforms. Strategy creates impact.
         </p>
       </motion.div>
     </div>
@@ -219,7 +219,7 @@ const Framework = () => (
 const WhyChoose = () => (
   <section className="section-padding bg-darker/50">
     <div className="container-max text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Choose <span className="text-accent">mTouch Labs</span>?</h2>
+      <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Choose <span className="text-accent">WorkHolo Labs</span>?</h2>
       <p className="text-gray-400 text-lg">We align brand presence with measurable business growth.</p>
     </div>
 

@@ -166,7 +166,7 @@ export default function GenerativeAI() {
               Intelligent Systems Designed to Think, Create & Evolve
             </p>
             <p className="text-slate-400 text-lg max-w-4xl mx-auto leading-relaxed mb-12">
-              mTouch Labs operates as a specialized generative AI development company, engineering advanced AI-driven systems that generate content, automate reasoning, and enhance decision-making across digital platforms. Innovation is no longer about automation alone — it's about intelligent generation.
+              WorkHolo Labs operates as a specialized generative AI development company, engineering advanced AI-driven systems that generate content, automate reasoning, and enhance decision-making across digital platforms. Innovation is no longer about automation alone — it's about intelligent generation.
             </p>
           </motion.div>
         </div>
@@ -312,7 +312,7 @@ export default function GenerativeAI() {
       <section className="py-24 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <SectionHeading subtitle="We focus on practical AI integration that delivers measurable value.">
-            Why Organizations <span className="text-orange-500">Partner with mTouch Labs</span>
+            Why Organizations <span className="text-orange-500">Partner with WorkHolo Labs</span>
           </SectionHeading>
           <div className="flex flex-wrap justify-center gap-6">
             {[

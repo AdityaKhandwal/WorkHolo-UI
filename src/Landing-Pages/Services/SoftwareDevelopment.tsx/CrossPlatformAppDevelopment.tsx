@@ -71,7 +71,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-12 font-medium"
         >
-          mTouch Labs is a trusted Cross Platform App Development Company delivering high-performance 
+          WorkHolo Labs is a trusted Cross Platform App Development Company delivering high-performance 
           mobile applications that run seamlessly on iOS, Android, and web platforms using a single codebase.
         </motion.p>
 
@@ -268,14 +268,14 @@ const Benefits = () => {
   );
 };
 
-const WhyMtouch = () => {
+const WhyWorkHolo = () => {
   return (
     <section className="py-24 bg-white text-brand-purple">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <div>
           <span className="text-blue-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4 block">Our Edge</span>
           <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight">
-            Why Choose <span className="text-brand-accent">mTouch Labs</span>?
+            Why Choose <span className="text-brand-accent">WorkHolo Labs</span>?
           </h2>
           <p className="text-gray-600 text-lg mb-10 leading-relaxed">
             As a forward-thinking Digital Transformation Company, we combine mobile engineering expertise 
@@ -366,7 +366,7 @@ const FAQ = () => {
       a: 'It depends on your needs. For 90% of business apps, cross-platform is better as it offers 99% native performance at 60% of the cost and time. Native is only preferred for extremely hardware-intensive apps like high-end games.'
     },
     {
-      q: 'Which frameworks does mTouch Labs use?',
+      q: 'Which frameworks does WorkHolo Labs use?',
       a: 'We specialize in Flutter (Google) and React Native (Meta). We also work with progressive web technologies to ensure your app scales across all devices.'
     },
     {
@@ -510,7 +510,7 @@ export default function CrossPlatformAppDevelopment() {
         <Overview />
         <Expertise />
         <Benefits />
-        <WhyMtouch />
+        <WhyWorkHolo />
         <Industries />
         <TechStack />
         <Process />

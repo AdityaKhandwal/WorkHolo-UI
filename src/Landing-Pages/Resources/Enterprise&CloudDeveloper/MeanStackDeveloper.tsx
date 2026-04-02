@@ -134,7 +134,7 @@ const StatsSection = () => (
           When speed, scalability, and real-time functionality matter, the MEAN stack offers a powerful and streamlined development approach. Built entirely on JavaScript technologies, MEAN enables seamless communication between frontend and backend layers.
         </p>
         <p className="text-blue-400 font-medium italic text-lg">
-          At mTouch Labs, we provide skilled MEAN stack developers in India who build dynamic, high-performance web applications engineered for modern digital products.
+          At WorkHolo Labs, we provide skilled MEAN stack developers in India who build dynamic, high-performance web applications engineered for modern digital products.
         </p>
       </div>
 

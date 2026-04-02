@@ -72,7 +72,7 @@ const Stats = () => (
           When building scalable web applications or SaaS platforms, the backend architecture plays a critical role in performance, maintainability, and security. Laravel has become one of the most trusted PHP frameworks for developing structured and future-ready applications.
         </p>
         <p className="text-blue-600 font-semibold mt-8 text-lg italic">
-          At mTouch Labs, we offer experienced Laravel developers in India who specialize in building secure, API-driven, and enterprise-grade web systems tailored to your business needs.
+          At WorkHolo Labs, we offer experienced Laravel developers in India who specialize in building secure, API-driven, and enterprise-grade web systems tailored to your business needs.
         </p>
       </div>
 
@@ -265,7 +265,7 @@ const CTA = () => (
         Build Scalable Web Applications <br /> with Laravel
       </h2>
       <p className="text-gray-400 text-xl max-w-3xl mx-auto mb-12">
-        If you're looking to hire Laravel developers in India who understand backend architecture, security, and SaaS scalability, mTouch Labs is ready to collaborate. Create structured, high-performance web platforms designed for long-term success.
+        If you're looking to hire Laravel developers in India who understand backend architecture, security, and SaaS scalability, WorkHolo Labs is ready to collaborate. Create structured, high-performance web platforms designed for long-term success.
       </p>
       <div className="flex flex-wrap justify-center gap-6">
         <button className="bg-[#7B2CBF] hover:bg-[#6a24a3] text-white px-10 py-4 rounded-lg text-xl font-bold flex items-center gap-2 transition-all shadow-lg shadow-purple-500/20">

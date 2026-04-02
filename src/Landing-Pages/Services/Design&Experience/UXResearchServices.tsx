@@ -68,7 +68,7 @@ const Hero = () => (
         transition={{ duration: 0.6, delay: 0.3 }}
         className="text-white/60 text-sm md:text-base max-w-2xl mx-auto mt-6 leading-relaxed italic"
       >
-        mTouch Labs delivers professional UX research services that uncover real
+        WorkHolo Labs delivers professional UX research services that uncover real
         user behavior, decision patterns, and usability barriers before
         development begins. Research reduces risk. Insight increases impact.
       </motion.p>
@@ -283,7 +283,7 @@ const WhyChoose = () => {
     <section className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
         <h2 className="text-4xl md:text-5xl font-display font-bold text-[#1A1A1A] mb-6">
-          Why Choose <span className="text-yellow-500">mTouch Labs</span>?
+          Why Choose <span className="text-yellow-500">WorkHolo Labs</span>?
         </h2>
         <p className="text-gray-600 text-lg mb-16">
           We help organizations design with confidence.

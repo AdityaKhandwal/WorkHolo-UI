@@ -56,7 +56,7 @@ const Hero = () => {
           transition={{ delay: 0.2 }}
           className="text-white/50 max-w-2xl mx-auto mb-12"
         >
-          mTouch Labs is a results-driven Machine Learning Development Company delivering scalable AI & ML solutions that help businesses automate processes, improve decision-making, and unlock predictive insights.
+          WorkHolo Labs is a results-driven Machine Learning Development Company delivering scalable AI & ML solutions that help businesses automate processes, improve decision-making, and unlock predictive insights.
         </motion.p>
       </div>
 
@@ -147,7 +147,7 @@ const Expertise = () => {
         <div>
           <h2 className="text-4xl font-bold mb-8">Our <span className="text-yellow-500">ML Expertise</span></h2>
           <p className="text-white/70 mb-10">
-            At mTouch Labs, we provide end-to-end Machine Learning development services, including:
+            At WorkHolo Labs, we provide end-to-end Machine Learning development services, including:
           </p>
           <div className="space-y-6">
             {points.map((point, i) => (
@@ -298,7 +298,7 @@ const WhyChoose = () => {
     <section className="py-24 px-4 md:px-12 bg-white/5">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
-          Why Choose <span className="text-yellow-500">mTouch Labs</span> for ML?
+          Why Choose <span className="text-yellow-500">WorkHolo Labs</span> for ML?
         </h2>
         <p className="text-white/60 mb-16 max-w-3xl mx-auto">
           We don't just build models — we build intelligent systems aligned with business goals.
@@ -404,7 +404,7 @@ const FAQ = () => {
     { q: 'What are machine learning services?', a: 'Machine learning services involve designing algorithms and AI models that enable systems to learn from data, identify patterns, and make intelligent decisions without explicit programming.' },
     { q: 'How can machine learning benefit my business?', a: 'Businesses leverage ML to automate repetitive processes, improve operational efficiency, enhance customer personalization, predict future trends, detect fraud and anomalies, and optimize supply chain performance.' },
     { q: 'How long does it take to implement ML solutions?', a: 'Implementation timelines vary depending on complexity, but typically range from 3 to 9 months for enterprise-grade solutions.' },
-    { q: 'Does mTouch Labs provide enterprise ML solutions?', a: 'Yes, we specialize in enterprise-grade ML solutions tailored to specific business needs and scalable across global infrastructures.' }
+    { q: 'Does WorkHolo Labs provide enterprise ML solutions?', a: 'Yes, we specialize in enterprise-grade ML solutions tailored to specific business needs and scalable across global infrastructures.' }
   ];
 
   const [open, setOpen] = useState(0);

@@ -106,7 +106,7 @@ const StatsSection = () => {
             viewport={{ once: true }}
             className="text-blue-600 font-display font-bold text-xl md:text-2xl italic"
           >
-            At mTouch Labs, we provide experienced quality analyst developers in India who ensure your applications are secure, stable, and ready for real-world usage.
+            At WorkHolo Labs, we provide experienced quality analyst developers in India who ensure your applications are secure, stable, and ready for real-world usage.
           </motion.p>
         </div>
 
@@ -429,7 +429,7 @@ const BottomCTA = () => {
           transition={{ delay: 0.1 }}
           className="text-gray-300 font-sans text-lg md:text-2xl max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          If you're looking to hire quality analyst developers in India who prioritize reliability, performance, and security, mTouch Labs is ready to collaborate. Ensure your software performs flawlessly before it reaches your users.
+          If you're looking to hire quality analyst developers in India who prioritize reliability, performance, and security, WorkHolo Labs is ready to collaborate. Ensure your software performs flawlessly before it reaches your users.
         </motion.p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <button 

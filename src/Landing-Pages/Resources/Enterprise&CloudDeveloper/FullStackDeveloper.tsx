@@ -85,7 +85,7 @@ const StatsSection = () => (
           Building a successful digital product requires more than isolated frontend or backend expertise.
         </h2>
         <p className="text-xl text-blue-600 font-bold italic">
-          At mTouch Labs, we provide experienced full stack developers in India who take ownership of complete product development, ensuring seamless integration, performance, and scalability.
+          At WorkHolo Labs, we provide experienced full stack developers in India who take ownership of complete product development, ensuring seamless integration, performance, and scalability.
         </p>
       </div>
 
@@ -277,7 +277,7 @@ const CTASection = () => (
      <div className="max-w-7xl mx-auto text-center relative z-10">
         <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-12 tracking-tight">Build Complete Digital Solutions</h2>
         <p className="text-gray-400 text-2xl mb-16 max-w-4xl mx-auto leading-relaxed">
-          If you're looking to hire full stack developers in India who understand both technology and business strategy, mTouch Labs is ready to collaborate. Create scalable, secure, and future-ready applications with confidence.
+          If you're looking to hire full stack developers in India who understand both technology and business strategy, WorkHolo Labs is ready to collaborate. Create scalable, secure, and future-ready applications with confidence.
         </p>
 
         <div className="flex flex-wrap justify-center gap-6">

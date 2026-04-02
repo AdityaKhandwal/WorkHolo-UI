@@ -93,8 +93,8 @@ export default function PHPDeveloper() {
       <div className="bg-[#050a15] border-b border-gray-800 py-2 hidden lg:block">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="mailto:contact@mtouchlabs.com" className="flex items-center gap-2 hover:text-[#0091FF] transition-colors">
-              <Mail size={16} /> contact@mtouchlabs.com
+            <a href="mailto:contact@WorkHololabs.com" className="flex items-center gap-2 hover:text-[#0091FF] transition-colors">
+              <Mail size={16} /> contact@WorkHololabs.com
             </a>
             <a href="tel:+919390683154" className="flex items-center gap-2 hover:text-[#0091FF] transition-colors">
               <Phone size={16} /> +91 9390683154
@@ -120,7 +120,7 @@ export default function PHPDeveloper() {
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 bg-[#0091FF] rounded-lg flex items-center justify-center text-white font-bold text-xl">M</div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold tracking-tight">mTouch Labs</span>
+              <span className="text-xl font-bold tracking-tight">WorkHolo Labs</span>
               <span className="text-[10px] text-gray-400 uppercase tracking-widest leading-none">ISO Certified Company</span>
             </div>
           </div>
@@ -194,7 +194,7 @@ export default function PHPDeveloper() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <p className="text-[#0091FF] font-bold italic text-lg mb-4">
-              At mTouch Labs, we offer skilled PHP developers in India who build secure, performance-driven, and maintainable backend solutions tailored to your business requirements.
+              At WorkHolo Labs, we offer skilled PHP developers in India who build secure, performance-driven, and maintainable backend solutions tailored to your business requirements.
             </p>
           </div>
           
@@ -352,7 +352,7 @@ export default function PHPDeveloper() {
             
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-8">Build a Backend That Supports Growth</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
-              If you're looking to hire PHP developers in India who understand architecture, scalability, and performance, our team is ready to collaborate. Partner with mTouch Labs and build web systems engineered for reliability and growth.
+              If you're looking to hire PHP developers in India who understand architecture, scalability, and performance, our team is ready to collaborate. Partner with WorkHolo Labs and build web systems engineered for reliability and growth.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

@@ -336,11 +336,11 @@ const FAQ = () => {
       a: "A chef management app helps restaurants and food service providers organize kitchen tasks, track orders, manage staff schedules, and monitor inventory in real time, improving kitchen efficiency and service quality."
     },
     {
-      q: "What features does mTouch Labs include in chef management app solutions?",
+      q: "What features does WorkHolo Labs include in chef management app solutions?",
       a: "We include recipe management, inventory tracking, staff scheduling, order processing, analytics, and multi-role access for chefs, managers, and owners."
     },
     {
-      q: "How does mTouch Labs ensure the app improves kitchen productivity?",
+      q: "How does WorkHolo Labs ensure the app improves kitchen productivity?",
       a: "By automating manual processes, providing real-time data, and streamlining communication between front-of-house and back-of-house teams."
     },
     {

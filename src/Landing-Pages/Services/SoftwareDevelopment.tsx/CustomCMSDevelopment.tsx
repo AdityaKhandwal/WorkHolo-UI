@@ -60,7 +60,7 @@ const Hero = () => (
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-lg text-white/70 leading-relaxed max-w-3xl mb-12"
         >
-          mTouch Labs is a leading custom CMS development company in India delivering scalable and flexible content management systems tailored to business workflows. We design and build custom CMS platforms that empower organizations to manage digital content efficiently, streamline publishing processes, and maintain full control over their digital ecosystem. Content management should enable growth — not restrict it.
+          WorkHolo Labs is a leading custom CMS development company in India delivering scalable and flexible content management systems tailored to business workflows. We design and build custom CMS platforms that empower organizations to manage digital content efficiently, streamline publishing processes, and maintain full control over their digital ecosystem. Content management should enable growth — not restrict it.
         </motion.p>
       </div>
     </div>
@@ -246,11 +246,11 @@ const Industries = () => (
   </section>
 );
 
-const WhyMtouch = () => (
+const WhyWorkHolo = () => (
   <section className="py-24 bg-white">
     <div className="max-w-[1440px] mx-auto px-6 md:px-12 text-center">
       <h2 className="text-4xl md:text-5xl font-bold text-[#0A1128] mb-6">
-        Why Choose mTouch Labs as Your <span className="text-yellow-500">CMS Development Company</span>?
+        Why Choose WorkHolo Labs as Your <span className="text-yellow-500">CMS Development Company</span>?
       </h2>
       <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-12">
         We deliver CMS platforms that support business growth and digital transformation.
@@ -468,7 +468,7 @@ export default function CustomCMSDevelopment() {
         <WhyChooseCustom />
         <Services />
         <Industries />
-        <WhyMtouch />
+        <WhyWorkHolo />
         <Process />
         <Tech />
         <FAQ />

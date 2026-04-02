@@ -50,7 +50,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-white/60 text-lg md:text-xl max-w-3xl mx-auto mb-12 leading-relaxed">
-            Secure, Scalable & Performance-Optimized Android Applications. mTouch Labs is a trusted Android app development company delivering secure, scalable, and performance-optimized mobile applications tailored for the Android ecosystem.
+            Secure, Scalable & Performance-Optimized Android Applications. WorkHolo Labs is a trusted Android app development company delivering secure, scalable, and performance-optimized mobile applications tailored for the Android ecosystem.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -418,7 +418,7 @@ export default function AndroidAppDevelopment() {
         <section className="py-24 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6 text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-[#0B0D17] mb-4">
-              Why Choose <span className="text-[#7B2CBF]">mTouch Labs</span> for Android?
+              Why Choose <span className="text-[#7B2CBF]">WorkHolo Labs</span> for Android?
             </h2>
             <p className="text-gray-600 text-lg mb-16">We build Android applications that are reliable, scalable, and future-ready.</p>
             

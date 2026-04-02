@@ -289,7 +289,7 @@ const SecondaryHero = () => {
           Build Scalable Web Applications <span className="text-brand-blue">with Angular</span>
         </h2>
         <p className="text-xl text-gray-400 mb-12 leading-relaxed">
-          If you're looking to hire Angular developers in India who understand enterprise architecture and scalable frontend engineering, mTouch Labs is ready to collaborate. Create modern, structured, and future-ready web platforms with us.
+          If you're looking to hire Angular developers in India who understand enterprise architecture and scalable frontend engineering, WorkHolo Labs is ready to collaborate. Create modern, structured, and future-ready web platforms with us.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-brand-purple hover:bg-purple-700 text-black px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-lg shadow-brand-purple/20">

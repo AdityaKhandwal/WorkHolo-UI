@@ -56,7 +56,7 @@ const Hero = () => (
         </p>
 
         <p className="text-gray-400 text-lg max-w-4xl mx-auto mb-12 leading-relaxed">
-          mTouch Labs is a performance-focused UI/UX design company delivering user-centered digital experiences that improve engagement, usability, and conversion rates. Great design is not just visual — it's functional, measurable, and aligned with business outcomes.
+          WorkHolo Labs is a performance-focused UI/UX design company delivering user-centered digital experiences that improve engagement, usability, and conversion rates. Great design is not just visual — it's functional, measurable, and aligned with business outcomes.
         </p>
 
         <div className="absolute right-12 top-1/2 -translate-y-1/2 hidden xl:block">
@@ -276,7 +276,7 @@ const WhyChoose = () => {
     <section className="py-24 bg-white">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-dark mb-8 font-display">
-          Why Choose <span className="text-accent">mTouch Labs</span>?
+          Why Choose <span className="text-accent">WorkHolo Labs</span>?
         </h2>
         <p className="text-gray-600 text-xl mb-12 max-w-3xl mx-auto">
           We design experiences that connect users with your brand seamlessly.

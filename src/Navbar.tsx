@@ -68,7 +68,7 @@ const NAV_DATA = [
         links: [
           {
             label: "NASSCOM SME Inspire Award 2026",
-            desc: "mTouch Labs wins Digital Transformation Catalyst award at NASSCOM Mumbai",
+            desc: "WorkHolo Labs wins Digital Transformation Catalyst award at NASSCOM Mumbai",
           },
           {
             label: "Next.js 16 for Enterprise",
@@ -98,7 +98,7 @@ const NAV_DATA = [
       links: [
         {
           label: "Company Overview",
-          desc: "mTouch Labs delivers innovative mobile and web app solutions for modern businesses",
+          desc: "WorkHolo Labs delivers innovative mobile and web app solutions for modern businesses",
         },
         {
           label: "Vision & Mission",
@@ -106,7 +106,7 @@ const NAV_DATA = [
         },
         {
           label: "Leadership Team",
-          desc: "Meet the experienced minds leading mTouch Labs to digital excellence",
+          desc: "Meet the experienced minds leading WorkHolo Labs to digital excellence",
         },
         {
           label: "Our Journey",
@@ -121,7 +121,7 @@ const NAV_DATA = [
           desc: "Proud member of India's premier IT industry association",
         },
         {
-          label: "Life at mTouch Labs",
+          label: "Life at WorkHolo Labs",
           desc: "Explore our vibrant culture, talented people, and collaborative work environment",
         },
       ],

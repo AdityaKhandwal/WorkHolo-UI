@@ -69,7 +69,7 @@ const Hero = () => {
           </p>
 
           <p className="text-lg text-white/60 max-w-3xl mx-auto mb-12 leading-relaxed">
-            mTouch Labs is a results-oriented React Native app development
+            WorkHolo Labs is a results-oriented React Native app development
             company delivering scalable, high-performance mobile applications
             for businesses seeking efficient cross-platform deployment. We build
             hybrid mobile apps using React Native's component-based
@@ -377,7 +377,7 @@ const WhyChooseSection = () => {
     <section className="py-24 px-4 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-6xl font-black font-display text-[#0a0a0a] mb-8">
-          Why Choose mTouch Labs as Your <br />{" "}
+          Why Choose WorkHolo Labs as Your <br />{" "}
           <span className="text-[#7B2CBF]">
             React Native Development Company?
           </span>
@@ -634,7 +634,7 @@ const ContactSection = () => {
                   Email Us
                 </h4>
                 <p className="text-xl font-bold text-[#0a0a0a]">
-                  contact@mtouchlabs.com
+                  contact@WorkHololabs.com
                 </p>
               </div>
             </div>

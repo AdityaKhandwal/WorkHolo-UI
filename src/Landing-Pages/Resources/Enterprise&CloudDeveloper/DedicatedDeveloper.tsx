@@ -159,7 +159,7 @@ export default function DedicatedDeveloper() {
             className="fixed inset-0 z-[60] bg-[#050A18] p-8 lg:hidden"
           >
             <div className="flex justify-between items-center mb-12">
-              <span className="text-2xl font-bold">mTouch Labs</span>
+              <span className="text-2xl font-bold">WorkHolo Labs</span>
               <button onClick={() => setMobileMenuOpen(false)}>
                 <X className="w-8 h-8" />
               </button>
@@ -216,7 +216,7 @@ export default function DedicatedDeveloper() {
             className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto mb-12 leading-relaxed"
           >
             If you're looking to hire dedicated developers in India who work as
-            a true extension of your team, mTouch Labs is ready to collaborate.
+            a true extension of your team, WorkHolo Labs is ready to collaborate.
             Build faster, scale confidently, and innovate continuously.
           </motion.p>
 
@@ -252,7 +252,7 @@ export default function DedicatedDeveloper() {
               talent that works as an extension of your internal team.
             </p>
             <p className="mt-8 text-blue-400 font-semibold italic text-lg">
-              At mTouch Labs, we provide dedicated developers in India who
+              At WorkHolo Labs, we provide dedicated developers in India who
               integrate seamlessly into your workflow, align with your product
               vision, and contribute consistently to your growth.
             </p>
@@ -354,7 +354,7 @@ export default function DedicatedDeveloper() {
           <SectionHeading
             title={
               <>
-                Why Choose <span className="text-blue-500">mTouch Labs?</span>
+                Why Choose <span className="text-blue-500">WorkHolo Labs?</span>
               </>
             }
             subtitle="We prioritize reliability, accountability, and measurable outcomes."

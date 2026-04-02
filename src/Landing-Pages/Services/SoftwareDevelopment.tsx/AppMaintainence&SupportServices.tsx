@@ -47,7 +47,7 @@ const Hero = () => {
         </p>
         
         <p className="text-sm text-gray-500 mb-16 max-w-2xl mx-auto italic">
-          mTouch Labs provides comprehensive App Maintenance and Support Services to ensure your mobile and web applications remain secure, scalable, and high-performing long after launch.
+          WorkHolo Labs provides comprehensive App Maintenance and Support Services to ensure your mobile and web applications remain secure, scalable, and high-performing long after launch.
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
@@ -309,7 +309,7 @@ const WhyChooseSection = () => {
         >
           <div className="text-blue-600 text-[10px] font-bold uppercase tracking-[0.2em] mb-4">Our Edge</div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight">
-            Why Choose mTouch Labs for <span className="text-orange-500">Application Maintenance</span>?
+            Why Choose WorkHolo Labs for <span className="text-orange-500">Application Maintenance</span>?
           </h2>
           <p className="text-gray-600 mb-10 text-lg leading-relaxed">
             We ensure your application evolves with business growth and technology advancements.
@@ -401,7 +401,7 @@ const FAQSection = () => {
       a: "We recommend continuous monitoring with monthly performance reviews and immediate patching for security vulnerabilities. Major updates are typically scheduled quarterly or alongside major OS releases."
     },
     {
-      q: "Does mTouch Labs provide SLA-based support?",
+      q: "Does WorkHolo Labs provide SLA-based support?",
       a: "Yes, we offer various SLA-based support models tailored to your business needs, including guaranteed response times and 24/7 monitoring options."
     },
     {

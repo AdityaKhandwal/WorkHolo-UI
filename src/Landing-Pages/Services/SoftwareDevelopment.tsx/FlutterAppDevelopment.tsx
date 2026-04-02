@@ -46,7 +46,7 @@ const Hero = () => (
         transition={{ duration: 0.6, delay: 0.4 }}
         className="max-w-3xl mx-auto text-white/70 text-lg leading-relaxed mb-12"
       >
-        mTouch Labs is a performance-driven Flutter app development company delivering high-quality cross-platform mobile applications for startups, enterprises, and digital product companies.
+        WorkHolo Labs is a performance-driven Flutter app development company delivering high-quality cross-platform mobile applications for startups, enterprises, and digital product companies.
       </motion.p>
     </div>
   </section>
@@ -199,7 +199,7 @@ const WhyChoose = () => (
   <section className="py-24 px-4 bg-white">
     <div className="max-w-7xl mx-auto text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-display font-extrabold text-[#050b17] mb-6">
-        Why Choose <span className="text-[#7B2CBF]">mTouch Labs</span> for Flutter?
+        Why Choose <span className="text-[#7B2CBF]">WorkHolo Labs</span> for Flutter?
       </h2>
       <p className="text-gray-500 text-lg max-w-3xl mx-auto">
         We combine speed with structured engineering to deliver reliable cross-platform apps.

@@ -33,7 +33,7 @@ const Stats = () => (
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-6">
           <p className="text-blue-600 font-sans font-bold text-lg leading-relaxed">Swift has become the foundation of modern iOS application development. Designed for performance, safety, and clarity, Swift enables businesses to build refined, high-performing applications.</p>
-          <p className="text-gray-500 font-sans text-xl leading-relaxed italic">"At mTouch Labs, we offer experienced Swift developers in India who craft robust iOS applications engineered for speed, stability, and seamless user experience."</p>
+          <p className="text-gray-500 font-sans text-xl leading-relaxed italic">"At WorkHolo Labs, we offer experienced Swift developers in India who craft robust iOS applications engineered for speed, stability, and seamless user experience."</p>
         </div>
         <div className="grid grid-cols-2 gap-8">
           {[{ label: 'Projects Delivered', value: '500+' }, { label: 'Global Clients', value: '1050+' }, { label: 'Years in Tech', value: '14+' }, { label: 'Satisfaction Rate', value: '99%' }].map((stat) => (
@@ -162,7 +162,7 @@ export default function SwiftDeveloper() {
         <section className="relative py-32 bg-[#05070A] overflow-hidden text-center">
           <div className="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
             <h2 className="text-5xl md:text-7xl font-display font-bold text-white tracking-tight mb-8">Build a High-Performance iOS Application</h2>
-            <p className="text-white/60 font-sans text-xl max-w-3xl mx-auto mb-12 leading-relaxed">If you're looking to hire Swift developers in India, mTouch Labs is ready to collaborate. Create secure and future-ready iOS applications with confidence.</p>
+            <p className="text-white/60 font-sans text-xl max-w-3xl mx-auto mb-12 leading-relaxed">If you're looking to hire Swift developers in India, WorkHolo Labs is ready to collaborate. Create secure and future-ready iOS applications with confidence.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button className="w-full sm:w-auto bg-[#7B2CBF] hover:bg-[#6A25A3] text-white px-10 py-4 rounded-full font-sans font-bold text-lg transition-all flex items-center justify-center gap-2 group">Contact Us Today <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" /></button>
               <button className="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white px-10 py-4 rounded-full font-sans font-bold text-lg transition-all flex items-center justify-center gap-2">WhatsApp <MessageCircle size={20} /></button>

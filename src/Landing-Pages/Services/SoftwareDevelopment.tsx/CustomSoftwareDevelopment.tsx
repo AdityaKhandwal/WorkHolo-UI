@@ -55,7 +55,7 @@ const Hero = () => (
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-3xl"
         >
-          mTouch Labs is a professional custom software development company
+          WorkHolo Labs is a professional custom software development company
           specializing in designing and building scalable, secure, and
           business-aligned software systems that automate operations and support
           long-term digital transformation.
@@ -302,7 +302,7 @@ const WhyChooseSection = () => (
   <section className="bg-gray-50 py-24">
     <div className="max-w-[1440px] mx-auto px-4 md:px-8 text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-bold text-[#0B1120] mb-6">
-        Why Choose <span className="text-[#7B2CBF]">mTouch Labs</span>?
+        Why Choose <span className="text-[#7B2CBF]">WorkHolo Labs</span>?
       </h2>
       <p className="text-gray-600 text-xl">
         We don't just develop applications — we build sustainable digital

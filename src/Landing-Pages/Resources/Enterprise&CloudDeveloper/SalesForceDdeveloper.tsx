@@ -172,7 +172,7 @@ const IntroText = () => (
         transition={{ delay: 0.2 }}
         className="text-lg md:text-xl text-blue-400 font-semibold mt-12 italic"
       >
-        At mTouch Labs, we provide skilled Salesforce developers in India who help organizations streamline processes, improve visibility, and drive measurable growth.
+        At WorkHolo Labs, we provide skilled Salesforce developers in India who help organizations streamline processes, improve visibility, and drive measurable growth.
       </motion.p>
     </div>
   </section>
@@ -317,7 +317,7 @@ const CTA = () => (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
       <h2 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tight font-display">Build a <span className="text-blue-500">Smarter CRM</span> Strategy</h2>
       <p className="text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
-        If you're looking to hire Salesforce developers in India who understand CRM strategy and enterprise workflows, mTouch Labs is ready to collaborate. Transform your Salesforce platform into a scalable growth engine.
+        If you're looking to hire Salesforce developers in India who understand CRM strategy and enterprise workflows, WorkHolo Labs is ready to collaborate. Transform your Salesforce platform into a scalable growth engine.
       </p>
       
       <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

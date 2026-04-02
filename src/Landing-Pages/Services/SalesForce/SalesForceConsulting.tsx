@@ -59,7 +59,7 @@ const Hero = () => (
           transition={{ delay: 0.2 }}
           className="text-lg text-white/70 leading-relaxed max-w-3xl"
         >
-          At mTouch Labs, we help businesses unlock the full potential of Salesforce by aligning CRM technology with strategic growth objectives. We don't just deploy Salesforce — we design scalable CRM ecosystems that improve sales performance, automate workflows, and enhance customer lifecycle management.
+          At WorkHolo Labs, we help businesses unlock the full potential of Salesforce by aligning CRM technology with strategic growth objectives. We don't just deploy Salesforce — we design scalable CRM ecosystems that improve sales performance, automate workflows, and enhance customer lifecycle management.
         </motion.p>
       </div>
     </div>
@@ -258,7 +258,7 @@ const WhyChoose = () => (
     <div className="container-custom">
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
-          Why Choose <span className="text-brand-orange">mTouch Labs</span>?
+          Why Choose <span className="text-brand-orange">WorkHolo Labs</span>?
         </h2>
         <p className="text-slate-500 max-w-3xl mx-auto">
           We focus on measurable outcomes such as improved conversion rates, faster deal closures, and enhanced customer engagement.

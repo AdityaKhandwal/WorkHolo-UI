@@ -47,7 +47,7 @@ const Hero = () => {
             Protecting Cloud Environments with Advanced Security & Compliance Frameworks
           </p>
           <p className="max-w-3xl mx-auto text-lg text-white/70 leading-relaxed mb-12">
-            mTouch Labs provides enterprise-grade Cloud Security Services designed to safeguard cloud infrastructure, applications, and data against evolving cyber threats. Cloud performance means nothing without cloud protection.
+            WorkHolo Labs provides enterprise-grade Cloud Security Services designed to safeguard cloud infrastructure, applications, and data against evolving cyber threats. Cloud performance means nothing without cloud protection.
           </p>
         </motion.div>
       </div>
@@ -268,7 +268,7 @@ const WhyChooseSection = () => {
     <section className="py-24 bg-white/5">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold mb-4">
-          Why Choose mTouch Labs for <span className="text-brand-orange">Cloud Security</span>?
+          Why Choose WorkHolo Labs for <span className="text-brand-orange">Cloud Security</span>?
         </h2>
         <p className="text-white/60 mb-16 text-lg">We secure cloud environments with precision and discipline.</p>
 

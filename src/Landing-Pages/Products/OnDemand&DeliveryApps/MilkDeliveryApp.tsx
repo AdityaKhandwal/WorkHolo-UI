@@ -311,8 +311,8 @@ const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const faqs = [
     { q: "How can a milk delivery app streamline operations for dairy businesses?", a: "A milk delivery app automates order placement, route optimization, and payment collection, reducing manual errors and saving time." },
-    { q: "What innovative features does mTouch Labs include in milk delivery apps?", a: "We include features like real-time tracking, subscription management, multi-payment gateways, and automated push notifications." },
-    { q: "How does mTouch Labs ensure a seamless user experience in milk delivery apps?", a: "We focus on intuitive UI/UX design, fast loading times, and robust backend infrastructure to ensure reliability." },
+    { q: "What innovative features does WorkHolo Labs include in milk delivery apps?", a: "We include features like real-time tracking, subscription management, multi-payment gateways, and automated push notifications." },
+    { q: "How does WorkHolo Labs ensure a seamless user experience in milk delivery apps?", a: "We focus on intuitive UI/UX design, fast loading times, and robust backend infrastructure to ensure reliability." },
     { q: "Can milk delivery apps support recurring subscriptions and notifications?", a: "Yes, our apps are built with sophisticated subscription engines that handle daily, weekly, or custom recurring orders automatically." },
     { q: "What factors affect the development timeline for a milk delivery app?", a: "The timeline depends on feature complexity, platform requirements (iOS/Android/Web), and integration needs with third-party services." }
   ];
@@ -393,7 +393,7 @@ const GlobalPresence = () => {
 const CopyrightBar = () => (
   <div className="bg-presence-dark text-gray-500 py-8 px-4 md:px-12 border-t border-gray-900 text-[12px]">
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-      <p>© 2026 <span className="text-gray-300 font-bold">mTouch Labs Pvt. Ltd.</span> All rights reserved.</p>
+      <p>© 2026 <span className="text-gray-300 font-bold">WorkHolo Labs Pvt. Ltd.</span> All rights reserved.</p>
       <div className="flex gap-8">
         <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
         <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

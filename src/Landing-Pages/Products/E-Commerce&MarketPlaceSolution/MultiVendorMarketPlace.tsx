@@ -147,7 +147,7 @@ export default function MultiVendorMarketPlace() {
           >
             <SectionHeading>Multi Vendor Ecommerce App Development</SectionHeading>
             <p className="text-lg text-gray-600 leading-relaxed mb-12">
-              Welcome to the future of eCommerce! At mTouch Labs, we specialize in creating innovative, scalable multi-vendor marketplace solutions that empower businesses to thrive in the digital marketplace. Whether you're looking to build a new online marketplace or scale an existing one, our expert team delivers custom eCommerce app development tailored to your unique needs. With our comprehensive vendor management system and cloud-based infrastructure, we ensure a seamless experience for both vendors and customers alike.
+              Welcome to the future of eCommerce! At WorkHolo Labs, we specialize in creating innovative, scalable multi-vendor marketplace solutions that empower businesses to thrive in the digital marketplace. Whether you're looking to build a new online marketplace or scale an existing one, our expert team delivers custom eCommerce app development tailored to your unique needs. With our comprehensive vendor management system and cloud-based infrastructure, we ensure a seamless experience for both vendors and customers alike.
             </p>
             <div className="bg-[#F3E8FF] p-10 rounded-[40px] border border-purple-100">
               <h3 className="text-2xl font-bold text-[#7B2CBF] mb-6">Ready to transform your business? Contact us today for a free consultation!</h3>

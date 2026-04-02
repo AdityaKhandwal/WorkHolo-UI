@@ -66,7 +66,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-lg text-white/70 max-w-3xl mx-auto leading-relaxed"
         >
-          mTouch Labs is a leading Enterprise Application Development Company delivering secure, scalable, and high-performance enterprise software solutions. We architect systems that streamline operations, unify data, automate workflows, and support long-term digital transformation.
+          WorkHolo Labs is a leading Enterprise Application Development Company delivering secure, scalable, and high-performance enterprise software solutions. We architect systems that streamline operations, unify data, automate workflows, and support long-term digital transformation.
         </motion.p>
       </div>
     </section>
@@ -304,7 +304,7 @@ const WhyChoose = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-6">
-            Why Choose <span className="text-accent">mTouch Labs</span>?
+            Why Choose <span className="text-accent">WorkHolo Labs</span>?
           </h2>
           <p className="text-slate-600 text-lg max-w-3xl mx-auto">
             We operate as a digital transformation partner — not just a software vendor.

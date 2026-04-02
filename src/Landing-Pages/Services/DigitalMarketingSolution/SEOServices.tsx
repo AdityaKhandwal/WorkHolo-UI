@@ -80,7 +80,7 @@ const Hero = () => {
           </h2>
           
           <p className="text-lg lg:text-xl text-white/60 max-w-3xl mx-auto mb-12 leading-relaxed">
-            mTouch Labs provides performance-driven SEO services designed to increase search visibility, 
+            WorkHolo Labs provides performance-driven SEO services designed to increase search visibility, 
             strengthen domain authority, and generate high-intent organic traffic. Organic visibility is not accidental 
             — it is engineered.
           </p>
@@ -311,7 +311,7 @@ const WhyChoose = () => {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-4xl font-black text-[#1F2937] mb-4">
-          Why Choose <span className="text-[#00A3FF]">mTouch Labs</span>?
+          Why Choose <span className="text-[#00A3FF]">WorkHolo Labs</span>?
         </h2>
         <p className="text-lg text-[#4B5563] mb-12">We combine technology, analytics, and strategy for sustainable organic growth.</p>
         

@@ -58,7 +58,7 @@ const Hero = () => (
         transition={{ duration: 0.6, delay: 0.3 }}
         className="text-sm text-gray-500 max-w-2xl mx-auto mt-6"
       >
-        mTouch Labs delivers advanced data science solutions that help organizations transform raw data into actionable intelligence. Data is valuable — only when it becomes insight.
+        WorkHolo Labs delivers advanced data science solutions that help organizations transform raw data into actionable intelligence. Data is valuable — only when it becomes insight.
       </motion.p>
     </div>
   </section>
@@ -249,7 +249,7 @@ const WhyChooseUs = () => (
   <section className="section-padding bg-white">
     <div className="container-max text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-bold mb-4">
-        Why Choose mTouch Labs for <span className="text-accent">Data Science</span>?
+        Why Choose WorkHolo Labs for <span className="text-accent">Data Science</span>?
       </h2>
       <p className="text-gray-500">We transform data complexity into measurable business clarity.</p>
     </div>

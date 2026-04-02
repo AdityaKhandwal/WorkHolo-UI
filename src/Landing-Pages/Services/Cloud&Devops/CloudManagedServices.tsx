@@ -42,7 +42,7 @@ const Hero = () => {
             Cloud <span className="text-accent-orange">Managed</span> Services
           </h1>
           <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto mb-10 leading-relaxed">
-            Proactive Cloud Operations & Continuous Infrastructure Management. mTouch Labs provides comprehensive Cloud Managed Services designed to ensure continuous performance, operational stability, and long-term scalability of cloud environments.
+            Proactive Cloud Operations & Continuous Infrastructure Management. WorkHolo Labs provides comprehensive Cloud Managed Services designed to ensure continuous performance, operational stability, and long-term scalability of cloud environments.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full text-lg font-bold transition-all transform hover:scale-105 shadow-xl shadow-primary/30">
@@ -265,7 +265,7 @@ const WhyChoose = () => {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-8 leading-tight">
-          Why Choose mTouch Labs for <span className="text-accent-orange">Managed Services</span>?
+          Why Choose WorkHolo Labs for <span className="text-accent-orange">Managed Services</span>?
         </h2>
         <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-12">
           We manage cloud environments with operational discipline and performance focus.

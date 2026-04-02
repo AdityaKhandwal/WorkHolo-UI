@@ -126,7 +126,7 @@ const Intro = () => {
           transition={{ delay: 0.2 }}
           className="text-lg text-accent italic font-semibold"
         >
-          At mTouch Labs, we provide experienced PWA developers in India who build fast, reliable, and engaging progressive web applications designed for reach, performance, and scalability.
+          At WorkHolo Labs, we provide experienced PWA developers in India who build fast, reliable, and engaging progressive web applications designed for reach, performance, and scalability.
         </motion.p>
       </div>
     </section>
@@ -316,7 +316,7 @@ const CTA = () => {
           Build Web Applications That Feel <br /> Like Native Apps
         </h2>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-12">
-          If you're looking to hire PWA developers in India who understand performance, scalability, and user engagement, mTouch Labs is ready to collaborate. Deliver fast, reliable, and app-like web experiences to your users.
+          If you're looking to hire PWA developers in India who understand performance, scalability, and user engagement, WorkHolo Labs is ready to collaborate. Deliver fast, reliable, and app-like web experiences to your users.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-lg font-bold text-lg flex items-center justify-center gap-2 transition-all">

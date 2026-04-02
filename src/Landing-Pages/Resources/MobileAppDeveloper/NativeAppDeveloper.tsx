@@ -277,7 +277,7 @@ const CTA = () => {
           Let's Build a <span className="text-blue-400">High-Performance</span> Native App
         </h2>
         <p className="text-gray-400 text-xl max-w-3xl mx-auto mb-12 leading-relaxed">
-          If you're planning to create a mobile application that demands speed, reliability, and scalability, our native developers are ready to support your vision. Partner with mTouch Labs and build mobile apps engineered for excellence.
+          If you're planning to create a mobile application that demands speed, reliability, and scalability, our native developers are ready to support your vision. Partner with WorkHolo Labs and build mobile apps engineered for excellence.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <button className="w-full sm:w-auto bg-blue-500 hover:bg-blue-600 text-white px-10 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-all transform hover:-translate-y-1">
@@ -300,7 +300,7 @@ const IntroText = () => {
           Native mobile applications deliver unmatched speed, reliability, and seamless integration with device hardware. If performance, responsiveness, and platform-level optimization are critical to your product, hiring native app developers is the right decision.
         </p>
         <p className="mt-10 text-xl md:text-2xl font-bold text-blue-600 italic">
-          At mTouch Labs, our native app developers in India build high-performance iOS and Android applications engineered specifically for their respective platforms.
+          At WorkHolo Labs, our native app developers in India build high-performance iOS and Android applications engineered specifically for their respective platforms.
         </p>
       </div>
     </section>

@@ -89,7 +89,7 @@ const Stats = () => (
           Modern applications demand backend systems that are fast, responsive, and capable of handling high volumes of concurrent users. Node.js has become a preferred technology for building scalable, event-driven, and real-time applications.
         </p>
         <p className="mt-8 text-blue-400 font-semibold italic text-xl">
-          At mTouch Labs, we offer experienced Node.js developers in India who design and build high-performance backend architectures tailored to your product vision.
+          At WorkHolo Labs, we offer experienced Node.js developers in India who design and build high-performance backend architectures tailored to your product vision.
         </p>
       </div>
     </div>
@@ -277,7 +277,7 @@ const CTA = () => (
     <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
       <h2 className="text-4xl md:text-6xl font-black font-display mb-8">Build High-Performance Backend Systems</h2>
       <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
-        If you're looking to hire Node.js developers in India who understand scalable architecture and real-time performance, mTouch Labs is ready to collaborate. Create secure and future-ready backend systems with confidence.
+        If you're looking to hire Node.js developers in India who understand scalable architecture and real-time performance, WorkHolo Labs is ready to collaborate. Create secure and future-ready backend systems with confidence.
       </p>
       <div className="flex flex-col md:flex-row items-center justify-center gap-6">
         <button className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 rounded-xl font-bold text-xl transition-all flex items-center justify-center gap-2 group">
@@ -318,7 +318,7 @@ export default function NodeJsDeveloper() {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Mail className="w-3 h-3 text-blue-500" />
-              CONTACT@MTOUCHLABS.COM
+              CONTACT@WorkHoloLABS.COM
             </div>
             <div className="flex items-center gap-2">
               <div className="w-4 h-3 bg-orange-500 rounded-xs" />

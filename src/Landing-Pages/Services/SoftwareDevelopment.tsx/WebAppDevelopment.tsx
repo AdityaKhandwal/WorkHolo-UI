@@ -29,7 +29,7 @@ const Hero = () => (
           <span className="text-white/60">and Startups</span>
         </h1>
         <p className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Recognized worldwide as a trusted Software Development Company & IT Solutions provider, mTouch Labs collaborates with the Telangana, Abu Dhabi Governments & leading enterprises to deliver secure, scalable, and innovative digital solutions.
+          Recognized worldwide as a trusted Software Development Company & IT Solutions provider, WorkHolo Labs collaborates with the Telangana, Abu Dhabi Governments & leading enterprises to deliver secure, scalable, and innovative digital solutions.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button className="w-full sm:w-auto bg-primary hover:bg-primary-dark text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-lg shadow-primary/20">
@@ -167,7 +167,7 @@ export default function WebAppDeveloper() {
               Empowering Businesses Through <span className="text-primary">Digital Transformation</span>
             </h2>
             <p className="text-white/70 text-lg mb-8 leading-relaxed">
-              At mTouch Labs, we are more than just a software company. We are your strategic partners in innovation. With a global presence and a team of dedicated experts, we help organizations navigate the complexities of the digital landscape.
+              At WorkHolo Labs, we are more than just a software company. We are your strategic partners in innovation. With a global presence and a team of dedicated experts, we help organizations navigate the complexities of the digital landscape.
             </p>
             
             <div className="grid grid-cols-2 gap-8 mb-10">
@@ -320,19 +320,19 @@ export default function WebAppDeveloper() {
               {
                 name: 'John Smith',
                 role: 'CEO, TechCorp',
-                content: 'mTouch Labs delivered our mobile app ahead of schedule and with exceptional quality. Their team is professional and highly skilled.',
+                content: 'WorkHolo Labs delivered our mobile app ahead of schedule and with exceptional quality. Their team is professional and highly skilled.',
                 avatar: 'https://i.pravatar.cc/150?u=1'
               },
               {
                 name: 'Sarah Johnson',
                 role: 'Founder, StartupX',
-                content: 'Working with mTouch Labs was a game-changer for our business. They understood our vision and brought it to life perfectly.',
+                content: 'Working with WorkHolo Labs was a game-changer for our business. They understood our vision and brought it to life perfectly.',
                 avatar: 'https://i.pravatar.cc/150?u=2'
               },
               {
                 name: 'Michael Brown',
                 role: 'CTO, GlobalSolutions',
-                content: 'The level of technical expertise at mTouch Labs is impressive. They solved complex problems with ease and delivered a robust solution.',
+                content: 'The level of technical expertise at WorkHolo Labs is impressive. They solved complex problems with ease and delivered a robust solution.',
                 avatar: 'https://i.pravatar.cc/150?u=3'
               }
             ].map((testimonial, idx) => (
@@ -369,7 +369,7 @@ export default function WebAppDeveloper() {
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-6xl font-bold mb-8">Ready to Build Something Amazing?</h2>
           <p className="text-white/80 text-xl mb-12 max-w-2xl mx-auto">
-            Join 500+ companies that trust mTouch Labs for their digital transformation journey.
+            Join 500+ companies that trust WorkHolo Labs for their digital transformation journey.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <button className="bg-white text-primary px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform">
@@ -408,7 +408,7 @@ export default function WebAppDeveloper() {
                 </div>
                 <div>
                   <h4 className="font-bold text-xl mb-1">Email Us</h4>
-                  <p className="text-white/60">contact@mtouchlabs.com</p>
+                  <p className="text-white/60">contact@WorkHololabs.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-6">

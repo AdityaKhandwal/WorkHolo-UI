@@ -62,7 +62,7 @@ const Stats = () => (
           Off-the-shelf CMS solutions often limit flexibility, scalability, and integration capabilities.
         </p>
         <p className="text-primary font-bold text-lg md:text-xl mt-8 italic">
-          At mTouch Labs, we provide experienced custom CMS developers in India who design and build fully tailored content management systems aligned with your workflows, publishing needs, and long-term digital strategy.
+          At WorkHolo Labs, we provide experienced custom CMS developers in India who design and build fully tailored content management systems aligned with your workflows, publishing needs, and long-term digital strategy.
         </p>
       </div>
       
@@ -286,7 +286,7 @@ const CTA = () => (
         Take Full Control of Your Digital Content
       </h2>
       <p className="text-gray-300 text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
-        If you're looking to hire custom CMS developers in India who can build a secure and scalable content management platform tailored to your business, mTouch Labs is ready to collaborate.
+        If you're looking to hire custom CMS developers in India who can build a secure and scalable content management platform tailored to your business, WorkHolo Labs is ready to collaborate.
       </p>
       <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
         <button className="bg-primary hover:bg-opacity-90 text-white px-10 py-4 rounded-full flex items-center gap-2 transition-all font-bold text-lg w-full md:w-auto justify-center">

@@ -99,7 +99,7 @@ const Stats = () => (
           User expectations for web applications have evolved. Speed, responsiveness, and seamless interaction are no longer optional — they are essential. React has emerged as a powerful framework for building dynamic interfaces that scale effortlessly.
         </p>
         <p className="mt-8 text-[#00A3FF] font-medium italic text-lg">
-          At mTouch Labs, we provide experienced React developers in India who craft high-performance web applications designed for growth, usability, and long-term maintainability.
+          At WorkHolo Labs, we provide experienced React developers in India who craft high-performance web applications designed for growth, usability, and long-term maintainability.
         </p>
       </div>
     </div>
@@ -325,7 +325,7 @@ const CTA = () => (
       </div>
       <h2 className="text-4xl md:text-6xl font-bold mb-8">Let's Build Your Next Web Application</h2>
       <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12">
-        If you're looking to hire React developers in India who combine technical expertise with business understanding, mTouch Labs is ready to collaborate. Create modern, scalable web applications that drive real results.
+        If you're looking to hire React developers in India who combine technical expertise with business understanding, WorkHolo Labs is ready to collaborate. Create modern, scalable web applications that drive real results.
       </p>
       <div className="flex flex-wrap justify-center gap-6">
         <button className="bg-[#007BFF] hover:bg-[#0069D9] text-white px-10 py-4 rounded-lg font-bold transition-all flex items-center gap-2 shadow-xl shadow-blue-500/20">

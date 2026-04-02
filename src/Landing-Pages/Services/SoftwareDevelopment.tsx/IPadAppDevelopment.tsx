@@ -201,8 +201,8 @@ export default function IPadAppDevelopment() {
       {/* --- Top Bar --- */}
       <div className="bg-black py-2 px-4 md:px-8 border-b border-white/5 text-[11px] md:text-[13px] text-gray-400 flex flex-wrap justify-between items-center gap-4">
         <div className="flex items-center gap-6">
-          <a href="mailto:contact@mtouchlabs.com" className="flex items-center gap-2 hover:text-white transition-colors">
-            <Mail className="w-3.5 h-3.5" /> contact@mtouchlabs.com
+          <a href="mailto:contact@WorkHololabs.com" className="flex items-center gap-2 hover:text-white transition-colors">
+            <Mail className="w-3.5 h-3.5" /> contact@WorkHololabs.com
           </a>
           <a href="tel:+919390683154" className="flex items-center gap-2 hover:text-white transition-colors">
             <Phone className="w-3.5 h-3.5" /> +91 9390683154
@@ -258,7 +258,7 @@ export default function IPadAppDevelopment() {
             transition={{ delay: 0.2 }}
             className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed mb-12"
           >
-            mTouch Labs is a specialized iPad app development company delivering high-performance, large-screen optimized applications designed for productivity, enterprise operations, and immersive digital experiences. Unlike standard mobile apps, iPad applications require structured layout engineering, advanced interaction models, and optimized performance for multitasking environments.
+            WorkHolo Labs is a specialized iPad app development company delivering high-performance, large-screen optimized applications designed for productivity, enterprise operations, and immersive digital experiences. Unlike standard mobile apps, iPad applications require structured layout engineering, advanced interaction models, and optimized performance for multitasking environments.
           </motion.p>
         </div>
       </section>
@@ -272,7 +272,7 @@ export default function IPadAppDevelopment() {
               The iPad is not just a bigger screen — it's a productivity platform. iPad app development differs significantly from standard smartphone development and requires a dedicated approach to design, architecture, and interaction.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-              At mTouch Labs, we develop iPad solutions that leverage the full potential of iPadOS to deliver seamless, large-format user experiences. Our <span className="text-blue-400 underline cursor-pointer">UI/UX design team</span> ensures every interface feels native and intuitive on iPad devices.
+              At WorkHolo Labs, we develop iPad solutions that leverage the full potential of iPadOS to deliver seamless, large-format user experiences. Our <span className="text-blue-400 underline cursor-pointer">UI/UX design team</span> ensures every interface feels native and intuitive on iPad devices.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed">
               Whether you need enterprise workflow systems, field service tools, or data dashboards, our <span className="text-blue-400 underline cursor-pointer">mobile app development expertise</span> ensures your iPad application is built for real-world productivity.
@@ -384,7 +384,7 @@ export default function IPadAppDevelopment() {
       {/* --- Why Choose Us --- */}
       <section className="py-24 px-4 bg-white/5">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">Why Choose mTouch Labs as Your <span className="text-orange-400">iPad App Development Company</span>?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">Why Choose WorkHolo Labs as Your <span className="text-orange-400">iPad App Development Company</span>?</h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto mb-12">
             We build iPad applications that enhance business efficiency and deliver measurable productivity gains.
           </p>

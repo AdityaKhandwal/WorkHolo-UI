@@ -105,8 +105,8 @@ export default function TaxiBookingApp() {
       {/* Top Bar */}
       <div className="bg-black text-white py-2 px-4 md:px-12 flex flex-wrap justify-between items-center text-[12px] border-b border-gray-800">
         <div className="flex gap-6 items-center">
-          <a href="mailto:contact@mtouchlabs.com" className="flex items-center gap-2 hover:text-purple-400 transition-colors">
-            <Mail size={14} /> contact@mtouchlabs.com
+          <a href="mailto:contact@WorkHololabs.com" className="flex items-center gap-2 hover:text-purple-400 transition-colors">
+            <Mail size={14} /> contact@WorkHololabs.com
           </a>
           <a href="tel:+919390683154" className="flex items-center gap-2 hover:text-purple-400 transition-colors">
             <span className="text-orange-500">🇮🇳</span> +91 9390683154
@@ -132,7 +132,7 @@ export default function TaxiBookingApp() {
             <span className="text-black font-black text-xl">M</span>
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-xl leading-none">mTouch Labs</span>
+            <span className="font-bold text-xl leading-none">WorkHolo Labs</span>
             <span className="text-[10px] uppercase tracking-widest opacity-60">ISO Certified Company</span>
           </div>
         </div>
@@ -290,7 +290,7 @@ export default function TaxiBookingApp() {
           <div className="md:w-1/2">
             <h2 className="text-4xl font-bold mb-8 text-[#0A0E12]">Taxi Booking App Development Agency</h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              At mtouch Labs, we use latest technology like GPS, AI, and machine learning to make your taxi booking software efficient, reliable, and adaptable to your client needs. Our creative strategy will provide you a competitive advantage in the market and keep your business ahead of the competition.
+              At WorkHolo Labs, we use latest technology like GPS, AI, and machine learning to make your taxi booking software efficient, reliable, and adaptable to your client needs. Our creative strategy will provide you a competitive advantage in the market and keep your business ahead of the competition.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
               Our team of experts will work closely with you to understand your unique business requirements and tailor your taxi booking app as per your specific needs. From branding to user experience, we'll make sure your app stands out and connects with your intended audience.

@@ -288,7 +288,7 @@ const ShopifyDeveloper = () => {
             Launch and Scale with Shopify
           </h2>
           <p className="text-xl text-gray-300 mb-12 leading-relaxed">
-            If you're looking to hire Shopify developers in India who understand eCommerce strategy and technical customization, mTouch Labs is ready to collaborate. Build a secure, scalable, and high-converting online store with confidence.
+            If you're looking to hire Shopify developers in India who understand eCommerce strategy and technical customization, WorkHolo Labs is ready to collaborate. Build a secure, scalable, and high-converting online store with confidence.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
             <button className="w-full sm:w-auto bg-primary hover:bg-[#6A25A5] text-white px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center transition-all purple-glow">

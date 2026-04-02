@@ -115,7 +115,7 @@ export default function VueJsDeveloper() {
             Build Modern Web Experiences <br /> with <span className="text-blue-500">Vue.js</span>
           </h1>
           <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            If you're looking to hire Vue.js developers in India who combine technical expertise with a user-focused approach, mTouch Labs is ready to collaborate. Create fast, scalable, and future-ready web applications with confidence.
+            If you're looking to hire Vue.js developers in India who combine technical expertise with a user-focused approach, WorkHolo Labs is ready to collaborate. Create fast, scalable, and future-ready web applications with confidence.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -168,7 +168,7 @@ export default function VueJsDeveloper() {
               When building modern web applications, speed and simplicity matter. Vue.js has emerged as a powerful yet lightweight framework that allows businesses to create dynamic interfaces without unnecessary complexity.
             </p>
             <p className="text-xl text-blue-400 font-medium italic">
-              At mTouch Labs, we provide experienced Vue.js developers in India who craft scalable, maintainable, and performance-driven web applications tailored to your product goals.
+              At WorkHolo Labs, we provide experienced Vue.js developers in India who craft scalable, maintainable, and performance-driven web applications tailored to your product goals.
             </p>
           </motion.div>
         </div>

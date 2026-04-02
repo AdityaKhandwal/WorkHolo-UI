@@ -63,7 +63,7 @@ const Hero = () => (
         transition={{ delay: 0.3 }}
         className="text-sm md:text-base opacity-60 max-w-2xl mx-auto italic"
       >
-        mTouch Labs delivers structured digital marketing solutions designed to help businesses attract, convert, and retain customers through measurable performance strategies. Marketing should generate predictable growth, not unpredictable spending.
+        WorkHolo Labs delivers structured digital marketing solutions designed to help businesses attract, convert, and retain customers through measurable performance strategies. Marketing should generate predictable growth, not unpredictable spending.
       </motion.p>
     </div>
   </section>
@@ -241,7 +241,7 @@ const GrowthFramework = () => (
 const WhyChoose = () => (
   <section className="py-24 px-4 md:px-12 bg-white text-center">
     <h2 className="text-4xl font-bold mb-6 text-[#05070A]">
-      Why Choose <span className="text-yellow-500">mTouch Labs?</span>
+      Why Choose <span className="text-yellow-500">WorkHolo Labs?</span>
     </h2>
     <p className="text-gray-500 mb-12">We focus on sustainable digital growth — not vanity metrics.</p>
     <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">

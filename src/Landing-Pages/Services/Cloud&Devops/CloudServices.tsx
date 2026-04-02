@@ -64,7 +64,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-lg text-gray-400 max-w-4xl leading-relaxed"
         >
-          mTouch Labs provides comprehensive cloud services designed to help organizations modernize infrastructure, improve operational agility, and scale digital operations securely. Cloud transformation requires architecture, not just migration.
+          WorkHolo Labs provides comprehensive cloud services designed to help organizations modernize infrastructure, improve operational agility, and scale digital operations securely. Cloud transformation requires architecture, not just migration.
         </motion.p>
       </div>
 
@@ -302,7 +302,7 @@ const WhyChooseUs = () => {
     <section className="py-24 px-4 md:px-12 bg-white text-black">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
-          Why Choose mTouch Labs for <span className="text-accent-yellow">Cloud Services</span>?
+          Why Choose WorkHolo Labs for <span className="text-accent-yellow">Cloud Services</span>?
         </h2>
         <p className="text-gray-500 text-lg mb-16">We build resilient cloud environments that support sustainable growth.</p>
         

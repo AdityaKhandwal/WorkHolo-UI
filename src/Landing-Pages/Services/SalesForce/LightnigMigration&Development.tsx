@@ -283,7 +283,7 @@ const WhyChoose = () => {
     <section className="py-24 px-6 md:px-12 bg-gray-50">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
         <div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose <span className="text-accent">mTouch Labs</span>?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose <span className="text-accent">WorkHolo Labs</span>?</h2>
           <p className="text-gray-600 mb-10 leading-relaxed">
             We modernize Salesforce environments without disrupting business operations.
           </p>

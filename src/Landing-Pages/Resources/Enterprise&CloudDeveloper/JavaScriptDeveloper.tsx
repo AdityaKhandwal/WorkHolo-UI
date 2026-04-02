@@ -86,8 +86,8 @@ export default function JavaScriptDeveloper() {
       <div className="bg-black border-b border-gray-800 py-2 px-4 hidden md:block">
         <div className="max-w-[1920px] mx-auto flex justify-between items-center text-[13px] text-gray-400">
           <div className="flex items-center gap-6">
-            <a href="mailto:contact@mtouchlabs.com" className="flex items-center gap-2 hover:text-white transition-colors">
-              <Mail size={14} /> contact@mtouchlabs.com
+            <a href="mailto:contact@WorkHololabs.com" className="flex items-center gap-2 hover:text-white transition-colors">
+              <Mail size={14} /> contact@WorkHololabs.com
             </a>
             <a href="tel:+919390683154" className="flex items-center gap-2 hover:text-white transition-colors">
               <Phone size={14} /> +91 9390683154
@@ -117,7 +117,7 @@ export default function JavaScriptDeveloper() {
               <span className="text-black font-bold text-xl">M</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold tracking-tight">mTouch Labs</h1>
+              <h1 className="text-xl font-bold tracking-tight">WorkHolo Labs</h1>
               <div className="flex items-center gap-1">
                 <div className="w-4 h-4 bg-yellow-500 rounded-full flex items-center justify-center text-[8px] text-black font-bold">ISO</div>
                 <span className="text-[10px] text-gray-500 uppercase tracking-widest">Company</span>
@@ -233,7 +233,7 @@ export default function JavaScriptDeveloper() {
             transition={{ delay: 0.1 }}
             className="max-w-3xl mx-auto text-lg text-gray-400 mb-12 leading-relaxed"
           >
-            If you're looking to hire JavaScript developers in India who combine technical expertise with strategic thinking, mTouch Labs is ready to collaborate. Create scalable, dynamic applications built for performance and growth.
+            If you're looking to hire JavaScript developers in India who combine technical expertise with strategic thinking, WorkHolo Labs is ready to collaborate. Create scalable, dynamic applications built for performance and growth.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}

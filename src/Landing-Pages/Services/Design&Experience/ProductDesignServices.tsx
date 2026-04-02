@@ -71,7 +71,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="max-w-3xl mx-auto text-gray-400 text-lg md:text-xl leading-relaxed mb-12"
         >
-          mTouch Labs provides strategic product design services that transform
+          WorkHolo Labs provides strategic product design services that transform
           ideas into scalable, user-centered digital products. Design is not
           decoration — it's product strategy in action.
         </motion.p>
@@ -340,7 +340,7 @@ const WhyChooseUs = () => {
     <section className="py-24 px-4 md:px-12 bg-slate-50">
       <div className="max-w-[1440px] mx-auto text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-          Why Choose <span className="text-yellow-500">mTouch Labs</span>?
+          Why Choose <span className="text-yellow-500">WorkHolo Labs</span>?
         </h2>
         <p className="text-gray-600 text-lg">
           We design products that perform — not just look good.

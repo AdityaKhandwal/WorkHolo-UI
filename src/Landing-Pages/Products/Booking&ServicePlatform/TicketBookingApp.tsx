@@ -235,7 +235,7 @@ const ContactSection = () => {
             </motion.p>
             <div className="space-y-14 relative z-10">
               {[
-                { icon: Mail, label: "Email Us", value: "contact@mtouchlabs.com" },
+                { icon: Mail, label: "Email Us", value: "contact@WorkHololabs.com" },
                 { icon: Phone, label: "Call Us", value: "+91 9390683154" },
                 { icon: MapPin, label: "Visit Us", value: "Hyderabad, India" }
               ].map((item, i) => (
@@ -587,7 +587,7 @@ const WhyChooseUs = () => {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-6xl md:text-7xl font-black mb-16 tracking-tight leading-tight">Why Choose mTouch Labs?</h2>
+          <h2 className="text-6xl md:text-7xl font-black mb-16 tracking-tight leading-tight">Why Choose WorkHolo Labs?</h2>
           <div className="space-y-12">
             {reasons.map((r, i) => (
               <motion.div 

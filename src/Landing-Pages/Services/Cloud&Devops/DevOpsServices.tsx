@@ -51,7 +51,7 @@ const Hero = () => (
         transition={{ duration: 0.6, delay: 0.3 }}
         className="text-white/70 max-w-3xl mx-auto mt-8 text-lg leading-relaxed"
       >
-        mTouch Labs delivers structured DevOps services that streamline development workflows, automate infrastructure, and improve deployment reliability across cloud environments. Speed without control creates risk. DevOps creates balance.
+        WorkHolo Labs delivers structured DevOps services that streamline development workflows, automate infrastructure, and improve deployment reliability across cloud environments. Speed without control creates risk. DevOps creates balance.
       </motion.p>
     </div>
   </section>
@@ -266,7 +266,7 @@ const WhyChoose = () => (
   <section className="py-24 px-4 md:px-12 bg-gray-50">
     <div className="max-w-7xl mx-auto text-center mb-16">
       <h2 className="text-4xl font-bold text-[#1A1A1A]">
-        Why Choose mTouch Labs for <span className="text-[#FFB800]">DevOps</span>?
+        Why Choose WorkHolo Labs for <span className="text-[#FFB800]">DevOps</span>?
       </h2>
       <p className="text-gray-500 mt-4 text-lg">We build DevOps systems that support innovation at scale.</p>
     </div>

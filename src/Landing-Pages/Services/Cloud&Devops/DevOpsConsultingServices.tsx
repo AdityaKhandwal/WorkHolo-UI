@@ -40,7 +40,7 @@ const Hero = () => {
         </h2>
 
         <p className="text-gray-400 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed font-medium">
-          mTouch Labs provides expert DevOps Consulting Services designed to
+          WorkHolo Labs provides expert DevOps Consulting Services designed to
           help organizations design, optimize, and scale modern DevOps
           frameworks. Transformation begins with strategy, not scripts.
         </p>
@@ -333,7 +333,7 @@ const WhyChoose = () => {
     <section className="py-24 px-4 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
-          Why Choose mTouch Labs for{" "}
+          Why Choose WorkHolo Labs for{" "}
           <span className="text-[#F2994A]">DevOps Consulting</span>?
         </h2>
         <p className="text-gray-500 text-xl font-medium mb-12">

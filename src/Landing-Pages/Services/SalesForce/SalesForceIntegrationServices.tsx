@@ -295,7 +295,7 @@ const Benefits = () => {
     <section className="bg-[#F8F9FA] py-24 px-4 md:px-12">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-black text-[#05070A] mb-6 tracking-tight">
-          Benefits of <span className="text-[#FFB800]">Choosing mTouch Labs</span>
+          Benefits of <span className="text-[#FFB800]">Choosing WorkHolo Labs</span>
         </h2>
         <p className="text-gray-600 mb-12 text-[15px]">We transform Salesforce into a connected enterprise command center.</p>
         

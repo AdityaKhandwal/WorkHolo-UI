@@ -247,11 +247,11 @@ const WhyChoose = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold mb-8">
-              Why Choose <span className="text-[#7B2CBF]">mTouch Labs</span>
+              Why Choose <span className="text-[#7B2CBF]">WorkHolo Labs</span>
             </h2>
             <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
               <p>
-                In today's competitive digital landscape, an app is not just a product — it is a business asset. Companies choose mTouch Labs because we align technology with business objectives and build scalable architectures from day one.
+                In today's competitive digital landscape, an app is not just a product — it is a business asset. Companies choose WorkHolo Labs because we align technology with business objectives and build scalable architectures from day one.
               </p>
               <p>
                 We prioritize security and performance, deliver predictable timelines using agile methodology, and provide long-term support beyond launch. Our focus is on building mobile solutions that are sustainable, secure, and future-ready.
@@ -278,7 +278,7 @@ const FAQ = () => {
 
   const faqs = [
     {
-      q: 'What makes mTouch Labs different from other mobile app development companies?',
+      q: 'What makes WorkHolo Labs different from other mobile app development companies?',
       a: 'We combine technical expertise with a deep understanding of business goals to deliver solutions that actually drive growth.'
     },
     {

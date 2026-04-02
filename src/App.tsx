@@ -97,7 +97,7 @@ export default function App() {
         <Route path="/home/our-journey" element={<Page name="Our Journey" />} />
         <Route path="/home/awards-recognition" element={<Page name="Awards" />} />
         <Route path="/home/nasscom-membership" element={<Page name="NASSCOM" />} />
-        <Route path="/home/life-at-mtouch-labs" element={<Page name="Life at WorkHolo" />} />
+        <Route path="/home/life-at-WorkHolo-labs" element={<Page name="Life at WorkHolo" />} />
 
         {/* SERVICES */}
         <Route path="/services/mobile-app-development" element={<MobileDevelopement />} />

@@ -53,7 +53,7 @@ const Hero = () => {
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
             Secure, Scalable & High-Performance Amazon Web Services Solutions. 
-            mTouch Labs provides professional AWS Cloud Services designed to help businesses migrate, modernize, 
+            WorkHolo Labs provides professional AWS Cloud Services designed to help businesses migrate, modernize, 
             and scale their infrastructure. From cloud migration to infrastructure optimization, we help organizations 
             unlock the full potential of AWS.
           </p>
@@ -303,7 +303,7 @@ const WhyChooseSection = () => {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
-          Why Choose <span className="text-brand-orange">mTouch Labs</span>?
+          Why Choose <span className="text-brand-orange">WorkHolo Labs</span>?
         </h2>
         <p className="text-gray-500 text-lg mb-16 max-w-3xl mx-auto">
           We help businesses transform infrastructure into a competitive advantage.

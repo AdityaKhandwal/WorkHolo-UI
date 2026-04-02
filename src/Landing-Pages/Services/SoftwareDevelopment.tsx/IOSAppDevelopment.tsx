@@ -38,7 +38,7 @@ const Hero = () => {
         </h2>
         
         <p className="text-white/80 text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed mb-10">
-          mTouch Labs is a professional iOS app development company delivering custom iPhone and iPad applications engineered for performance, security, and seamless user experience — from startup MVPs to enterprise-grade applications.
+          WorkHolo Labs is a professional iOS app development company delivering custom iPhone and iPad applications engineered for performance, security, and seamless user experience — from startup MVPs to enterprise-grade applications.
         </p>
       </div>
     </section>
@@ -233,7 +233,7 @@ const WhyChooseSection = () => {
     <section className="py-20 bg-[#F8F9FA]">
       <div className="max-w-[1440px] mx-auto px-6 text-center">
         <h2 className="text-4xl lg:text-5xl font-extrabold text-[#050505] mb-4">
-          Why Choose <span className="text-[#0096FF]">mTouch Labs</span>?
+          Why Choose <span className="text-[#0096FF]">WorkHolo Labs</span>?
         </h2>
         <p className="text-[#666666] text-lg mb-12">We build iOS apps that align with business goals and user expectations.</p>
         

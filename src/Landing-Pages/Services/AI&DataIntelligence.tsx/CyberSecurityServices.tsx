@@ -70,7 +70,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="max-w-3xl mx-auto text-white/60 text-lg md:text-xl leading-relaxed mb-12"
         >
-          mTouch Labs delivers advanced Cyber Security Services designed to protect digital assets, 
+          WorkHolo Labs delivers advanced Cyber Security Services designed to protect digital assets, 
           secure enterprise infrastructure, and ensure compliance in today's evolving threat landscape.
         </motion.p>
 
@@ -325,7 +325,7 @@ const WhyChooseSection = () => {
     <section className="py-24 px-4 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-6xl font-bold text-slate-900 mb-8">
-          Why Choose <span className="text-yellow-500">mTouch Labs</span>?
+          Why Choose <span className="text-yellow-500">WorkHolo Labs</span>?
         </h2>
         <p className="text-xl text-slate-500 mb-12 max-w-3xl mx-auto">
           We combine technical expertise with strategic consulting to deliver long-term cyber resilience.
@@ -519,7 +519,7 @@ const FAQSection = () => {
 
   const faqs = [
     { q: "What are cyber security services?", a: "Cyber security services encompass a range of solutions designed to protect digital assets, networks, and systems from unauthorized access, attacks, and data breaches. This includes everything from threat detection to compliance management." },
-    { q: "Does mTouch Labs provide secure application development?", a: "Yes, we integrate security into the entire software development lifecycle (SDLC) using DevSecOps practices, ensuring that security is a core component of your application from day one." },
+    { q: "Does WorkHolo Labs provide secure application development?", a: "Yes, we integrate security into the entire software development lifecycle (SDLC) using DevSecOps practices, ensuring that security is a core component of your application from day one." },
     { q: "How often should security audits be conducted?", a: "We recommend conducting comprehensive security audits at least annually, or whenever significant changes are made to your infrastructure or applications to ensure ongoing protection." },
     { q: "Do you provide cloud security services?", a: "Absolutely. We specialize in securing cloud environments across AWS, Azure, and Google Cloud Platform, focusing on IAM, data encryption, and network security." }
   ];

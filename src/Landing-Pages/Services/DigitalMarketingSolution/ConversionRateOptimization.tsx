@@ -55,7 +55,7 @@ const Hero = () => (
         </p>
         
         <p className="text-lg md:text-xl text-gray-400 max-w-5xl mx-auto mb-16 italic leading-relaxed font-light">
-          mTouch Labs delivers strategic CRO services designed to maximize the value of existing website traffic. Traffic without conversion is wasted potential.
+          WorkHolo Labs delivers strategic CRO services designed to maximize the value of existing website traffic. Traffic without conversion is wasted potential.
         </p>
 
         <motion.button 
@@ -306,7 +306,7 @@ const WhyChoose = () => {
     <section className="py-32 bg-[#F8F9FA]">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 text-center">
         <h2 className="text-4xl md:text-[56px] font-display font-bold text-[#141414] mb-8">
-          Why Choose <span className="text-[#F2A93B]">mTouch Labs</span>?
+          Why Choose <span className="text-[#F2A93B]">WorkHolo Labs</span>?
         </h2>
         <p className="text-[22px] text-gray-500 mb-16 font-medium max-w-3xl mx-auto">We transform website performance into measurable business growth.</p>
         

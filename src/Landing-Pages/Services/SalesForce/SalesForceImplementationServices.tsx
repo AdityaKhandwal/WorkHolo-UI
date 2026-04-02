@@ -450,7 +450,7 @@ const WhyUs = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-8">
-              Why <span className="text-[#F2A93B]">mTouch Labs</span>?
+              Why <span className="text-[#F2A93B]">WorkHolo Labs</span>?
             </h2>
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
               We position Salesforce as a core growth infrastructure — not just

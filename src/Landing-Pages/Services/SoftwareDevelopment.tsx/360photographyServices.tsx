@@ -191,7 +191,7 @@ export default function ThreeSixtyPhotography() {
               Immersive Visual Experiences That Capture Every Angle
             </p>
             <p className="text-lg text-white/60 max-w-4xl mx-auto leading-relaxed mb-12">
-              mTouch Labs provides professional 360 degree photography services in India, helping businesses showcase their spaces, products, and environments through interactive panoramic visuals. From real estate and hospitality to retail and corporate spaces, we capture environments with precision and clarity. Visual storytelling is evolving — 360-degree photography leads the way.
+              WorkHolo Labs provides professional 360 degree photography services in India, helping businesses showcase their spaces, products, and environments through interactive panoramic visuals. From real estate and hospitality to retail and corporate spaces, we capture environments with precision and clarity. Visual storytelling is evolving — 360-degree photography leads the way.
             </p>
           </motion.div>
         </div>
@@ -380,7 +380,7 @@ export default function ThreeSixtyPhotography() {
       <section className="py-24 px-4 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-8">
-            Why Choose mTouch Labs for <span className="text-orange-500">360° Photography</span>?
+            Why Choose WorkHolo Labs for <span className="text-orange-500">360° Photography</span>?
           </h2>
           <p className="text-xl text-gray-600 mb-12">We combine visual precision with digital presentation expertise.</p>
           

@@ -71,7 +71,7 @@ const Navbar = () => {
             <span className="text-bg-dark font-bold text-xl">m</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-xl font-bold tracking-tight text-white">mTouch Labs</span>
+            <span className="text-xl font-bold tracking-tight text-white">WorkHolo Labs</span>
             <span className="text-[8px] uppercase tracking-[0.2em] text-gray-400">ISO Certified Company</span>
           </div>
         </div>
@@ -152,7 +152,7 @@ const Hero = () => {
             Crafting High-Impact Mobile Experiences That Drive Engagement
           </p>
           <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed mb-12">
-            mTouch Labs is a specialized mobile app design company delivering intuitive, high-performance app interfaces tailored for iOS and Android platforms. Mobile app success begins with intelligent design.
+            WorkHolo Labs is a specialized mobile app design company delivering intuitive, high-performance app interfaces tailored for iOS and Android platforms. Mobile app success begins with intelligent design.
           </p>
         </motion.div>
       </div>
@@ -259,7 +259,7 @@ const WhyChooseSection = () => {
           className="order-1 lg:order-2"
         >
           <h2 className="text-4xl font-bold mb-8">
-            Why Choose mTouch Labs for <span className="text-accent">Mobile Design</span>?
+            Why Choose WorkHolo Labs for <span className="text-accent">Mobile Design</span>?
           </h2>
           <p className="text-xl text-gray-300 mb-8">
             We design mobile apps that users want to engage with — not uninstall:
@@ -585,7 +585,7 @@ const CareersSection = () => {
             We are always looking for passionate designers, developers, and visionaries to join our global team.
           </p>
           <p className="text-gray-400 mb-12 leading-relaxed">
-            At mTouch Labs, we foster a culture of innovation, collaboration, and continuous learning. Build the future of mobile experiences with us.
+            At WorkHolo Labs, we foster a culture of innovation, collaboration, and continuous learning. Build the future of mobile experiences with us.
           </p>
           <button className="bg-white text-bg-dark px-8 py-3 rounded-full text-sm font-bold hover:bg-accent hover:text-white transition-all">
             View All Openings
@@ -751,7 +751,7 @@ const Footer = () => {
                 <span className="text-bg-dark font-bold text-xl">m</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold tracking-tight text-white">mTouch Labs</span>
+                <span className="text-xl font-bold tracking-tight text-white">WorkHolo Labs</span>
                 <span className="text-[8px] uppercase tracking-[0.2em] text-gray-400">ISO Certified Company</span>
               </div>
             </div>
@@ -760,7 +760,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors cursor-pointer">
               <Mail size={16} />
-              <span className="text-sm">contact@mtouchlabs.com</span>
+              <span className="text-sm">contact@WorkHololabs.com</span>
             </div>
           </div>
 
@@ -800,7 +800,7 @@ const Footer = () => {
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
               <MapPin className="text-accent mb-2" size={24} />
-              <span className="text-xs font-bold text-white mb-1">mTouch Labs</span>
+              <span className="text-xs font-bold text-white mb-1">WorkHolo Labs</span>
               <span className="text-[10px] text-gray-400">Software Development</span>
             </div>
           </div>
@@ -808,7 +808,7 @@ const Footer = () => {
 
         <div className="pt-12 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-8">
           <p className="text-gray-600 text-xs">
-            © 2026 <span className="text-gray-400 font-bold">mTouch Labs Pvt. Ltd.</span> All rights reserved.
+            © 2026 <span className="text-gray-400 font-bold">WorkHolo Labs Pvt. Ltd.</span> All rights reserved.
           </p>
           <div className="flex items-center gap-8">
             {["Privacy Policy", "Terms of Service", "Refund Policy"].map((item) => (

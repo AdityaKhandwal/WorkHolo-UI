@@ -345,7 +345,7 @@ export default function GroceryDeliveryApp() {
               Online Grocery Delivery Applications
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Welcome to mTouch Labs, your trusted partner for{" "}
+              Welcome to WorkHolo Labs, your trusted partner for{" "}
               <span className="text-blue-600 font-semibold">
                 grocery delivery app development
               </span>

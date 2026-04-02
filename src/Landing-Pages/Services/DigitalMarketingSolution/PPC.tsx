@@ -181,8 +181,8 @@ export const PPC = () => {
       {/* --- Top Bar --- */}
       <div className="bg-black text-white py-2 px-4 md:px-12 text-[11px] md:text-[13px] flex flex-wrap justify-between items-center gap-2 border-b border-white/10">
         <div className="flex items-center gap-4 flex-wrap">
-          <a href="mailto:contact@mtouchlabs.com" className="flex items-center gap-1 hover:text-blue-400 transition-colors">
-            <Mail className="w-3 h-3" /> contact@mtouchlabs.com
+          <a href="mailto:contact@WorkHololabs.com" className="flex items-center gap-1 hover:text-blue-400 transition-colors">
+            <Mail className="w-3 h-3" /> contact@WorkHololabs.com
           </a>
           <a href="tel:+919390683154" className="flex items-center gap-1 hover:text-blue-400 transition-colors">
             <Phone className="w-3 h-3" /> +91 9390683154
@@ -240,7 +240,7 @@ export const PPC = () => {
             transition={{ delay: 0.2 }}
             className="text-slate-400 max-w-4xl mx-auto leading-relaxed mb-12"
           >
-            mTouch Labs delivers strategic PPC advertising services designed to generate qualified traffic, increase conversions, and optimize advertising spend. Paid traffic should produce measurable growth — not wasted spend.
+            WorkHolo Labs delivers strategic PPC advertising services designed to generate qualified traffic, increase conversions, and optimize advertising spend. Paid traffic should produce measurable growth — not wasted spend.
           </motion.p>
         </div>
       </section>
@@ -396,7 +396,7 @@ export const PPC = () => {
       {/* --- Why Choose --- */}
       <section className="py-24 px-4 text-center max-w-7xl mx-auto">
         <SectionHeading subtitle="We focus on profitable growth, not vanity metrics.">
-          Why Choose <span className="text-yellow-500">mTouch Labs</span>?
+          Why Choose <span className="text-yellow-500">WorkHolo Labs</span>?
         </SectionHeading>
         
         <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
@@ -520,7 +520,7 @@ export const PPC = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-slate-600 leading-relaxed">
-                mTouch Labs' Joint Talent Program is a strategic initiative designed to bridge the gap between global enterprise needs and world-class digital talent.
+                WorkHolo Labs' Joint Talent Program is a strategic initiative designed to bridge the gap between global enterprise needs and world-class digital talent.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[

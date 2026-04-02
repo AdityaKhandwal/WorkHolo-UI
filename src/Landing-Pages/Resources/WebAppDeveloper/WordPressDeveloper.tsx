@@ -91,7 +91,7 @@ const Stats = () => (
           or scaling an e-commerce store, WordPress offers flexibility and control when built correctly.
         </p>
         <p className="mt-8 text-blue-600 font-semibold italic text-lg">
-          At mTouch Labs, we provide experienced WordPress developers in India who craft 
+          At WorkHolo Labs, we provide experienced WordPress developers in India who craft 
           secure, custom-built websites that are easy to manage and designed for growth.
         </p>
       </div>
@@ -294,7 +294,7 @@ const CTA = () => (
       </h2>
       <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
         If you're looking to hire WordPress developers in India who combine technical expertise with strategic thinking, 
-        mTouch Labs is ready to collaborate. Create a scalable, secure, and high-performing WordPress platform with us.
+        WorkHolo Labs is ready to collaborate. Create a scalable, secure, and high-performing WordPress platform with us.
       </p>
       
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

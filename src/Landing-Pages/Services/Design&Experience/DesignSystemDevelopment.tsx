@@ -63,7 +63,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-6 text-sm md:text-base text-gray-400 max-w-2xl mx-auto italic"
         >
-          mTouch Labs offers professional design system development services that establish unified visual and interaction standards across digital products. Consistency is not repetition — it is structured efficiency.
+          WorkHolo Labs offers professional design system development services that establish unified visual and interaction standards across digital products. Consistency is not repetition — it is structured efficiency.
         </motion.p>
       </div>
     </section>
@@ -281,7 +281,7 @@ const WhyChoose = () => {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4 md:px-12 text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-display font-extrabold mb-4 text-gray-900">
-          Why Choose <span className="text-orange-500">mTouch Labs?</span>
+          Why Choose <span className="text-orange-500">WorkHolo Labs?</span>
         </h2>
         <p className="text-lg text-gray-600">We build UI frameworks that support product growth, not restrict it.</p>
       </div>

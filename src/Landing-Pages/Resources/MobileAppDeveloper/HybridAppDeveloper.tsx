@@ -177,7 +177,7 @@ export default function HybridAppDeveloper() {
               Launching a mobile app today means reaching users on both Android and iOS — without doubling development time or cost. That's where hybrid app development becomes a smart business decision.
             </p>
             <p className="text-lg md:text-xl text-blue-600 font-semibold italic leading-relaxed">
-              At mTouch Labs, we help startups and enterprises hire hybrid app developers in India who create powerful cross-platform applications using a single codebase — without compromising performance or user experience.
+              At WorkHolo Labs, we help startups and enterprises hire hybrid app developers in India who create powerful cross-platform applications using a single codebase — without compromising performance or user experience.
             </p>
           </motion.div>
         </div>
@@ -305,7 +305,7 @@ export default function HybridAppDeveloper() {
           >
             <h2 className="text-4xl md:text-6xl font-bold mb-8">Let's Build Smarter, Not Harder</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-              If you're looking for a cost-effective way to launch across platforms without sacrificing quality, our hybrid app developers are ready to collaborate. Partner with mTouch Labs and bring your cross-platform app idea to life.
+              If you're looking for a cost-effective way to launch across platforms without sacrificing quality, our hybrid app developers are ready to collaborate. Partner with WorkHolo Labs and bring your cross-platform app idea to life.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

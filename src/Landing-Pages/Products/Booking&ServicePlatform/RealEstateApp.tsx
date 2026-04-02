@@ -188,7 +188,7 @@ const BuyersSellersSection = () => {
           </div>
           <h2 className="text-4xl md:text-[48px] font-extrabold text-[#1A1A1A] mb-8 leading-tight tracking-tight">Real Estate Apps for Buyers and Sellers</h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-8">
-            At mTouch Labs, we specialize in creating custom mobile apps for the real estate industry. 
+            At WorkHolo Labs, we specialize in creating custom mobile apps for the real estate industry. 
             As a custom real estate app development company, our team of experienced developers and 
             designers works closely with clients to understand their unique needs and deliver tailored solutions.
           </p>

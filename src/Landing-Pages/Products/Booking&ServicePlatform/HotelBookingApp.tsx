@@ -160,7 +160,7 @@ const AgencySection = () => (
           Hotel Booking App Development Agency
         </h2>
         <p className="text-gray-600 leading-relaxed text-lg">
-          Welcome to mtouch labs, your premier destination for hotel booking app
+          Welcome to WorkHolo labs, your premier destination for hotel booking app
           development solutions. We specialise in developing apps that
           revolutionise the way travellers book their accommodations. We craft
           bespoke apps that cater to the unique needs of your business and

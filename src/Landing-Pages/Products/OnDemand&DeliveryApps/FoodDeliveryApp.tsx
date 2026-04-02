@@ -106,7 +106,7 @@ const OnlineApplications = () => {
           <h2 className="text-[40px] font-bold text-[#1A1A1A] mb-8">Online Food Delivery Applications</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <p className="text-[#4A4A4A] text-[18px] leading-relaxed">
-              At mTouch Labs, we specialise in creating unique food delivery apps that transform how restaurants and food businesses interact with their customers. Our expertise in <span className="text-[#0096FF] font-semibold underline">cross-platform app development</span> and deep understanding of the food and beverage industry allow us to create solutions that are not only functional but also highly engaging and user-friendly.
+              At WorkHolo Labs, we specialise in creating unique food delivery apps that transform how restaurants and food businesses interact with their customers. Our expertise in <span className="text-[#0096FF] font-semibold underline">cross-platform app development</span> and deep understanding of the food and beverage industry allow us to create solutions that are not only functional but also highly engaging and user-friendly.
             </p>
             <p className="text-[#4A4A4A] text-[18px] leading-relaxed">
               Our Food delivery app solutions are intended to create a seamless experience for both customers and restaurant partners. From user-friendly interfaces to secure payment gateways, our apps are designed to improve every aspect of the food delivery experience.

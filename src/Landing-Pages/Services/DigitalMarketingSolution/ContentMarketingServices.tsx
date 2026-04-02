@@ -91,7 +91,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-lg text-white/60 max-w-3xl mx-auto leading-relaxed italic"
         >
-          mTouch Labs delivers structured content marketing services designed to build brand authority, improve search visibility, and generate measurable business growth. Authority is earned through value-driven communication.
+          WorkHolo Labs delivers structured content marketing services designed to build brand authority, improve search visibility, and generate measurable business growth. Authority is earned through value-driven communication.
         </motion.p>
       </div>
     </section>
@@ -314,7 +314,7 @@ const WhyChoose = () => {
     <section className="py-24 bg-white text-center">
       <div className="max-w-[1440px] mx-auto px-6">
         <h2 className="text-4xl font-bold text-[#0B1120] mb-4">
-          Why Choose <span className="text-[#F2A93B]">mTouch Labs</span>?
+          Why Choose <span className="text-[#F2A93B]">WorkHolo Labs</span>?
         </h2>
         <p className="text-xl text-[#0B1120]/80 mb-12 font-medium">We create content ecosystems — not isolated articles.</p>
         

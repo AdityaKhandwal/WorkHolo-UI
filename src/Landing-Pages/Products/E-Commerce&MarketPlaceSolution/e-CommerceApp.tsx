@@ -27,7 +27,7 @@ const TopBar = () => (
       <div className="flex items-center gap-6">
         <div className="flex items-center gap-2">
           <Mail className="w-3.5 h-3.5 text-[#007bff]" />
-          <span>contact@mtouchlabs.com</span>
+          <span>contact@WorkHololabs.com</span>
         </div>
         <div className="flex items-center gap-2">
           <Phone className="w-3.5 h-3.5 text-[#007bff]" />
@@ -250,7 +250,7 @@ export default function ECommerceApp() {
                 E-commerce apps have transformed the landscape of online shopping. As more consumers turn to their smartphones for purchasing goods and services, having a robust e-commerce app is essential for businesses aiming to stay competitive and meet customer expectations.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                At mTouch Labs, we specialize in transforming your business vision into a reality by crafting exceptional e-commerce applications. Our team of seasoned professionals is dedicated to deliver innovative and customized solutions that meet the unique needs of your business.
+                At WorkHolo Labs, we specialize in transforming your business vision into a reality by crafting exceptional e-commerce applications. Our team of seasoned professionals is dedicated to deliver innovative and customized solutions that meet the unique needs of your business.
               </p>
             </motion.div>
 
@@ -521,9 +521,9 @@ export default function ECommerceApp() {
           <SectionHeading title="FAQ's" />
           <div className="space-y-2">
             {[
-              { q: "What services are included in ecommerce app development by mTouch Labs?", a: "We provide end-to-end services including UI/UX design, front-end and back-end development, payment gateway integration, and post-launch maintenance." },
-              { q: "How does mTouch Labs build scalable ecommerce applications for businesses?", a: "We use modern tech stacks like Flutter, Laravel, and AWS to ensure your app can handle growth and high traffic seamlessly." },
-              { q: "Why should businesses choose mTouch Labs for ecommerce app development?", a: "With years of experience and a track record of successful projects, we deliver high-quality, secure, and user-centric solutions." },
+              { q: "What services are included in ecommerce app development by WorkHolo Labs?", a: "We provide end-to-end services including UI/UX design, front-end and back-end development, payment gateway integration, and post-launch maintenance." },
+              { q: "How does WorkHolo Labs build scalable ecommerce applications for businesses?", a: "We use modern tech stacks like Flutter, Laravel, and AWS to ensure your app can handle growth and high traffic seamlessly." },
+              { q: "Why should businesses choose WorkHolo Labs for ecommerce app development?", a: "With years of experience and a track record of successful projects, we deliver high-quality, secure, and user-centric solutions." },
               { q: "What features should a modern ecommerce app include?", a: "Key features include advanced search, secure checkout, real-time tracking, push notifications, and personalized recommendations." },
               { q: "How long does it take to develop a fully functional ecommerce app?", a: "The timeline varies based on complexity, but typically ranges from 3 to 6 months for a comprehensive solution." }
             ].map((faq, idx) => (
