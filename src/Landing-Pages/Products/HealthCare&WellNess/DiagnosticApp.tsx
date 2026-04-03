@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 import type { HTMLMotionProps } from "framer-motion";
@@ -13,8 +13,7 @@ import {
   ChevronRight,
   Calendar, FileText, Home, ShieldCheck, Plus, Minus,
   Smartphone, Database, Activity, Search,
-  Users, MessageSquare, ArrowUpRight, Menu, X,
-  Phone, Mail, MapPin,
+  Users, MessageSquare, ArrowUpRight,
 } from 'lucide-react';
 
 // --- Components ---
@@ -172,16 +171,6 @@ export default function DiagnosticApp() {
   const [bookingTab, setBookingTab] = useState('health checkups');
   const [featureTab, setFeatureTab] = useState('customer');
   const [openFaq, setOpenFaq] = useState<number | null>(0);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const keyFeatures = [
     { 

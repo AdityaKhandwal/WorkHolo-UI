@@ -25,7 +25,7 @@ const Hero = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-[48px] md:text-[64px] text-[#EFEFEF] font-extrabold leading-[1.1] text-[#1A1A1A] mb-6">
+          <h1 className="text-[48px] md:text-[64px] text-[#EFEFEF] font-extrabold leading-[1.1] mb-6">
             Grow Your <span className="text-[#7B2CBF]">Food Delivery</span> with Web & App Solutions
           </h1>
           <button className="bg-[#7B2CBF] hover:bg-[#430876] text-white px-10 py-4 rounded-lg font-bold text-[18px] transition-all shadow-lg shadow-orange-200">
