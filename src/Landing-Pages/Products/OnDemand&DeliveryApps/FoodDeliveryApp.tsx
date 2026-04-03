@@ -14,7 +14,6 @@ import {
 
 // --- Components ---
 
-
 const Hero = () => {
   return (
     <section className="pt-40 pb-20 px-4 md:px-12 bg-[#140036] overflow-hidden relative">
