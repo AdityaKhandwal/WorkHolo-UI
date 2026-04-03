@@ -74,7 +74,7 @@ const Stats = () => (
           In the world of online commerce, performance and scalability directly impact revenue. Magento is built for businesses that require flexibility, advanced product management, and the ability to scale without limitations.
         </p>
         <p className="text-xl md:text-2xl font-semibold italic text-[#0080ff] mt-8">
-          At mTouch Labs, we provide experienced Magento developers in India who create secure, high-performing, and conversion-focused eCommerce platforms tailored to your business goals.
+          At WorkHolo Labs, we provide experienced Magento developers in India who create secure, high-performing, and conversion-focused eCommerce platforms tailored to your business goals.
         </p>
       </div>
 
@@ -278,7 +278,7 @@ const CTASection = () => (
     <div className="max-w-[1440px] mx-auto px-6 md:px-12 text-center relative z-10">
       <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-8">Launch and Scale Your <br /> eCommerce Platform</h2>
       <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-        If you're planning to build or enhance a high-performance online store, our Magento developers are ready to collaborate. Partner with mTouch Labs and create a scalable eCommerce platform designed for growth.
+        If you're planning to build or enhance a high-performance online store, our Magento developers are ready to collaborate. Partner with WorkHolo Labs and create a scalable eCommerce platform designed for growth.
       </p>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
         <button className="bg-[#0080ff] hover:bg-[#7B2CBF] text-white px-10 py-4 rounded-full font-bold text-lg flex items-center gap-2 transition-all duration-300 shadow-xl shadow-blue-500/30">

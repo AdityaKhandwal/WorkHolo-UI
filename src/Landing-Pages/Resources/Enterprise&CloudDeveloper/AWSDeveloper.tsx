@@ -116,8 +116,8 @@ export default function AWSDeveloper() {
       <div className="hidden lg:block bg-black text-white py-2 border-b border-gray-800">
         <div className="container mx-auto px-6 flex justify-between items-center text-xs font-medium">
           <div className="flex items-center gap-6">
-            <a href="mailto:contact@mtouchlabs.com" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
-              <Mail size={14} /> contact@mtouchlabs.com
+            <a href="mailto:contact@WorkHololabs.com" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+              <Mail size={14} /> contact@WorkHololabs.com
             </a>
             <a href="tel:+919390683154" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
               <span className="flex items-center gap-1">🇮🇳 +91 9390683154</span>
@@ -140,9 +140,9 @@ export default function AWSDeveloper() {
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1">
-              <img src="https://picsum.photos/seed/mtouch/100/100" alt="Logo" className="w-full h-full object-contain rounded-full" referrerPolicy="no-referrer" />
+              <img src="https://picsum.photos/seed/WorkHolo/100/100" alt="Logo" className="w-full h-full object-contain rounded-full" referrerPolicy="no-referrer" />
             </div>
-            <span className="text-2xl font-bold text-white tracking-tight">mTouch Labs</span>
+            <span className="text-2xl font-bold text-white tracking-tight">WorkHolo Labs</span>
             <div className="hidden sm:block px-2 py-0.5 bg-yellow-500 text-black text-[10px] font-bold rounded uppercase">ISO Certified</div>
           </div>
 
@@ -207,7 +207,7 @@ export default function AWSDeveloper() {
               </p>
               
               <p className="text-blue-400 font-bold italic text-lg mb-12">
-                At mTouch Labs, we provide experienced AWS developers in India who design, deploy, and manage cloud-native applications built on Amazon Web Services.
+                At WorkHolo Labs, we provide experienced AWS developers in India who design, deploy, and manage cloud-native applications built on Amazon Web Services.
               </p>
 
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -380,7 +380,7 @@ export default function AWSDeveloper() {
               Build Secure and Scalable Cloud Solutions
             </h2>
             <p className="text-xl text-gray-400 mb-12">
-              If you're looking to hire AWS developers in India who understand cloud architecture and scalable infrastructure, mTouch Labs is ready to collaborate. Create resilient, cost-efficient, and future-ready cloud systems with confidence.
+              If you're looking to hire AWS developers in India who understand cloud architecture and scalable infrastructure, WorkHolo Labs is ready to collaborate. Create resilient, cost-efficient, and future-ready cloud systems with confidence.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <Button variant="blue" className="w-full sm:w-auto !px-10 !py-4 text-lg">

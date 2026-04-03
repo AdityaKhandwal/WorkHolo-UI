@@ -90,7 +90,7 @@ export default function ContactUs() {
       name: 'Dover, United States',
       address: '1111B South Governors Avenue, Suite 48193, Dover, DE 19904, United States',
       phone: '+1 (551) 222-0070',
-      email: 'contact@mtouchlabs.com',
+      email: 'contact@WorkHololabs.com',
       hours: 'Mon–Fri, 9:00 AM – 6:00 PM EST',
       mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.882434526671!2d-75.5255474!3d39.1456128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c77b0767073747%3A0x6b77960787073747!2s1111B%20S%20Governors%20Ave%2C%20Dover%2C%20DE%2019904!5e0!3m2!1sen!2sus!4v1712123456789!5m2!1sen!2sus'
     },
@@ -98,7 +98,7 @@ export default function ContactUs() {
       name: 'Hyderabad, India',
       address: '#514, Manjeera Trinity Corporate, JNTU-Hitech City Road, Kukatpally, Hyderabad, Telangana 500072',
       phone: '+91 9390683154',
-      email: 'contact@mtouchlabs.com',
+      email: 'contact@WorkHololabs.com',
       hours: 'Mon–Fri, 9:00 AM – 6:00 PM IST',
       mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.263842135017!2d78.3888365!3d17.4950131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb918d3637171d%3A0x8670498a44211f90!2sManjeera%20Trinity%20Corporate!5e0!3m2!1sen!2sin!4v1712123456790!5m2!1sen!2sin'
     },
@@ -106,7 +106,7 @@ export default function ContactUs() {
       name: 'Bengaluru, India',
       address: '101, 4th Main Road, Gayathri Layout, Vijaya Bank Layout, Bilekahalli, Bengaluru, Karnataka 560076',
       phone: '+91 9014793487',
-      email: 'contact@mtouchlabs.com',
+      email: 'contact@WorkHololabs.com',
       hours: 'Mon–Fri, 9:00 AM – 6:00 PM IST',
       mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.123456789!2d77.6!3d12.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU0JzAwLjAiTiA3N8KwMzYnMDAuMCJF!5e0!3m2!1sen!2sin!4v1712123456791!5m2!1sen!2sin'
     }
@@ -171,7 +171,7 @@ export default function ContactUs() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Extraordinary</span>
             </h1>
             <p className="text-xl text-white/60 mb-12 max-w-xl leading-relaxed">
-              Have a project in mind? Fill out the form and let's discuss how mTouch Labs can transform your vision into reality.
+              Have a project in mind? Fill out the form and let's discuss how WorkHolo Labs can transform your vision into reality.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
@@ -281,7 +281,7 @@ export default function ContactUs() {
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Visit Us <span className="text-blue-600">Worldwide</span></h2>
           <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-            With offices across 3 continents, we're always close to you. Find the nearest mTouch Labs office below.
+            With offices across 3 continents, we're always close to you. Find the nearest WorkHolo Labs office below.
           </p>
         </div>
 
@@ -363,7 +363,7 @@ export default function ContactUs() {
       {/* Why Partner Section */}
       <section className="py-24 bg-[#020617]">
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-white">Why Partner with <span className="text-blue-500">mTouch Labs</span>?</h2>
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-white">Why Partner with <span className="text-blue-500">WorkHolo Labs</span>?</h2>
           <p className="text-white/50 text-lg max-w-2xl mx-auto">
             We don't just write code — we engineer solutions that scale with your business.
           </p>
@@ -387,7 +387,7 @@ export default function ContactUs() {
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-[#EFEFEF]">Frequently Asked <span className="text-blue-600">Questions</span></h2>
           <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-            Everything you need to know about working with mTouch Labs
+            Everything you need to know about working with WorkHolo Labs
           </p>
         </div>
 
@@ -416,7 +416,7 @@ export default function ContactUs() {
             Ready to Accelerate Your Digital Transformation?
           </h2>
           <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
-            Connect with mTouch Labs today and speak with our enterprise technology experts.
+            Connect with WorkHolo Labs today and speak with our enterprise technology experts.
           </p>
           <button className="bg-white text-blue-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all flex items-center gap-2 mx-auto shadow-xl">
             Get Started Now <ArrowRight size={20} />

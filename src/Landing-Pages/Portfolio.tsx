@@ -90,11 +90,11 @@ const PORTFOLIO_ITEMS = [
 
 const FAQS = [
   {
-    question: "What does mTouch Labs portfolio include?",
-    answer: "The portfolio showcases a wide range of digital products created by mTouch Labs, including mobile apps, business websites, e-commerce platforms, SaaS products, and custom software solutions across multiple industries."
+    question: "What does WorkHolo Labs portfolio include?",
+    answer: "The portfolio showcases a wide range of digital products created by WorkHolo Labs, including mobile apps, business websites, e-commerce platforms, SaaS products, and custom software solutions across multiple industries."
   },
   {
-    question: "Can I request a project similar to something in mTouch Labs portfolio?",
+    question: "Can I request a project similar to something in WorkHolo Labs portfolio?",
     answer: "Yes, we specialize in custom solutions. If you see something you like, we can adapt and build a tailored version for your specific needs."
   },
   {
@@ -258,7 +258,7 @@ const FAQSection = () => {
           Your Questions <span className="text-blue-500">Answered</span> Clearly
         </h2>
         <p className="text-center text-gray-600 mb-12 font-medium">
-          Everything you need to know about Mtouchlabs
+          Everything you need to know about WorkHololabs
         </p>
 
         <div className="space-y-4">
