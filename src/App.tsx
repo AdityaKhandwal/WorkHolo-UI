@@ -1,5 +1,6 @@
 import ASOServices from "./Landing-Pages/Services/DigitalMarketingSolution/ASOServices";
 import AWSCloudServices from "./Landing-Pages/Services/Cloud&Devops/AWSCloudServices";
+import AWSDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/AWSDeveloper";
 import AndroidAppDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/AndroidAppDevelopment";
 import AngularDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/AngularDeveloper";
 import CMSDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/CustomCMSDeveloper";
@@ -16,6 +17,7 @@ import DedicatedDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDevelo
 import DesignSystemDevelopment from "./Landing-Pages/Services/Design&Experience/DesignSystemDevelopment";
 import DevOpsConsultingServices from "./Landing-Pages/Services/Cloud&Devops/DevOpsConsultingServices";
 import DevOpsServices from "./Landing-Pages/Services/Cloud&Devops/DevOpsServices";
+import DiagnosticApp from "./Landing-Pages/Products/HealthCare&WellNess/DiagnosticApp";
 import DigitalMarketing from "./Landing-Pages/Services/DigitalMarketingSolution/DigitalMarketing";
 import ECommerceApp from "./Landing-Pages/Products/E-Commerce&MarketPlaceSolution/e-CommerceApp";
 import ELearningApp from "./Landing-Pages/Products/Education&Entertainment/E-LearningApp";
@@ -35,6 +37,7 @@ import JavaScriptDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDevel
 import LaravelDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/LaravelDeveloper";
 import LightnigMigrationDevelopment from "./Landing-Pages/Services/SalesForce/LightnigMigration&Development";
 import MERNStackDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/MERNStackDeveloper";
+import MagentoDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/MagentoDeveloper";
 import MeanStackDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/MeanStackDeveloper";
 import MilkDeliveryApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/MilkDeliveryApp";
 import MobileAppDesign from "./Landing-Pages/Services/Design&Experience/MobileAppDesign";
@@ -43,6 +46,7 @@ import MultiVendorMarketPlace from "./Landing-Pages/Products/E-Commerce&MarketPl
 import NativeAppDeveloper from "./Landing-Pages/Resources/MobileAppDeveloper/NativeAppDeveloper";
 import Navbar from "./Navbar";
 import NodeJsDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/NodeJsDeveloper";
+import OnlineShoppingApp from "./Landing-Pages/Products/E-Commerce&MarketPlaceSolution/OnlineShoppingApp";
 import PHPDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/PHPDeveloper";
 import PWADeveloper from "./Landing-Pages/Resources/Design&CreativeExperts/PWADeveloper";
 import ProductDesignServices from "./Landing-Pages/Services/Design&Experience/ProductDesignServices";
@@ -79,8 +83,6 @@ const Page = ({ name }: { name: string }) => (
 
 export default function App() {
   return (
-
-
 <>
       <Navbar />
       <Routes>
@@ -156,7 +158,7 @@ export default function App() {
 
 {/* E-COMMERCE */}
 <Route path="/products/ecommerce-app" element={<ECommerceApp />} />
-<Route path="/products/online-shopping-app" element={<Page name="Online Shopping App" />} />
+<Route path="/products/online-shopping-app" element={<OnlineShoppingApp />} />
 <Route path="/products/multi-vendor-marketplace" element={<MultiVendorMarketPlace />} />
 
 {/* EDUCATION & ENTERTAINMENT */}
@@ -164,7 +166,7 @@ export default function App() {
 <Route path="/products/gaming-app" element={<GamingApp />} />
 
 {/* HEALTHCARE */}
-<Route path="/products/diagnostic-app" element={<Page name="Diagnostic App" />} />
+<Route path="/products/diagnostic-app" element={<DiagnosticApp/>} />
 <Route path="/products/sports-fitness-app" element={<SportsAndFitness />} />
 
 
@@ -188,7 +190,7 @@ export default function App() {
 <Route path="/resources/react-developers" element={<ReactDeveloper />} />
 <Route path="/resources/swift-developers" element={<SwiftDeveloper />} />
 <Route path="/resources/laravel-developers" element={<LaravelDeveloper />} />
-<Route path="/resources/magento-developers" element={<Page name="Magento Developers" />} />
+<Route path="/resources/magento-developers" element={<MagentoDeveloper />} />
 <Route path="/resources/woocommerce-developers" element={<WooCommerceDeveloper />} />
 
 {/* ENTERPRISE & CLOUD */}
@@ -198,7 +200,7 @@ export default function App() {
 <Route path="/resources/mern-stack-developers" element={<MERNStackDeveloper />} />
 <Route path="/resources/vue-js-developers" element={<VueJsDeveloper />} />
 <Route path="/resources/node-js-developers" element={<NodeJsDeveloper />} />
-<Route path="/resources/aws-developers" element={<Page name="AWS Developers" />} />
+<Route path="/resources/aws-developers" element={<AWSDeveloper />} />
 <Route path="/resources/dedicated-developers" element={<DedicatedDeveloper />} />
 <Route path="/resources/salesforce-developers" element={<SalesForceDeveloper />} />
 

@@ -17,7 +17,7 @@ import {
 
 const Hero = () => {
   return (
-    <section className="pt-40 pb-20 px-4 md:px-12 bg-white overflow-hidden relative">
+    <section className="pt-40 pb-20 px-4 md:px-12 bg-[#140036] overflow-hidden relative">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -25,10 +25,10 @@ const Hero = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-[48px] md:text-[64px] font-extrabold leading-[1.1] text-[#1A1A1A] mb-6">
-            Grow Your <span className="text-[#FF8A4C]">Food Delivery</span> with Web & App Solutions
+          <h1 className="text-[48px] md:text-[64px] text-[#EFEFEF] font-extrabold leading-[1.1] text-[#1A1A1A] mb-6">
+            Grow Your <span className="text-[#7B2CBF]">Food Delivery</span> with Web & App Solutions
           </h1>
-          <button className="bg-[#FF8A4C] hover:bg-[#e67a3d] text-white px-10 py-4 rounded-lg font-bold text-[18px] transition-all shadow-lg shadow-orange-200">
+          <button className="bg-[#7B2CBF] hover:bg-[#430876] text-white px-10 py-4 rounded-lg font-bold text-[18px] transition-all shadow-lg shadow-orange-200">
             View Demo
           </button>
         </motion.div>
@@ -153,7 +153,7 @@ const OnlineApplications = () => {
 
 const AppScreens = () => {
   return (
-    <section className="py-20 px-4 md:px-12 bg-[#FF8A4C]">
+    <section className="py-20 px-4 md:px-12 bg-[#2a036e]">
       <div className="max-w-7xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -203,8 +203,8 @@ const Features = () => {
               onClick={() => setActiveTab(tab)}
               className={`px-8 py-3 rounded-full font-bold text-[16px] transition-all border-2 ${
                 activeTab === tab 
-                ? 'bg-[#FF8A4C] border-[#FF8A4C] text-white shadow-lg' 
-                : 'bg-white border-gray-200 text-[#4A4A4A] hover:border-[#FF8A4C]'
+                ? 'bg-[#7B2CBF] border-[#7B2CBF] text-white shadow-lg' 
+                : 'bg-white border-gray-200 text-[#4A4A4A] hover:border-[#7B2CBF]'
               }`}
             >
               {tab}
@@ -222,10 +222,10 @@ const Features = () => {
               transition={{ delay: idx * 0.05 }}
               className="flex items-center space-x-4 group"
             >
-              <div className="bg-[#FF8A4C] p-1 rounded-full text-white">
+              <div className="bg-[#7B2CBF] p-1 rounded-full text-white">
                 <CheckCircle2 size={20} />
               </div>
-              <span className="text-[18px] font-medium text-[#1A1A1A] group-hover:text-[#FF8A4C] transition-colors">{feature}</span>
+              <span className="text-[18px] font-medium text-[#1A1A1A] group-hover:text-[#7B2CBF] transition-colors">{feature}</span>
             </motion.div>
           ))}
         </div>
@@ -312,7 +312,7 @@ const CTA = () => {
       <div className="max-w-4xl mx-auto">
         <h2 className="text-[48px] font-bold text-[#1A1A1A] mb-4">Get Your Custom Food Delivery App Now</h2>
         <p className="text-[#4A4A4A] text-[20px] mb-12">Drive your business forward with our customizable Food Delivery App Development Solutions</p>
-        <button className="bg-[#FF8A4C] hover:bg-[#e67a3d] text-white px-12 py-5 rounded-full font-bold text-[20px] transition-all flex items-center mx-auto shadow-xl shadow-orange-100">
+        <button className="bg-#7B2CBF[] hover:bg-[#4a0785] text-white px-12 py-5 rounded-full font-bold text-[20px] transition-all flex items-center mx-auto shadow-xl shadow-orange-100">
           Let's Bring Your Idea to Life <ArrowRight size={24} className="ml-3" />
         </button>
       </div>
