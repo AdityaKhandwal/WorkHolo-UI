@@ -10,6 +10,7 @@ import CloudManagedServices from "./Landing-Pages/Services/Cloud&Devops/CloudMan
 import CloudMigrationServices from "./Landing-Pages/Services/Cloud&Devops/CloudMigrationServices";
 import CloudSecurityServices from "./Landing-Pages/Services/Cloud&Devops/CloudSecurityServices";
 import CloudServices from "./Landing-Pages/Services/Cloud&Devops/CloudServices";
+import ContactUs from "./ContactUs";
 import ContentMarketingServices from "./Landing-Pages/Services/DigitalMarketingSolution/ContentMarketingServices";
 import ConversionRateOptimization from "./Landing-Pages/Services/DigitalMarketingSolution/ConversionRateOptimization";
 import CustomSOftwareDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/CustomSoftwareDevelopment";
@@ -49,6 +50,7 @@ import NodeJsDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper
 import OnlineShoppingApp from "./Landing-Pages/Products/E-Commerce&MarketPlaceSolution/OnlineShoppingApp";
 import PHPDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/PHPDeveloper";
 import PWADeveloper from "./Landing-Pages/Resources/Design&CreativeExperts/PWADeveloper";
+import Portfolio from "./Landing-Pages/Portfolio";
 import ProductDesignServices from "./Landing-Pages/Services/Design&Experience/ProductDesignServices";
 import QualityAnalystDeveloper from "./Landing-Pages/Resources/Design&CreativeExperts/QualityAnalysts";
 import ReactDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/ReactDeveloper";
@@ -88,9 +90,9 @@ export default function App() {
       <Routes>
         {/* MAIN ROUTES */}
         <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Page name="Portfolio" />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/careers" element={<Page name="Careers" />} />
-        <Route path="/contact" element={<Page name="Contact" />} />
+        <Route path="/contact" element={<ContactUs />} />
 
         {/* HOME */}
         <Route path="/home/company-overview" element={<Page name="Company Overview" />} />
