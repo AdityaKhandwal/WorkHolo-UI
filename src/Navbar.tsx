@@ -14,8 +14,6 @@ import {
   ChevronDown,
   Phone,
   Mail,
-  Globe,
-  Smartphone,
   Code,
   Cloud,
   Palette,
