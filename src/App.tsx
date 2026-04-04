@@ -3,6 +3,7 @@ import AWSCloudServices from "./Landing-Pages/Services/Cloud&Devops/AWSCloudServ
 import AWSDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/AWSDeveloper";
 import AndroidAppDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/AndroidAppDevelopment";
 import AngularDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/AngularDeveloper";
+import AwardAndRecognisation from "./Landing-Pages/Home/AboutUs/Award&Recognisation";
 import CMSDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/CustomCMSDeveloper";
 import CarWashApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/CarWashApp";
 import ChefManagementApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/ChefManagementApp";
@@ -10,6 +11,7 @@ import CloudManagedServices from "./Landing-Pages/Services/Cloud&Devops/CloudMan
 import CloudMigrationServices from "./Landing-Pages/Services/Cloud&Devops/CloudMigrationServices";
 import CloudSecurityServices from "./Landing-Pages/Services/Cloud&Devops/CloudSecurityServices";
 import CloudServices from "./Landing-Pages/Services/Cloud&Devops/CloudServices";
+import CompanyOverview from "./Landing-Pages/Home/AboutUs/CompanyOverView";
 import ContactUs from "./ContactUs";
 import ContentMarketingServices from "./Landing-Pages/Services/DigitalMarketingSolution/ContentMarketingServices";
 import ConversionRateOptimization from "./Landing-Pages/Services/DigitalMarketingSolution/ConversionRateOptimization";
@@ -36,6 +38,8 @@ import IOTDevelopment from "./Landing-Pages/Services/Cloud&Devops/IOTDevelopment
 import IPadAppDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/IPadAppDevelopment";
 import JavaScriptDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/JavaScriptDeveloper";
 import LaravelDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/LaravelDeveloper";
+import LeadershipTeamApp from "./Landing-Pages/Home/AboutUs/LeadershipTeam";
+import LifeAtWorkHolo from "./Landing-Pages/Home/AboutUs/LifeAtWorkHoloLab";
 import LightnigMigrationDevelopment from "./Landing-Pages/Services/SalesForce/LightnigMigration&Development";
 import MERNStackDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/MERNStackDeveloper";
 import MagentoDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/MagentoDeveloper";
@@ -44,10 +48,12 @@ import MilkDeliveryApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/Milk
 import MobileAppDesign from "./Landing-Pages/Services/Design&Experience/MobileAppDesign";
 import MobileDevelopement from "./Landing-Pages/Services/SoftwareDevelopment.tsx/Mobile-Development";
 import MultiVendorMarketPlace from "./Landing-Pages/Products/E-Commerce&MarketPlaceSolution/MultiVendorMarketPlace";
+import NASSCOMMembers from "./Landing-Pages/Home/AboutUs/NASSCOMMembers";
 import NativeAppDeveloper from "./Landing-Pages/Resources/MobileAppDeveloper/NativeAppDeveloper";
 import Navbar from "./Navbar";
 import NodeJsDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/NodeJsDeveloper";
 import OnlineShoppingApp from "./Landing-Pages/Products/E-Commerce&MarketPlaceSolution/OnlineShoppingApp";
+import OurJourney from "./Landing-Pages/Home/AboutUs/OurJourney";
 import PHPDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/PHPDeveloper";
 import PWADeveloper from "./Landing-Pages/Resources/Design&CreativeExperts/PWADeveloper";
 import Portfolio from "./Landing-Pages/Portfolio";
@@ -69,6 +75,7 @@ import TaxiBookingApp from "./Landing-Pages/Products/Booking&ServicePlatform/Tax
 import TicketBookingApp from "./Landing-Pages/Products/Booking&ServicePlatform/TicketBookingApp";
 import UIUXDesign from "./Landing-Pages/Services/Design&Experience/UI&UXDesign";
 import UXReasearchServices from "./Landing-Pages/Services/Design&Experience/UXResearchServices";
+import VisionAndMission from "./Landing-Pages/Home/AboutUs/Vision&Mission";
 import VueJsDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/VueJsDeveloper";
 import WebAppDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/WebAppDevelopment";
 import WooCommerceDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/WooCommerceDeveloper";
@@ -95,13 +102,13 @@ export default function App() {
         <Route path="/contact" element={<ContactUs />} />
 
         {/* HOME */}
-        <Route path="/home/company-overview" element={<Page name="Company Overview" />} />
-        <Route path="/home/vision-mission" element={<Page name="Vision & Mission" />} />
-        <Route path="/home/leadership-team" element={<Page name="Leadership Team" />} />
-        <Route path="/home/our-journey" element={<Page name="Our Journey" />} />
-        <Route path="/home/awards-recognition" element={<Page name="Awards" />} />
-        <Route path="/home/nasscom-membership" element={<Page name="NASSCOM" />} />
-        <Route path="/home/life-at-WorkHolo-labs" element={<Page name="Life at WorkHolo" />} />
+        <Route path="/home/company-overview" element={<CompanyOverview />} />
+        <Route path="/home/vision-mission" element={<VisionAndMission />} />
+        <Route path="/home/leadership-team" element={<LeadershipTeamApp />} />
+        <Route path="/home/our-journey" element={<OurJourney />} />
+        <Route path="/home/awards-recognition" element={<AwardAndRecognisation/>} />
+        <Route path="/home/nasscom-membership" element={<NASSCOMMembers />} />
+        <Route path="/home/life-at-WorkHolo-labs" element={<LifeAtWorkHolo />} />
 
         {/* SERVICES */}
         <Route path="/services/mobile-app-development" element={<MobileDevelopement />} />
