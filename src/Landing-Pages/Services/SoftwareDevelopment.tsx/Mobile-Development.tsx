@@ -2,8 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
 import { 
-  ChevronDown, 
-  ChevronRight, 
+  ChevronDown,  
   ArrowRight, 
   MessageCircle
 } from 'lucide-react';
@@ -13,12 +12,9 @@ import {
 
 const Hero = () => {
   return (
-    <section className="relative pt-20 pb-32 overflow-hidden">
+    <section className="relative pt-32 pb-32 overflow-hidden bg-[#150153]">
       <div className="container-custom text-center relative z-10">
-        <div className="flex items-center justify-center gap-2 text-[14px] text-gray-400 mb-6">
-          <span>Home</span> <ChevronRight size={14} /> <span>Services</span> <ChevronRight size={14} /> <span className="text-[#7B2CBF]">Mobile App Development</span>
-        </div>
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
           Mobile <span className="text-[#7B2CBF] italic">App Development</span> <br /> Company
         </h1>
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">

@@ -28,7 +28,7 @@ const Hero = () => (
       className="max-w-5xl z-10"
     >
       <h2 className="text-blue-600 font-bold uppercase tracking-[0.2em] text-[14px] mb-6">Transform Your Milk Business With Us</h2>
-      <h1 className="text-4xl md:text-7xl font-extrabold text-[#1A1A1A] leading-[1.1] mb-10">
+      <h1 className="text-4xl md:text-7xl font-extrabold text-[white] leading-[1.1] mb-10">
         Revolutionize Your Dairy Business with Custom <br />
         <span className="text-blue-500">Milk Delivery Solution</span>
       </h1>
@@ -421,7 +421,10 @@ export default function MilkDeliveryApp() {
   return (
     <div className="min-h-screen flex flex-col selection:bg-blue-100 selection:text-blue-900">
       <main className="flex-grow">
-        <Hero />
+        <div className={"bg-[#1c0148]"}> 
+          <Hero />
+        </div>
+        
         <IntroSection />
         <ProductShowcase />
         <DiscoverServices />

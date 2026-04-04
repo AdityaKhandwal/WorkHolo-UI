@@ -130,22 +130,22 @@ const FAQItem = ({
 
 export default function GroceryDeliveryApp() {
   return (
-    <div className="min-h-screen bg-white p-3">
+    <div className="min-h-screen bg-white ">
       {/* --- Top Bar --- */}
 
       {/* --- Header --- */}
 
       {/* --- Hero Section --- */}
-      <section className="relative bg-[#F0FDF4] pt-20 pb-32 overflow-hidden">
-        <div className="container-custom grid lg:grid-cols-2 gap-12 items-center">
+      <section className="relative bg-[#1c012f] pt-36 pb-32 overflow-hidden">
+        <div className="container-custom grid lg:grid-cols-2 gap-12 items-center px-5">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-gray-900 leading-[1.1] mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white leading-[1.1] mb-6">
               Grocery Delivery <br />
-              <span className="text-[#7B2CBF]">App Development</span>
+              <span className="text-[#EFEFEF]">App Development</span>
             </h1>
             <div className="bg-white inline-flex items-center gap-3 px-6 py-3 rounded-full shadow-sm mb-8">
               <div className="bg-green-500 p-1 rounded-full">
@@ -153,7 +153,7 @@ export default function GroceryDeliveryApp() {
               </div>
               <span className="font-semibold text-gray-800">View Demo</span>
             </div>
-            <p className="text-lg text-gray-600 mb-10 max-w-xl leading-relaxed">
+            <p className="text-lg text-[#EFEFEF] mb-10 max-w-xl leading-relaxed">
               Drive your business forward with our customizable Grocery Delivery
               App Development Solutions. We build high-performance apps that
               scale with your business.

@@ -454,9 +454,7 @@ const NAV_DATA = [
 ];
 
 const ROUTES: Record<string, string> = {
-  Home: "/",
-  Services: "/services",
-  Products: "/products",
+  Home: "/Home",
   Portfolio: "/portfolio",
   "Contact Us": "/contact",
 };
@@ -597,7 +595,7 @@ export default function Navbar() {
                 onMouseEnter={() => handleNavHover(nav.title, nav.hasMegaMenu)}
               >
                 <Link
-                  to={ROUTES[nav.title] || "/"}
+                  to={ROUTES[nav.title]}
                   className={`text-[14px] font-bold flex items-center gap-1 transition-all py-2 ${
                     activeMegaMenu === nav.title
                       ? "text-[#7B2CBF]"
@@ -876,7 +874,7 @@ export default function Navbar() {
                   >
                     <div className="flex items-center justify-between">
                       <Link
-                        to={ROUTES[nav.title] || "/"}
+                        to={""}
                         onClick={() => setMobileMenuOpen(false)}
                         className="flex-1 text-left py-4 px-2 text-[16px] font-bold text-gray-900"
                       >

@@ -35,7 +35,7 @@ const Button = ({
 
   const variants = {
     primary: "bg-[#7B2CBF] hover:bg-[#6A25A5] text-white",
-    secondary: "bg-[#F3A833] hover:bg-[#E29722] text-white",
+    secondary: "bg-[#7B2CBF] hover:bg-[#E29722] text-white",
     blue: "bg-[#0085FF] hover:bg-[#0074E0] text-white",
     outline: "border-2 border-white/20 hover:bg-white/10 text-white"
   };
@@ -59,7 +59,7 @@ const SectionHeading = ({ title, subtitle, light = false }: { title: string; sub
       className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-4 ${light ? 'text-gray-900' : 'text-white'}`}
     >
       {title.split(' ').map((word, i) => (
-        <span key={i} className={word.toLowerCase() === 'it' || word.toLowerCase() === 'services' || word.toLowerCase() === 'we' || word.toLowerCase() === 'serve' || word.toLowerCase() === 'digital' || word.toLowerCase() === 'transformation' || word.toLowerCase() === 'delivery' || word.toLowerCase() === 'approach' || word.toLowerCase() === 'commitment' || word.toLowerCase() === 'WorkHolo' || word.toLowerCase() === 'labs' ? 'text-[#F3A833]' : ''}>
+        <span key={i} className={word.toLowerCase() === 'it' || word.toLowerCase() === 'services' || word.toLowerCase() === 'we' || word.toLowerCase() === 'serve' || word.toLowerCase() === 'digital' || word.toLowerCase() === 'transformation' || word.toLowerCase() === 'delivery' || word.toLowerCase() === 'approach' || word.toLowerCase() === 'commitment' || word.toLowerCase() === 'WorkHolo' || word.toLowerCase() === 'labs' ? 'text-[#7B2CBF]' : ''}>
           {word}{' '}
         </span>
       ))}
@@ -162,10 +162,10 @@ export default function CompanyOverview() {
               <span className="text-sm font-medium text-gray-600">/</span>
               <span className="text-sm font-medium text-gray-400">Services</span>
               <span className="text-sm font-medium text-gray-600">/</span>
-              <span className="text-sm font-medium text-[#F3A833]">IT Services & Digital Transformation</span>
+              <span className="text-sm font-medium text-[#7B2CBF]">IT Services & Digital Transformation</span>
             </div>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-8 leading-[1.1] tracking-tight">
-              Trusted <span className="text-[#F3A833]">IT Services</span> & Digital <br className="hidden md:block" /> Transformation Company
+              Trusted <span className="text-[#7B2CBF]">IT Services</span> & Digital <br className="hidden md:block" /> Transformation Company
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-6 font-medium">
               Delivering Measurable Results
@@ -259,7 +259,7 @@ export default function CompanyOverview() {
       <section className="section-padding bg-[#F8F9FA] text-gray-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Core <span className="text-[#F3A833]">IT Services</span></h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Core <span className="text-[#7B2CBF]">IT Services</span></h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {[
@@ -333,7 +333,7 @@ export default function CompanyOverview() {
                   <ul className="space-y-3">
                     {service.bullets.map((bullet, j) => (
                       <li key={j} className="flex items-start gap-3 text-sm text-gray-600">
-                        <div className="w-1.5 h-1.5 bg-[#F3A833] rounded-full mt-1.5 shrink-0" />
+                        <div className="w-1.5 h-1.5 bg-[#7B2CBF] rounded-full mt-1.5 shrink-0" />
                         {bullet}
                       </li>
                     ))}
@@ -348,7 +348,7 @@ export default function CompanyOverview() {
       {/* Our Proven Delivery Approach */}
       <section className="section-padding bg-white text-gray-900">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Proven <span className="text-[#F3A833]">Delivery Approach</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Proven <span className="text-[#7B2CBF]">Delivery Approach</span></h2>
           <p className="text-gray-600 mb-16 max-w-3xl mx-auto">
             We follow a structured execution model that ensures transparency, accountability, and performance-driven outcomes.
           </p>
@@ -390,7 +390,7 @@ export default function CompanyOverview() {
       <section className="section-padding bg-white text-gray-900">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">Why Businesses Choose <span className="text-[#F3A833]">WorkHolo Labs</span></h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8">Why Businesses Choose <span className="text-[#7B2CBF]">WorkHolo Labs</span></h2>
             <p className="text-gray-600 mb-10 text-lg">
               Our focus is not just launching products — but building digital systems that evolve with business growth.
             </p>
@@ -411,14 +411,14 @@ export default function CompanyOverview() {
                   transition={{ delay: i * 0.1 }}
                   className="flex items-center gap-4 text-gray-700 font-medium"
                 >
-                  <Check className="text-[#F3A833]" size={20} />
+                  <Check className="text-[#7B2CBF]" size={20} />
                   {item}
                 </motion.li>
               ))}
             </ul>
           </div>
           <div className="relative">
-            <div className="absolute -inset-4 bg-[#F3A833]/10 rounded-3xl blur-2xl" />
+            <div className="absolute -inset-4 bg-[#7B2CBF]/10 rounded-3xl blur-2xl" />
             <img 
               src="https://WorkHololabs.com/assets/images/why-choose-us.png" 
               alt="Why Choose Us" 
@@ -436,7 +436,7 @@ export default function CompanyOverview() {
       <section className="section-padding bg-[#F8F9FA] text-gray-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Industries <span className="text-[#F3A833]">We Serve</span></h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Industries <span className="text-[#7B2CBF]">We Serve</span></h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -468,7 +468,7 @@ export default function CompanyOverview() {
       {/* What Makes WorkHolo Labs Reliable */}
       <section className="section-padding bg-white text-gray-900">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">What Makes WorkHolo Labs a Reliable <span className="text-[#F3A833]">Digital Transformation</span> Company?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">What Makes WorkHolo Labs a Reliable <span className="text-[#7B2CBF]">Digital Transformation</span> Company?</h2>
           <p className="text-gray-600 mb-12 text-lg leading-relaxed">
             A true digital transformation partner must deliver measurable outcomes. WorkHolo Labs integrates strategy, engineering, and analytics to ensure transformation initiatives produce real operational improvements.
           </p>
@@ -481,7 +481,7 @@ export default function CompanyOverview() {
               'Long-term scalability'
             ].map((item, i) => (
               <span key={i} className="px-6 py-3 bg-gray-50 text-gray-700 rounded-full border border-gray-200 text-sm font-semibold flex items-center gap-2">
-                <div className="w-2 h-2 bg-[#F3A833] rounded-full" />
+                <div className="w-2 h-2 bg-[#7B2CBF] rounded-full" />
                 {item}
               </span>
             ))}
@@ -492,7 +492,7 @@ export default function CompanyOverview() {
       {/* FAQ Section */}
       <section className="section-padding bg-white text-gray-900 border-t border-gray-100">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Frequently Asked <span className="text-[#F3A833]">Questions</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Frequently Asked <span className="text-[#7B2CBF]">Questions</span></h2>
           <div className="space-y-2">
             {[
               { q: 'What IT services does WorkHolo Labs provide?', a: 'We provide a comprehensive range of IT services including custom software development, mobile app development, cloud & DevOps solutions, enterprise digital transformation, AI & data analytics, and Salesforce consulting.' },
@@ -510,7 +510,7 @@ export default function CompanyOverview() {
       {/* Commitment Section */}
       <section className="section-padding bg-white text-gray-900 text-center border-t border-gray-100">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">Our <span className="text-[#F3A833]">Commitment</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">Our <span className="text-[#7B2CBF]">Commitment</span></h2>
           <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
             Our mission is to be a trusted global IT Services and Digital Transformation Company delivering innovative, secure, and scalable technology solutions that drive sustainable business success.
           </p>
@@ -520,10 +520,10 @@ export default function CompanyOverview() {
       {/* CTA Section */}
       <section className="section-padding bg-[#0B0E14] text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#F3A833] via-transparent to-transparent" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#7B2CBF] via-transparent to-transparent" />
         </div>
         <div className="max-w-4xl mx-auto relative z-10">
-          <h2 className="text-4xl md:text-6xl font-bold mb-8">Start Your Digital <span className="text-[#F3A833]">Transformation</span> Journey</h2>
+          <h2 className="text-4xl md:text-6xl font-bold mb-8">Start Your Digital <span className="text-[#7B2CBF]">Transformation</span> Journey</h2>
           <p className="text-xl text-gray-400 mb-12">
             If your organization is ready to modernize operations, improve efficiency, and scale confidently, WorkHolo Labs is your strategic technology partner.
           </p>
@@ -565,7 +565,7 @@ export default function CompanyOverview() {
           </div>
           <div>
             <div className="text-xs text-gray-400 font-medium">Let's Chat!</div>
-            <div className="text-sm font-bold">WE ARE <span className="text-[#F3A833]">HERE!</span></div>
+            <div className="text-sm font-bold">WE ARE <span className="text-[#7B2CBF]">HERE!</span></div>
           </div>
           <div className="w-6 h-6 bg-red-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center">1</div>
         </div>

@@ -93,7 +93,7 @@ export default function CarWashApp() {
 
       <main>
         {/* Hero Section */}
-        <section className="bg-hero-gradient pt-20 pb-32 px-4 md:px-12 relative overflow-hidden">
+        <section className="bg-hero-gradient pt-36 pb-32 px-4 md:px-12 relative overflow-hidden bg-[#1d0151]">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
             <motion.div 
               initial={{ opacity: 0, x: -50 }}
