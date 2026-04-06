@@ -914,18 +914,29 @@ export default function Navbar() {
                                   {item.label}
                                 </span>
                               </div>
-                              <div className="grid grid-cols-1 gap-1 pl-9">
-                                {item.links.map((link, idx) => (
-                                  <Link
-                                    key={idx}
-                                    to={createPath(nav.title, link.label)}
-                                    onClick={() => setMobileMenuOpen(false)}
-                                    className="text-[13px] text-gray-500 py-1.5 hover:text-[#7B2CBF]"
-                                  >
-                                    {link.label}
-                                  </Link>
-                                ))}
-                              </div>
+                            <div className="grid grid-cols-1 gap-1 pl-9">
+  {nav.title === "Home"
+    ? NAV_DATA.find((n) => n.title === "Home")?.centerContent?.links.map((link, idx) => (
+        <Link
+          key={idx}
+          to={createPath("home", link.label)}
+          onClick={() => setMobileMenuOpen(false)}
+          className="text-[13px] text-gray-500 py-1.5 hover:text-[#7B2CBF]"
+        >
+          {link.label}
+        </Link>
+      ))
+    : item.links.map((link, idx) => (
+        <Link
+          key={idx}
+          to={createPath(nav.title, link.label)}
+          onClick={() => setMobileMenuOpen(false)}
+          className="text-[13px] text-gray-500 py-1.5 hover:text-[#7B2CBF]"
+        >
+          {link.label}
+        </Link>
+      ))}
+</div>
                             </div>
                           ))}
                         </motion.div>
