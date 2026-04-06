@@ -96,6 +96,7 @@ export default function App() {
       <Navbar />
       <Routes>
         {/* MAIN ROUTES */}
+        <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/careers" element={<Page name="Careers" />} />
