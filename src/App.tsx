@@ -80,6 +80,8 @@ import VueJsDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/
 import WebAppDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/WebAppDevelopment";
 import WooCommerceDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/WooCommerceDeveloper";
 import WordPressDeveloper from "./Landing-Pages/Resources/WebAppDeveloper/WordPressDeveloper";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import { PPC } from "./Landing-Pages/Services/DigitalMarketingSolution/PPC";
 
@@ -91,6 +93,28 @@ const Page = ({ name }: { name: string }) => (
 );
 
 export default function App() {
+const location = useLocation();
+
+useEffect(() => {
+  const path = location.pathname;
+
+  // convert URL → Title
+  const formattedTitle = path
+    .split("/")
+    .filter(Boolean)
+    .map(word =>
+      word
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, c => c.toUpperCase())
+    )
+    .join(" | ");
+
+  document.title = formattedTitle
+    ? `${formattedTitle} | WorkHolo`
+    : "WorkHolo";
+}, [location]);
+
+
   return (
 <>
       <Navbar />
