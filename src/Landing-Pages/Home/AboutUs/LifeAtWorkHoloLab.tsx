@@ -23,21 +23,13 @@ import {
 // --- Components ---
 
 const Hero = () => (
-  <section className="bg-dark text-white pt-16 pb-24 relative overflow-hidden">
+  <section className="bg-dark text-white bg-[#280260]  pt-32 pb-24 relative overflow-hidden">
     <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-secondary rounded-full blur-[120px]"></div>
       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-primary rounded-full blur-[120px]"></div>
     </div>
     
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-      <nav className="flex justify-center items-center gap-2 text-accent text-[14px] font-medium mb-8">
-        <a href="#" className="hover:underline">Home</a>
-        <span>/</span>
-        <a href="#" className="hover:underline">Services</a>
-        <span>/</span>
-        <span className="text-white">Life At WorkHolo</span>
-      </nav>
-
       <motion.h1 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

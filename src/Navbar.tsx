@@ -140,10 +140,6 @@ const NAV_DATA = [
             desc: "High-performance hybrid mobile apps",
           },
           {
-            label: "Cross-Platform Development",
-            desc: "build once, deploy everywhere",
-          },
-          {
             label: "Web Application Development",
             desc: "Scalable web apps built for your business",
           },
@@ -152,148 +148,12 @@ const NAV_DATA = [
             desc: "Tailored solution for unique business needs",
           },
           {
-            label: "CMS & Portal Development",
-            desc: "Optimized tablet experiences for enterprise",
-          },
-          {
             label: "Enterprise Application Development",
             desc: "Scalable, Secure & cloud-native enterprise software",
           },
           {
             label: "App maintainance & Support",
             desc: "Ongoing updates, bug fixes & performance optimization",
-          },
-        ],
-      },
-      {
-        id: "cloud-hosting",
-        label: "Cloud Hosting & Deployment",
-        icon: Cloud,
-        description: "Hosting and managing real-time communication systems",
-        links: [
-          {
-            label: "Cloud Services",
-            desc: "Secure, scalable cloud infrastructure and deployment solutions",
-          },
-          {
-            label: "Cloud Migration Services",
-            desc: "Seamless migration of application and data to modern cloud platforms",
-          },
-          {
-            label: "Cloud Security Services",
-            desc: "Advanced cloud security, compliance, and threat protection for your infrastructure",
-          },
-          {
-            label: "IoT Development",
-            desc: "Custom IoT solutions with device integration, cloud connectivity, and real-time analytics",
-          },
-          {
-            label: "DevOps Services",
-            desc: "Ci/CD automation, infrastructure as code, and faster release cycles",
-          },
-          {
-            label: "DevOps Consulting Services",
-            desc: "Strategic DevOps advisory to improve performance and scalability",
-          },
-          {
-            label: "Cloud Managed Services",
-            desc: "24/7 monitoring, optimization, and ongoing cloud management support",
-          },
-          {
-            label: "AWS Cloud Services",
-            desc: "Scalable cloud solutions on AWS including deployment, migration, DevOps, and secure infrastructure management",
-          },
-        ],
-      },
-      {
-        id: "salesforce",
-        label: "Salesforce",
-        icon: ShieldCheck,
-        description: "CRM customization, integration and consulting",
-        links: [
-          {
-            label: "Salesforce Consulting",
-            desc: "CRM implementtion, customization & integration",
-          },
-          {
-            label: "SalesForce Implementation",
-            desc: "End-to-end CRM setup, migration & deployment",
-          },
-          {
-            label: "Lightning Migration & Development",
-            desc: "Classic to Lightning upgrade & LWC development",
-          },
-          {
-            label: "Salesforce Integration",
-            desc: "Connect Salesforce with ERP, marketing & APIs",
-          },
-        ],
-      },
-      {
-        id: "design-exp",
-        label: "Design & Experience",
-        icon: Palette,
-        description: "User-centric UI/UX design that drives engagement",
-        links: [
-          {
-            label: "UI/UX Design Company",
-            desc: "User-centered interfaces that enhance usability and drive conversions",
-          },
-          {
-            label: "Product Design Services",
-            desc: "End-to-end product design from concept to scalble digital solutions",
-          },
-          {
-            label: "Design sustem Development",
-            desc: "Consisent, scalable UI systems for faster and unified product development",
-          },
-          {
-            label: "Mobile App Design",
-            desc: "Engaging mobile app experience built for performance and clarity",
-          },
-          {
-            label: "UX Research Services",
-            desc: "Responsive, conversion-focused websites tailored to your brand",
-          },
-        ],
-      },
-      {
-        id: "digital-marketing",
-        label: "Digital Marketing Solutions",
-        icon: TrendingUp,
-        description: "SEO, PPC and social media strategies that grow revenue",
-        links: [
-          {
-            label: "Digital Marketing",
-            desc: "Full-funnel strategies to grow your brand",
-          },
-          {
-            label: "PPC Advertising",
-            desc: "Targeting paid compaigns with high ROI",
-          },
-          {
-            label: "Social Media Marketing",
-            desc: "Boost app visibility and downloads",
-          },
-          {
-            label: "Content Marketing Services",
-            desc: "Boost app visibility and Downloads",
-          },
-          {
-            label: "SEO Services",
-            desc: "Rank higher and drive organic traffic",
-          },
-          {
-            label: "ASO Services",
-            desc: "Boost app visibility and downloads",
-          },
-          {
-            label: "Conversion Rate Optimization",
-            desc: "Boost app visiblity and downloads",
-          },
-          {
-            label: "Mobile App Design",
-            desc: "Boost app visibility and downloads",
           },
         ],
       },

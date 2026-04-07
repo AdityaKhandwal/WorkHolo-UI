@@ -16,40 +16,21 @@ import {
 // --- Components ---
 
 const Hero = () => (
-  <section className="relative bg-gradient-to-br from-navy via-navy to-black py-24 overflow-hidden">
+  <section className="relative bg-[#1e0247] py-32 overflow-hidden">
     {/* Background Pattern */}
     <div className="absolute inset-0 opacity-10 pointer-events-none">
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,#007BFF_0%,transparent_50%)]"></div>
     </div>
 
     <div className="container-standard relative z-10 text-center">
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="flex items-center justify-center gap-2 text-sm text-white/70 mb-8"
-      >
-        <a href="#" className="hover:text-white transition-colors">Home</a>
-        <span>/</span>
-        <span className="text-white">Awards & Recognition</span>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="inline-block bg-primary/20 text-primary px-4 py-1 rounded-md text-xs font-bold tracking-widest uppercase mb-6"
-      >
-        Recognition
-      </motion.div>
 
       <motion.h1 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="text-5xl md:text-7xl font-extrabold mb-8 leading-tight"
+        className="text-5xl md:text-7xl text-white font-extrabold mb-8 leading-tight"
       >
-        Awards & <span className="text-accent">Recognition</span>
+        Awards & <span className="text-white text-accent">Recognition</span>
       </motion.h1>
 
       <motion.p 

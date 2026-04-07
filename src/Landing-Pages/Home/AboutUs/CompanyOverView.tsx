@@ -145,7 +145,7 @@ export default function CompanyOverview() {
       </AnimatePresence>
 
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex flex-col items-center justify-center text-center px-6 py-20 overflow-hidden bg-gradient-to-b from-black to-[#0B0E14]">
+      <section className="relative min-h-[80vh] flex flex-col bg-[#22034f] items-center justify-center text-center px-6 py-32 overflow-hidden bg-gradient-to-b from-black to-[#0B0E14]">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#0085FF] rounded-full blur-[120px]" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#7B2CBF] rounded-full blur-[120px]" />
@@ -153,18 +153,11 @@ export default function CompanyOverview() {
 
         <div className="relative z-10 max-w-5xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex justify-center gap-2 mb-6">
-              <span className="text-sm font-medium text-gray-400">Home</span>
-              <span className="text-sm font-medium text-gray-600">/</span>
-              <span className="text-sm font-medium text-gray-400">Services</span>
-              <span className="text-sm font-medium text-gray-600">/</span>
-              <span className="text-sm font-medium text-[#7B2CBF]">IT Services & Digital Transformation</span>
-            </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-8 leading-[1.1] tracking-tight">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-8 text-white leading-[1.1] tracking-tight">
               Trusted <span className="text-[#7B2CBF]">IT Services</span> & Digital <br className="hidden md:block" /> Transformation Company
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-6 font-medium">

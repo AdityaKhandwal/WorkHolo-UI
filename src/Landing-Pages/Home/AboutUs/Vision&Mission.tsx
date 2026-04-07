@@ -102,25 +102,16 @@ export default function VisionAndMission() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative pt-20 pb-32 px-4 lg:px-12 overflow-hidden">
+        <section className="relative pt-32 pb-32 px-4 lg:px-12 bg-[#220262] overflow-hidden">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-blue-500/5 to-transparent pointer-events-none" />
           <div className="max-w-4xl mx-auto text-center relative z-10">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="flex items-center justify-center gap-2 text-sm font-medium text-gray-400 mb-8"
-            >
-              <span>Home</span>
-              <span className="text-white/20">/</span>
-              <span className="text-blue-500">Vision & Mission</span>
-            </motion.div>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-5xl lg:text-7xl font-extrabold mb-8 font-outfit"
+              className="text-5xl lg:text-7xl font-extrabold mb-8 text-white font-outfit"
             >
-              Our <span className="text-blue-500 italic">Vision</span> & <span className="text-yellow-500 italic">Mission</span>
+              Our <span className="text-blue-500 italic">Vision</span> & <span className="text-[#7B2CBF] italic">Mission</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -150,7 +141,7 @@ export default function VisionAndMission() {
               viewport={{ once: true }}
               className="flex-1"
             >
-              <h2 className="text-4xl lg:text-5xl font-bold mb-8 font-outfit">Our <span className="text-yellow-500">Vision</span></h2>
+              <h2 className="text-4xl lg:text-5xl font-bold mb-8 font-outfit">Our <span className="text-[#7B2CBF]">Vision</span></h2>
               <p className="text-gray-400 text-lg leading-relaxed mb-8">
                 At WorkHolo Labs, our vision is to become a globally recognized <span className="text-blue-500 underline decoration-blue-500/30 underline-offset-4 cursor-pointer hover:text-blue-400 transition-colors">IT Services and Digital Transformation Company</span> that empowers businesses across India and international markets to innovate, scale, and lead confidently in the digital era.
               </p>
@@ -184,7 +175,7 @@ export default function VisionAndMission() {
               viewport={{ once: true }}
               className="flex-1"
             >
-              <h2 className="text-4xl lg:text-5xl font-bold mb-8 font-outfit">Our <span className="text-yellow-500">Mission</span></h2>
+              <h2 className="text-4xl lg:text-5xl font-bold mb-8 font-outfit">Our <span className="text-[#7B2CBF]">Mission</span></h2>
               <p className="text-gray-400 text-lg leading-relaxed mb-8">
                 Our mission is to deliver scalable, secure, and high-performance IT services that enable sustainable digital transformation for businesses worldwide.
               </p>
@@ -200,7 +191,7 @@ export default function VisionAndMission() {
                   "Aligning technology investments with business KPIs"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-300">
-                    <CheckCircle2 className="text-yellow-500 shrink-0 mt-1" size={18} />
+                    <CheckCircle2 className="text-[#7B2CBF] shrink-0 mt-1" size={18} />
                     <span dangerouslySetInnerHTML={{ __html: item }} />
                   </li>
                 ))}
@@ -224,7 +215,7 @@ export default function VisionAndMission() {
         <section className="py-24 px-4 lg:px-12 bg-white/2">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-outfit">How Our Vision Aligns with <span className="text-yellow-500">Global Digital Trends</span></h2>
+              <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-outfit">How Our Vision Aligns with <span className="text-[#7B2CBF]">Global Digital Trends</span></h2>
               <p className="text-gray-400 text-lg">Modern enterprises require advanced digital capabilities to stay competitive</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -262,7 +253,7 @@ export default function VisionAndMission() {
         {/* Philosophy Section */}
         <section className="py-24 px-4 lg:px-12">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-outfit">Our Digital <span className="text-yellow-500">Transformation Philosophy</span></h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-outfit">Our Digital <span className="text-[#7B2CBF]">Transformation Philosophy</span></h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto mb-20">
               Digital transformation is not a one-time upgrade — it is a continuous evolution. Our approach ensures long-term ROI and operational resilience.
             </p>
@@ -280,7 +271,7 @@ export default function VisionAndMission() {
         {/* Commitment Section */}
         <section className="py-24 px-4 lg:px-12 bg-white/2">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-outfit">Commitment to <span className="text-yellow-500">Excellence & Trust</span></h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-outfit">Commitment to <span className="text-[#7B2CBF]">Excellence & Trust</span></h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto mb-16">
               As an emerging global IT consulting partner from India, WorkHolo Labs is committed to building digital solutions designed to grow with our clients — across industries and geographic markets.
             </p>
@@ -293,7 +284,7 @@ export default function VisionAndMission() {
                 "Innovation-driven engineering"
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 bg-white/5 border border-white/10 px-6 py-3 rounded-full text-sm font-semibold hover:bg-white/10 transition-colors cursor-default">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full" />
+                  <div className="w-2 h-2 bg-[#7B2CBF] rounded-full" />
                   {item}
                 </div>
               ))}
@@ -327,12 +318,12 @@ export default function VisionAndMission() {
           <div className="max-w-5xl mx-auto bg-gradient-to-r from-blue-600/20 to-blue-900/20 border border-blue-500/20 rounded-[40px] p-12 lg:p-20 text-center relative overflow-hidden group">
             <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-from)_0%,_transparent_70%)] from-blue-500/10 pointer-events-none" />
             <h2 className="text-4xl lg:text-5xl font-bold mb-8 font-outfit">
-              Partner with a Trusted <span className="text-yellow-500">Digital Transformation</span> Company
+              Partner with a Trusted <span className="text-[#7B2CBF]">Digital Transformation</span> Company
             </h2>
-            <p className="text-gray-300 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-gray-700 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
               Ready to align your technology with your business vision? WorkHolo Labs combines strategic consulting with deep technical expertise to deliver measurable business outcomes.
             </p>
-            <button className="bg-[#F59E0B] hover:bg-[#D97706] text-black px-10 py-5 rounded-xl text-lg font-bold transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-yellow-500/20">
+            <button className="bg-[#7B2CBF] hover:bg-[#4d0c87] text-black px-10 py-5 rounded-xl text-lg font-bold transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-[#7B2CBF]/20">
               Connect With Our Team
             </button>
           </div>
