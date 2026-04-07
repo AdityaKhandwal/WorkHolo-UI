@@ -86,11 +86,6 @@ import { Route, Routes } from "react-router-dom";
 import { PPC } from "./Landing-Pages/Services/DigitalMarketingSolution/PPC";
 
 // Dummy Pages (you replace later)
-const Page = ({ name }: { name: string }) => (
-  <div style={{ padding: "100px 20px" }}>
-    <h1>{name}</h1>
-  </div>
-);
 
 export default function App() {
 const location = useLocation();

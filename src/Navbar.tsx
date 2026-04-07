@@ -15,15 +15,11 @@ import {
   Phone,
   Mail,
   Code,
-  Cloud,
-  Palette,
-  TrendingUp,
   ShoppingBag,
   BookOpen,
   Users,
   CheckCircle2,
   ArrowRight,
-  ShieldCheck,
 } from "lucide-react";
 
 const TOP_BAR = {
