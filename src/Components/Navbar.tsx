@@ -387,6 +387,7 @@ export default function Navbar() {
             {TOP_BAR.phone1}
           </a>
         </div>
+        <span></span>
         <div className="flex items-center justify-center flex-1 overflow-hidden">
           <div className="relative w-full max-w-[600px] h-[20px] overflow-hidden flex items-center justify-center">
             <AnimatePresence mode="wait">
