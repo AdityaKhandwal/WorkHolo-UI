@@ -12,7 +12,7 @@ import CloudMigrationServices from "./Landing-Pages/Services/Cloud&Devops/CloudM
 import CloudSecurityServices from "./Landing-Pages/Services/Cloud&Devops/CloudSecurityServices";
 import CloudServices from "./Landing-Pages/Services/Cloud&Devops/CloudServices";
 import CompanyOverview from "./Landing-Pages/Home/AboutUs/CompanyOverView";
-import ContactUs from "./ContactUs";
+import ContactUs from "./Components/ContactUs";
 import ContentMarketingServices from "./Landing-Pages/Services/DigitalMarketingSolution/ContentMarketingServices";
 import ConversionRateOptimization from "./Landing-Pages/Services/DigitalMarketingSolution/ConversionRateOptimization";
 import CustomSOftwareDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/CustomSoftwareDevelopment";
@@ -26,11 +26,11 @@ import ECommerceApp from "./Landing-Pages/Products/E-Commerce&MarketPlaceSolutio
 import ELearningApp from "./Landing-Pages/Products/Education&Entertainment/E-LearningApp";
 import FlutterAppDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/FlutterAppDevelopment";
 import FoodDeliveryApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/FoodDeliveryApp";
-import Footer from "./Footer";
+import Footer from "./Components/Footer";
 import FullStackDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/FullStackDeveloper";
 import GamingApp from "./Landing-Pages/Products/Education&Entertainment/GamingApp";
 import GroceryDeliveryApp from "./Landing-Pages/Products/OnDemand&DeliveryApps/GroceryDeliveryApp";
-import Home from "./Home";
+import Home from "./Components/Home";
 import HotelBookingApp from "./Landing-Pages/Products/Booking&ServicePlatform/HotelBookingApp";
 import HybridAppDeveloper from "./Landing-Pages/Resources/MobileAppDeveloper/HybridAppDeveloper";
 import IOSAppDevelopment from "./Landing-Pages/Services/SoftwareDevelopment.tsx/IOSAppDevelopment";
@@ -50,7 +50,7 @@ import MobileDevelopement from "./Landing-Pages/Services/SoftwareDevelopment.tsx
 import MultiVendorMarketPlace from "./Landing-Pages/Products/E-Commerce&MarketPlaceSolution/MultiVendorMarketPlace";
 import NASSCOMMembers from "./Landing-Pages/Home/AboutUs/NASSCOMMembers";
 import NativeAppDeveloper from "./Landing-Pages/Resources/MobileAppDeveloper/NativeAppDeveloper";
-import Navbar from "./Navbar";
+import Navbar from "./Components/Navbar";
 import NodeJsDeveloper from "./Landing-Pages/Resources/Enterprise&CloudDeveloper/NodeJsDeveloper";
 import OnlineShoppingApp from "./Landing-Pages/Products/E-Commerce&MarketPlaceSolution/OnlineShoppingApp";
 import OurJourney from "./Landing-Pages/Home/AboutUs/OurJourney";
