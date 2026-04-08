@@ -1,4 +1,4 @@
-import logoImage from "../src/assets/WorkHolo-logo.png";
+import logoImage from "../assets/WorkHolo-logo.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
